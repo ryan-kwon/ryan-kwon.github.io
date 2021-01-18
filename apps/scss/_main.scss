@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixins";
+
+.main { 
+    //first image (about)
+    .bg_image-1 {
+        background-image: url('/images/Parallax\ image.jpg');
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.75;
+    }
+
+    //second image (work)
+    .bg_img-2 {
+        background-image: url("/images/Parallax\ meme\ image.jpg");
+        min-height: 400px;
+    }
+    
+    //third image (Contact)
+    .bg_img-3 {
+        background-image: url("/images/Parallax\ meme\ image\ 2.jpg");
+        min-height: 400px;
+    }
+
+    .DisplayContainer {
+        position: relative;
+        .AboutSection {
+            .LogoDisplay {
+                position: relative;
+
+                .Logo {
+                    background-color: $secondary;
+                    padding: 12px 24px;
+                    color: $font;
+                    font-size: 24px;
+                    letter-spacing: 10px;
+                    text-align: center;
+                    animation: opac 0.8s;
+                }
+            }
+        }
+        
+        /*
+        .WorkSection {
+        
+        }
+        
+        .ContactSection {
+        
+        }
+        */
+    }
+}

@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 html {
     scroll-behavior: smooth;
@@ -47,14 +48,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.3;
-    //font-family: 'Quattrocento', serif;
-    color: $gray;
-    background-color: $white;
+    font-family: 'Roboto', sans-serif;
+    color: $font;
+    background-color: $primary;
 }
 
 a, a:link, a:visited, a:active {
     text-decoration: none;
-    color: $gray;
+    color: $font;
 }
 
 .flex {

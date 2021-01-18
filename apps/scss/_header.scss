@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixins";
+
+.header {
+    top: 0;
+
+    .nav {
+        //position: fixed;
+        width: 100%;
+        z-index: 1;
+
+        &__links {
+            border: none;
+            display: inline-block;
+            padding: 8px 16px;
+            vertical-align: middle;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            background-color: inherit;
+            text-align: center;
+            cursor: pointer;
+
+            a {
+                font-weight: 900;
+                color: $font;
+                padding: 8px 16px;
+                float: left;
+                width: auto;
+                border: none;
+                display: block;
+                outline: 0;
+            }
+        }
+    }
+}
