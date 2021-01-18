@@ -20,27 +20,31 @@ cheerful and energetic
 #b4dfe5
 #d2fdff
 */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 100%;
   width: 100%;
-  /*
-    &::-webkit-scrollbar {
-        width: 20px;
-        background-color: $white;
-    }
+}
 
-    &::-webkit-scrollbar-track {
-        border-radius: 50px;
-        box-shadow: 5px 5px 10px #ccc inset, -5px -5px 10px #fff inset;
-    }
+html::-webkit-scrollbar {
+  width: 20px;
+  background-color: #fbe8a6;
+}
 
-    &::-webkit-scrollbar-thumb {
-        background: $white;
-        border-radius: 50px;
-        box-shadow: -5px -5px 5px #ccc inset, 5px 5px 5px #f2f2f2 inset;
-    }
-    */
+html::-webkit-scrollbar-track {
+  border-radius: 50px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #303c6c;
+  border-radius: 50px;
 }
 
 * {
@@ -158,6 +162,97 @@ cheerful and energetic
 #b4dfe5
 #d2fdff
 */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+.footer {
+  background-color: #f4976c;
+  padding: 30px;
+}
+
+.footer a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #303c6c;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+.footer a:hover {
+  color: #303c6c;
+}
+
+.footer .FootLinks {
+  width: 150px;
+  -webkit-columns: 2;
+          columns: 2;
+  list-style: none;
+}
+
+.footer .FootSecondContainer .Footer_links {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+}
+
+.footer .FootSecondContainer .Footer_links__icon {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30px;
+  height: 30px;
+  opacity: .5;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.footer .FootSecondContainer .Footer_links__icon:hover {
+  opacity: 1;
+  -webkit-transition: .15s;
+  transition: .15s;
+  cursor: pointer;
+}
+
+/* Color schemes
+Colorful and balanced
+#e27d60
+#85dcb
+#e8a87c
+#c38d9e
+#41b3a3
+
+striking and simple (futuristic tech, not professional)
+#0b0c10
+#1f2833
+#c5c6c7
+#66fcf1
+#45a29e
+
+cheerful and energetic
+#fbe8a6
+#f4976c
+#303c6c
+#b4dfe5
+#d2fdff
+*/
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
 .header {
   top: 0;
 }
@@ -213,9 +308,16 @@ cheerful and energetic
 #b4dfe5
 #d2fdff
 */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
 .main .bg_image-1 {
   background-image: url("/images/Parallax image.jpg");
-  height: 100%;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -235,6 +337,7 @@ cheerful and energetic
 
 .main .DisplayContainer {
   position: relative;
+  top: 50%;
   /*
         .WorkSection {
         
@@ -246,11 +349,11 @@ cheerful and energetic
         */
 }
 
-.main .DisplayContainer .AboutSection .LogoDisplay {
+.main .DisplayContainer .AboutSection__logoposition {
   position: relative;
 }
 
-.main .DisplayContainer .AboutSection .LogoDisplay .Logo {
+.main .DisplayContainer .AboutSection__logoposition .Logo {
   background-color: #f4976c;
   padding: 12px 24px;
   color: #303c6c;
@@ -259,5 +362,12 @@ cheerful and energetic
   text-align: center;
   -webkit-animation: opac 0.8s;
           animation: opac 0.8s;
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

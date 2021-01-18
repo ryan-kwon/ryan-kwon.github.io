@@ -1,11 +1,13 @@
 @import "variables";
 @import "mixins";
 
-.main { 
+.main {
+    //height: 100vh;
+
     //first image (about)
     .bg_image-1 {
         background-image: url('/images/Parallax\ image.jpg');
-        height: 100%;
+        min-height: 100vh;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -27,8 +29,9 @@
 
     .DisplayContainer {
         position: relative;
+        top: 50%;
         .AboutSection {
-            .LogoDisplay {
+            &__logoposition {
                 position: relative;
 
                 .Logo {

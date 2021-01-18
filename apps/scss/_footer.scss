@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixins";
+
+.footer {
+    background-color: $secondary;
+    padding: 30px;
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: $font;
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+            color: $font;
+        }
+    }
+
+    .FootLinks {
+        width: 150px;
+        columns: 2;
+        list-style: none;
+    }
+
+    .FootSecondContainer {
+        .Footer_links {
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+
+            &__icon {
+                object-fit: contain;
+                width: 30px;
+                height: 30px;
+                opacity: .5;
+                transition: .15s;
+
+                &:hover {
+                    opacity: 1;
+                    transition: .15s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
