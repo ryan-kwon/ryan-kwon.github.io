@@ -25,6 +25,7 @@
 .FstParallax, .SecParallax, .ThirParallax {
     opacity: 0.75;
     background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -37,7 +38,7 @@
 }
 
 .FstParallax {
-    background-position: center;
+    //background-position: center;
     h1 {
         padding: 12px 24px;
         background-color: $primary;
@@ -103,8 +104,9 @@
 }
 
 .SecParallax {
-    background-position: bottom;
+    background-position: 0 70%;
     h1 {
+        color: $third;
         position: relative;
         top: 50%;
         left: 50%;
@@ -153,8 +155,9 @@
 }
 
 .ThirParallax {
-    background-position: top;
+    background-position: 0 25%;
     h1 {
+        color: $third;
         position: relative;
         top: 50%;
         left: 50%;
@@ -181,10 +184,12 @@
     .ContactSection {
         //find solution
         display: flex;
+        justify-content: center;
         align-items: center;
 
         padding: 10px;
         .ContactSlides {
+            margin: 0;
             padding: 10px;
 
             p {
@@ -199,6 +204,10 @@
             }
         }
         .ContactInfo {
+            //this is a dumb solution lmao
+            //position: relative;
+            //left: -20%;
+            //margin: auto;
             width: 33.33333%; 
             padding: 12px 24px;
             vertical-align: middle;
@@ -206,6 +215,7 @@
             p {
                 margin: 0;
                 img {
+                    //margin: auto;
                     object-fit: contain;
                     width: 30px;
                     height: 30px;

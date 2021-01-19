@@ -36,6 +36,12 @@
                 height: 30px;
                 opacity: .5;
                 transition: .15s;
+                margin-right: 10px;
+                /*
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+                */
 
                 &:hover {
                     opacity: 1;
