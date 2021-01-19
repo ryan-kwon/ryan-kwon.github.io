@@ -1,26 +1,6 @@
 @import "variables";
 @import "mixins";
 
-html {
-    scroll-behavior: smooth;
-    font-size: 100%;
-    width: 100%;
-
-    &::-webkit-scrollbar {
-        width: 20px;
-        background-color: $primary;
-    }
-
-    &::-webkit-scrollbar-track {
-        border-radius: 50px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: $font;
-        border-radius: 50px;
-    }
-}
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -40,13 +20,31 @@ html {
     }
 }
 
-body {
+html, body {
+    scroll-behavior: smooth;
+    font-size: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     line-height: 1.3;
     font-family: 'Roboto', sans-serif;
     color: $font;
     background-color: $primary;
+    height: 100%;
+
+    &::-webkit-scrollbar {
+        width: 20px;
+        background-color: $primary;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $font;
+        border-radius: 50px;
+    }
 }
 
 a, a:link, a:visited, a:active {

@@ -1,0 +1,216 @@
+@import "variables";
+@import "mixins";
+
+.bg_img-1 {
+    background-image: url("/images/png-files/parallax_image.png");
+    min-height: 100%;
+}
+
+.bg_img-2 {
+    background-image: url("/images/png-files/parallax_meme_image1.png");
+    min-height: 100%;
+}
+
+.bg_img-3 {
+    background-image: url("/images/png-files/parallax_meme_image2.png");
+    min-height: 100%;
+}
+
+#BlogHomePage, #BlogAboutPage, #BlogContactPage {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.FstParallax, .SecParallax, .ThirParallax {
+    opacity: 0.75;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        text-align: center;
+        letter-spacing: 10px;
+        color: $font;
+        font-size: 24px;
+    }
+}
+
+.FstParallax {
+    background-position: center;
+    h1 {
+        padding: 12px 24px;
+        background-color: $primary;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.HomePage {
+    //border: 5px solid $border;
+    //border-radius: 10px;
+    margin: auto;
+    max-width: 900px;
+    text-align: center;
+    width: 80%;
+    h3 {
+        //padding: 10px 0;
+        margin: 30px 0 10px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    &__fstpara {
+        margin: 0 20px;
+    }
+
+    .AboutMidSection {
+        //find solution
+        display: flex;
+        align-items: center;
+
+        background-color: $primary;
+        padding: 10px;
+        .AboutPicture {
+            //border-radius: 10px;
+            //box-shadow: 5px 5px 5px gray, -5px -5px 5px gray;
+            padding: 12px 24px;
+            width: 50%;
+            p {
+                margin: 10px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    object-fit: contain;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .AboutPara {
+            padding: 12px 24px;
+            width: 50%;
+        }
+    }
+}
+
+.SecParallax {
+    background-position: bottom;
+    h1 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;
+    }
+}
+
+.AboutPage {
+    //background-color: $secondary;
+    padding-bottom: 30px;
+    margin: auto;
+    max-width: 900px;
+    text-align: center;
+    h3 {
+        //padding: 10px 0;
+        margin: 30px 0 10px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .AboutWorkSection { //in mobile, the flex does not drop down
+        //width: 80%;
+        margin: auto;
+        //display:flex;
+        //align-items: center;
+        //padding: 12px 24px;
+        a {
+            margin: 10px;
+            img{
+                object-fit: contain;
+                height: 300px;
+                width: auto;
+                opacity: 0.6;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            h5 {
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.ThirParallax {
+    background-position: top;
+    h1 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;
+    }
+}
+
+.ContactPage {
+    width: 80%;
+    min-height: 550px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    h3 {
+        margin: 30px 0 10px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+
+    .ContactSection {
+        //find solution
+        display: flex;
+        align-items: center;
+
+        padding: 10px;
+        .ContactSlides {
+            padding: 10px;
+
+            p {
+                margin:auto;
+            }
+            &__slide {
+                margin: auto;
+                animation: fadeIn ease 5s;
+                display:none;
+                width: 500px;
+                height: 350px;
+            }
+        }
+        .ContactInfo {
+            width: 33.33333%; 
+            padding: 12px 24px;
+            vertical-align: middle;
+            overflow: hidden;
+            p {
+                margin: 0;
+                img {
+                    object-fit: contain;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
