@@ -1,29 +1,174 @@
 @import "variables";
 
-.mainstyle {
+main {
+    background-color: $primary;
     max-width: 1400px;
-    margin-top: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    //height: 1000px;
+    //margin-top:48px;
+    margin: auto;
 
-    .LeftColumn {
-        float: left;
-        width: 100%;
+    hr {
+        border: 0;
+        border-top: 1px solid #b4dfe5;
+        margin: 20px 0;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+    }
+}
 
-        &__stuff {
+.LeftColumn {
+    //box-sizing: inherit;
+    //width: 33.3333%;
+    //float:left;
+    margin: 16px;
+    //margin-top: 30px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
+    0 4px 20px 0 rgba(0,0,0,0.19);
+
+    .PicSection{
+        //height: 30%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        &__display {
             background-color: $secondary;
-            box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
-            0 4px 20px 0 rgba(0,0,0,0.19);
+            position: absolute;
+            bottom: 0;
+            left:0;
+            padding: 16px;
+            text-align: left;
+            width: 100%;
+            h3{
+                font-size:30px;
+                //font-weight: 400;
+                //margin: 10px 0;
+            }
+        }
+    }
 
-            .LeftColPic {
-                position: relative;
-
-                &__name {
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
+    .StatSection {
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        margin: 0 16px;
+        img{
+            object-fit: contain;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        p {
+            margin: 1rem 0;
+            //margin-top: 1rem;
+        }
+        h3{
+            font-size: 18px;
+            //font-weight: 400;
+            margin: 10px 0;
+        }
+        .progress{
+            background-color: $border;
+            border-radius: 16px;
+            &__bar{
+                color: $third;
+                border-radius: 16px;
+                font-size: 12px;
+                background-color: $font;
+                text-align: center;
+                &__num1 {
+                    width: 70%;
+                }
+                &__num2 {
+                    width: 50%;
+                }
+                &__num3 {
+                    width: 50%;
+                }
+                &__num4 {
+                    width: 40%;
+                }
+                &__num5 {
+                    width: 20%;
                 }
             }
+        }
+    }
+}
+
+.RightColumn {
+    //box-sizing: inherit;
+    //width: 66.66666%;
+    //float:right;
+    margin: 0 16px;
+    h2 {
+        padding: 16px 0;
+        margin: 16px 0;
+        img {
+            object-fit: contain;
+            width: 60px;
+            height: 60px;
+            margin-right: 16px;
+        }
+    }
+
+    img {
+        object-fit: contain;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    h5, h6{
+        margin: 10px 0;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+
+    .StateSection {
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
+        0 4px 20px 0 rgba(0,0,0,0.19);
+        padding: 16px;
+        padding-bottom: 32px;
+        margin:16px 0;
+        text-align: center;
+        h2 {
+            padding: 0;
+        }
+    }
+    .WorkSection{
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
+        0 4px 20px 0 rgba(0,0,0,0.19);
+        padding: 16px;
+        padding-bottom: 48px;
+        margin:16px 0;
+        &__work {
+            padding: 0 16px;
+        }
+    }
+    .EduSection {
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
+        0 4px 20px 0 rgba(0,0,0,0.19);
+        padding: 16px;
+        padding-bottom: 48px;
+        margin:16px 0;
+        &__school {
+            padding: 0 16px;
+        }
+    }
+    .CertSection {
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
+        0 4px 20px 0 rgba(0,0,0,0.19);
+        padding: 16px;
+        padding-bottom: 48px;
+        margin:16px 0;
+        &__cert {
+            padding: 0 16px;
         }
     }
 }

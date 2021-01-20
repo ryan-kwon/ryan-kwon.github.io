@@ -2,6 +2,7 @@
 @import "mixins";
 
 .footer {
+    width: 100%;
     background-color: $secondary;
     padding: 30px;
 
@@ -22,32 +23,40 @@
         list-style: none;
     }
 
-    .FootContainer {
-        .Footer_links {
-            margin: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    .Footer_links {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        text-align: center;
+
+        a{
+            &:hover {
+                text-decoration:underline;
+            }
+            &:not(:last-child) {
+                margin-right: 3px;
+            }
+        }
+
+        img {
+            object-fit: contain;
+            width: 30px;
             height: 30px;
-
-            &__icon {
-                object-fit: contain;
-                width: 30px;
-                height: 30px;
-                opacity: .5;
-                transition: .15s;
+            opacity: .5;
+            transition: .15s;
+            margin-right: 10px;
+            /*
+            &:not(:last-child) {
                 margin-right: 10px;
-                /*
-                &:not(:last-child) {
-                    margin-right: 10px;
-                }
-                */
+            }
+            */
 
-                &:hover {
-                    opacity: 1;
-                    transition: .15s;
-                    cursor: pointer;
-                }
+            &:hover {
+                opacity: 1;
+                transition: .15s;
+                cursor: pointer;
             }
         }
     }

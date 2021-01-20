@@ -12,6 +12,7 @@
     </head>
     <body>
         <header class="header">
+            <!--
             <nav class="nav">
                 <div class="nav__links">
                     <a href="/index.html">Home</a>
@@ -29,39 +30,193 @@
                     </a>
                 </div>
 
-                <!--small nav-->
                 <div class="">  
 
                 </div>
+            -->
             </nav>
         </header>
 
-        <div class="mainstyle">
-            <div style="padding: 0 8px;">
-                <div class="LeftColumn">
-                    <div class="LeftColumn__stuff">
-                        <div class="LeftColPic">
-                            <img src="images/png-files/profile_image.png" alt="Picture of me!">
-                            <div class="LeftColPic__name">
-                                <h2>Kyu Sung Kwon</h2>
-                            </div>
-                        </div>
+        <main class="flex flex-jc-c flex-ai-c">
+            <div class="LeftColumn">
+                <div class="PicSection">
+                    <img src="images/png-files/profile_image.png">
+                    <div class="PicSection__display">
+                        <h3>Kyu Sung Kwon</h3>
+                    </div>
+                </div>
+                <div class="StatSection">
+                    <p class="flex flex-ai-c">
+                        <img src="images/svg-files/user.svg">
+                        Student
+                    </p>
+                    <p class="flex flex-ai-c">
+                        <img src="images/svg-files/home.svg">
+                        Tigard, Oregon
+                    </p>
+                    <p class="flex flex-ai-c">
+                        <img src="images/svg-files/email.svg">
+                        ryanksk@gmail.com
+                    </p>
+                    <p class="flex flex-ai-c">
+                        <img src="images/svg-files/phone.svg">
+                        (503) 747-8745
+                    </p>
+                    <hr>
+                    <h3 class="flex flex-ai-c">
+                        <img src="/images/svg-files/monitor.svg" alt="monitor">
+                        Programming Skills
+                    </h3>
+                    <p>Python</p>
+                    <div class="progress">
+                        <div class="progress__bar progress__bar__num1">70%</div>
+                    </div>
+                    <p>HTML</p>
+                    <div class="progress">
+                        <div class="progress__bar progress__bar__num2">50%</div>
+                    </div>
+                    <p>SCSS</p>
+                    <div class="progress">
+                        <div class="progress__bar progress__bar__num3">50%</div>
+                    </div>
+                    <p>C++</p>
+                    <div class="progress">
+                        <div class="progress__bar progress__bar__num4">40%</div>
+                    </div>
+                    <p>Javascript</p>
+                    <div class="progress">
+                        <div class="progress__bar progress__bar__num5">20%</div>
+                    </div>
+                    <hr>
+                    <!--maybe put strengths and skills side by side-->
+                    <h3 class="flex flex-ai-c">
+                        <img src="/images/svg-files/arm.svg" alt="arm">
+                        Strengths
+                    </h3>
+                    <p>Flexible</p>
+                    <p>Desire to learn</p>
+                    <p>Respectfulness</p>
+                    <p>Meeting Deadlines</p>
+                    <p>Organized</p>
+                    <p>Independent</p>
+                    <hr>
+                    <h3 class="flex flex-ai-c">
+                        <img src="/images/svg-files/world.svg" alt="globe">
+                        Skills
+                    </h3>
+                    <p>Korean</p>
+                    <p>Calculus</p>
+                    <p>Photoshop</p>
+                    <p>Audacity</p>
+                    <p>Musescore</p>
+                </div>
+            </div>
+    
+            <div class="RightColumn">
+                <div class="StateSection">
+                    <h2>Computer Science Student</h2>
+                    <i>
+                        Eager student equipped to handle fast-paced work inspecting coursework <br>
+                        Benefits both work and the students by accurately grading quickly and efficiently
+                    </i>
+                </div>
+                <div class="WorkSection">
+                    <h2 class="flex flex-ai-c">
+                        <img src="images/svg-files/suitcase.svg" alt="suitcase">
+                        Experience
+                    </h2>
+                    <div class="WorkSection__work">
+                        <h5><b>Grader/Tutor | Kumon</b></h5>
+                        <h6 class="flex flex-ai-c">
+                            <img src="images/svg-files/calendar.svg" alt="calendar">
+                            August 2019 - present
+                        </h6>
+                        <p>
+                            ● One of the few graders who understand calculus <br>
+                            ● Often helped students understand Calculus
+                            leading to better score improvements
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="WorkSection__work">
+                        <h5><b>Secretary | Liberty in North Korea</b></h5>
+                        <h6 class="flex flex-ai-c">
+                            <img src="images/svg-files/calendar.svg" alt="calendar">
+                            Sep 2017 - Feb 2019
+                        </h6>
+                        <p>
+                            ● Organized 2 events <br>
+                            ● Facilitated 12 meetings on the upcoming events <br>
+                            ● Raised over $6000, resulting in helping 3 refugees
+                        </p>
+                    </div>
+                </div>
+                <div class="EduSection">
+                    <h2 class="flex flex-ai-c">
+                        <img src="images/svg-files/graduation-hat.svg" alt="graduation hat">
+                        Education
+                    </h2>
+                    <div class="EduSection__school">
+                        <h5><b>Oregon State University</b></h5>
+                        <h6 style="margin: none;">Bachelor in Computer Science</h6>
+                        <h6 class="flex flex-ai-c">
+                            <img src="images/svg-files/calendar.svg" alt="calendar">
+                            Sep 2020 - June 2024
+                        </h6>
+                        <p>OSU App Club</p>
+                        <hr>
+                        <h5><b>Tualatin High School</b></h5>
+                        <h6 style="margin: none;">Honors Degree</h6>
+                        <h6 class="flex flex-ai-c">
+                            <img src="images/svg-files/calendar.svg" alt="calendar">
+                            Sep 2016 - June 2020
+                        </h6>
+                        <p>Presidential Award | Honors Band | Mu Alpha Theta</p>
+                    </div>
+                </div>
+                <div class="CertSection">
+                    <h2 class="flex flex-ai-c">
+                        <img src="images/svg-files/graduation-hat.svg" alt="graduation hat">
+                        Certification
+                    </h2>
+                    <div class="CertSection__cert">
+                        <h5><b>Python Certification</b></h5>
+                        <h6 style="margin: none;">Sololearn</h6>
+                        <h6 class="flex flex-ai-c">
+                            <img src="images/svg-files/calendar.svg" alt="calendar">
+                            June 2020
+                        </h6>
+                        <hr>
+                        <h5><b>Javascript Certification</b></h5>
+                        <h6 style="margin: none;">Sololearn</h6>
+                        <h6 class="flex flex-ai-c">
+                            <img src="images/svg-files/calendar.svg" alt="calendar">
+                            June 2020
+                        </h6>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
         
         <footer class="footer">
-            <div class="FootContainer">
+            <div class="FirstFootContainer">
+                <div class="Footer_links">
+                    <a href="index.html">Home</a>
+                    <a href="/#HomePage">About</a>
+                    <a href="/resume.html">Work</a>
+                    <a href="/#ContactPage">Contact</a>
+                </div>
+            </div>
+            <div class="SecondFootContainer">
                 <div class="Footer_links">
                     <a href="https://github.com/ryan-kwon">
-                        <img class="Footer_links__icon" src="/images/svg-files/github logo.svg" alt="github">
+                        <img src="/images/svg-files/github logo.svg" alt="github">
                     </a>
                     <a href="https://www.linkedin.com/in/kyu-sung-k-a079a01a5/">
-                        <img class="Footer_links__icon" src="/images/svg-files/linkedin logo.svg" alt="linkedin">
+                        <img src="/images/svg-files/linkedin logo.svg" alt="linkedin">
                     </a>
                     <a href="https://www.instagram.com/_kyu_sung_/">
-                        <img class="Footer_links__icon" src="/images/svg-files/insta logo.svg" alt="instagram">
+                        <img src="/images/svg-files/insta logo.svg" alt="instagram">
                     </a>
                 </div>
             </div>

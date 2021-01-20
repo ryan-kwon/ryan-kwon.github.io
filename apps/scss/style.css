@@ -254,6 +254,7 @@ cheerful and energetic
 }
 
 .footer {
+  width: 100%;
   background-color: #f4976c;
   padding: 30px;
 }
@@ -277,7 +278,7 @@ cheerful and energetic
   list-style: none;
 }
 
-.footer .FootContainer .Footer_links {
+.footer .Footer_links {
   margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,9 +290,18 @@ cheerful and energetic
       -ms-flex-pack: center;
           justify-content: center;
   height: 30px;
+  text-align: center;
 }
 
-.footer .FootContainer .Footer_links__icon {
+.footer .Footer_links a:hover {
+  text-decoration: underline;
+}
+
+.footer .Footer_links a:not(:last-child) {
+  margin-right: 3px;
+}
+
+.footer .Footer_links img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 30px;
@@ -301,13 +311,13 @@ cheerful and energetic
   transition: .15s;
   margin-right: 10px;
   /*
-                &:not(:last-child) {
-                    margin-right: 10px;
-                }
-                */
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            */
 }
 
-.footer .FootContainer .Footer_links__icon:hover {
+.footer .Footer_links img:hover {
   opacity: 1;
   -webkit-transition: .15s;
   transition: .15s;
@@ -818,31 +828,190 @@ cheerful and energetic
 #b4dfe5
 #d2fdff
 */
-.mainstyle {
+main {
+  background-color: #fbe8a6;
   max-width: 1400px;
-  margin-top: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
-.mainstyle .LeftColumn {
-  float: left;
-  width: 100%;
+main hr {
+  border: 0;
+  border-top: 1px solid #b4dfe5;
+  margin: 20px 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
 
-.mainstyle .LeftColumn__stuff {
-  background-color: #f4976c;
+.LeftColumn {
+  margin: 16px;
   -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.mainstyle .LeftColumn__stuff .LeftColPic {
+.LeftColumn .PicSection {
   position: relative;
 }
 
-.mainstyle .LeftColumn__stuff .LeftColPic__name {
+.LeftColumn .PicSection img {
+  width: 100%;
+}
+
+.LeftColumn .PicSection__display {
+  background-color: #f4976c;
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
+  padding: 16px;
+  text-align: left;
+  width: 100%;
+}
+
+.LeftColumn .PicSection__display h3 {
+  font-size: 30px;
+}
+
+.LeftColumn .StatSection {
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  margin: 0 16px;
+}
+
+.LeftColumn .StatSection img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.LeftColumn .StatSection p {
+  margin: 1rem 0;
+}
+
+.LeftColumn .StatSection h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.LeftColumn .StatSection .progress {
+  background-color: #b4dfe5;
+  border-radius: 16px;
+}
+
+.LeftColumn .StatSection .progress__bar {
+  color: #d2fdff;
+  border-radius: 16px;
+  font-size: 12px;
+  background-color: #303c6c;
+  text-align: center;
+}
+
+.LeftColumn .StatSection .progress__bar__num1 {
+  width: 70%;
+}
+
+.LeftColumn .StatSection .progress__bar__num2 {
+  width: 50%;
+}
+
+.LeftColumn .StatSection .progress__bar__num3 {
+  width: 50%;
+}
+
+.LeftColumn .StatSection .progress__bar__num4 {
+  width: 40%;
+}
+
+.LeftColumn .StatSection .progress__bar__num5 {
+  width: 20%;
+}
+
+.RightColumn {
+  margin: 0 16px;
+}
+
+.RightColumn h2 {
+  padding: 16px 0;
+  margin: 16px 0;
+}
+
+.RightColumn h2 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+}
+
+.RightColumn img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.RightColumn h5, .RightColumn h6 {
+  margin: 10px 0;
+}
+
+.RightColumn h5 {
+  font-size: 18px;
+}
+
+.RightColumn h6 {
+  font-size: 14px;
+}
+
+.RightColumn .StateSection {
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 16px;
+  padding-bottom: 32px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.RightColumn .StateSection h2 {
+  padding: 0;
+}
+
+.RightColumn .WorkSection {
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 16px;
+  padding-bottom: 48px;
+  margin: 16px 0;
+}
+
+.RightColumn .WorkSection__work {
+  padding: 0 16px;
+}
+
+.RightColumn .EduSection {
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 16px;
+  padding-bottom: 48px;
+  margin: 16px 0;
+}
+
+.RightColumn .EduSection__school {
+  padding: 0 16px;
+}
+
+.RightColumn .CertSection {
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 16px;
+  padding-bottom: 48px;
+  margin: 16px 0;
+}
+
+.RightColumn .CertSection__cert {
+  padding: 0 16px;
 }
 /*# sourceMappingURL=style.css.map */
