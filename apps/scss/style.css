@@ -866,12 +866,13 @@ main hr {
   bottom: 0;
   left: 0;
   padding: 16px;
-  text-align: left;
+  text-align: center;
   width: 100%;
 }
 
 .LeftColumn .PicSection__display h3 {
   font-size: 30px;
+  font-weight: bolder;
 }
 
 .LeftColumn .StatSection {
@@ -936,8 +937,8 @@ main hr {
 }
 
 .RightColumn h2 {
-  padding: 16px 0;
-  margin: 16px 0;
+  padding: 8px 0;
+  margin: 8px 0;
 }
 
 .RightColumn h2 img {
@@ -985,7 +986,7 @@ main hr {
   -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 16px;
-  padding-bottom: 48px;
+  padding-bottom: 32px;
   margin: 16px 0;
 }
 
@@ -993,11 +994,27 @@ main hr {
   padding: 0 16px;
 }
 
+.RightColumn .ProjectSection {
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 16px;
+  padding-bottom: 32px;
+  margin: 16px 0;
+}
+
+.RightColumn .ProjectSection__project {
+  padding: 0 16px;
+}
+
+.RightColumn .ProjectSection__project a:hover {
+  text-decoration: underline;
+}
+
 .RightColumn .EduSection {
   -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 16px;
-  padding-bottom: 48px;
+  padding-bottom: 32px;
   margin: 16px 0;
 }
 
@@ -1009,7 +1026,7 @@ main hr {
   -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 16px;
-  padding-bottom: 48px;
+  padding-bottom: 32px;
   margin: 16px 0;
 }
 
