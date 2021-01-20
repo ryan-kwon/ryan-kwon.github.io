@@ -62,7 +62,11 @@
         font-size: 24px;
         font-weight: 400;
     }
-
+    p{
+        a:hover {
+            text-decoration: underline;
+        }
+    }
     &__fstpara {
         margin: 0 20px;
     }

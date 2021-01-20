@@ -576,6 +576,10 @@ cheerful and energetic
   font-weight: 400;
 }
 
+.HomePage p a:hover {
+  text-decoration: underline;
+}
+
 .HomePage__fstpara {
   margin: 0 20px;
 }
