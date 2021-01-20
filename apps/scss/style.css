@@ -117,6 +117,8 @@ html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
   background: #303c6c;
   border-radius: 50px;
+  -webkit-box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, 0.25) inset;
+          box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, 0.25) inset;
 }
 
 a, a:link, a:visited, a:active {
