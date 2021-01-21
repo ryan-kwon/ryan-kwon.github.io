@@ -183,6 +183,56 @@ cheerful and energetic
 #b4dfe5
 #d2fdff
 */
+@media only screen and (max-device-width: 1600px) {
+  .bg_img-1, .bg_img-2, .bg_img-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .AboutPara {
+    display: none;
+  }
+}
+
+/*
+ @media (min-width: 601px) {
+    .ContactSlides {
+        width: 66.66666%;
+    }
+ }
+ */
+@media (min-width: 601px) {
+  .LeftColumn {
+    width: 33.33333%;
+  }
+}
+
+@media (min-width: 601px) {
+  .ContactInfo {
+    width: 33.33333%;
+  }
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 /* Color schemes
 Colorful and balanced
 #e27d60
@@ -421,6 +471,7 @@ cheerful and energetic
 .header .nav__links__icon {
   -o-object-fit: contain;
      object-fit: contain;
+  margin-right: 10px;
   width: 30px;
   height: 30px;
   -webkit-transition: .15s;
@@ -585,12 +636,6 @@ cheerful and energetic
 }
 
 .HomePage .AboutMidSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #fbe8a6;
   padding: 10px;
 }
@@ -626,8 +671,8 @@ cheerful and energetic
 }
 
 .HomePage .AboutMidSection .AboutPara {
-  padding: 12px 24px;
   width: 50%;
+  padding: 12px 24px;
 }
 
 .SecParallax {
@@ -714,19 +759,12 @@ cheerful and energetic
 }
 
 .ContactPage .ContactSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 10px;
 }
 
 .ContactPage .ContactSection .ContactSlides {
+  width: 50%;
+  float: left;
   margin: 0;
   padding: 10px;
 }
@@ -745,6 +783,8 @@ cheerful and energetic
 }
 
 .ContactPage .ContactSection .ContactInfo {
+  width: 50%;
+  float: left;
   width: 33.33333%;
   padding: 12px 24px;
   vertical-align: middle;
@@ -760,56 +800,7 @@ cheerful and energetic
      object-fit: contain;
   width: 30px;
   height: 30px;
-}
-
-@media only screen and (max-device-width: 1600px) {
-  .bg_img-1, .bg_img-2, .bg_img-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-
-@media (max-width: 767px) {
-  .AboutPara {
-    display: none;
-  }
-}
-
-/*
- @media (min-width: 601px) {
-    .ContactSlides {
-        width: 66.66666%;
-    }
- }
- */
-@media (min-width: 601px) {
-  .LeftColumn {
-    width: 33.33333%;
-  }
-}
-
-@media (min-width: 601px) {
-  .ContactInfo {
-    width: 33.33333%;
-  }
-}
-
-@keyframes fadeIn {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
+  margin-right: 10px;
 }
 
 /* Color schemes
@@ -1037,4 +1028,169 @@ main hr {
 .RightColumn .CertSection__cert {
   padding: 0 16px;
 }
+
+/* Color schemes
+Colorful and balanced
+#e27d60
+#85dcb
+#e8a87c
+#c38d9e
+#41b3a3
+
+striking and simple (futuristic tech, not professional)
+#0b0c10
+#1f2833
+#c5c6c7
+#66fcf1
+#45a29e
+
+cheerful and energetic
+#fbe8a6
+#f4976c
+#303c6c
+#b4dfe5
+#d2fdff
+*/
+@media only screen and (max-device-width: 1600px) {
+  .bg_img-1, .bg_img-2, .bg_img-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .AboutPara {
+    display: none;
+  }
+}
+
+/*
+ @media (min-width: 601px) {
+    .ContactSlides {
+        width: 66.66666%;
+    }
+ }
+ */
+@media (min-width: 601px) {
+  .LeftColumn {
+    width: 33.33333%;
+  }
+}
+
+@media (min-width: 601px) {
+  .ContactInfo {
+    width: 33.33333%;
+  }
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.bg_img-friend {
+  background-image: url("/images/png-files/about_image2.png");
+  min-height: 100%;
+}
+
+.bg_img-movie {
+  background-image: url("/images/png-files/master-oogway2.png");
+  min-height: 100%;
+  background-position: 40%;
+}
+
+.bg_img-cook {
+  background-image: url("/images/png-files/anthony-bourdain.png");
+  min-height: 100%;
+}
+
+#BlogFriendPage, #BlogMoviePage, #BlogCookPage {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+#BlogFriendPage h1, #BlogMoviePage h1, #BlogCookPage h1 {
+  background: none;
+  color: #d2fdff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+#BlogMoviePage h1 {
+  font-size: 20px;
+  left: 30%;
+}
+
+.FriendPage {
+  margin: 16px 0;
+  text-align: center;
+}
+
+.FriendPage__topic h3 {
+  font-size: 30px;
+}
+
+.MoviePage {
+  margin: 16px 0;
+  text-align: center;
+}
+
+#BlogCookPage {
+  background-position: 0 10%;
+}
+
+#BlogCookPage h1 {
+  font-size: 30px;
+}
+
+.CookPage {
+  margin: 16px 0;
+  text-align: center;
+}
+
+.CookPage__topic {
+  max-width: 60%;
+  margin: auto;
+}
+
+/*
+#BlogHomePage, #BlogAboutPage, #BlogContactPage {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.FstParallax, .SecParallax, .ThirParallax {
+    opacity: 0.75;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        text-align: center;
+        letter-spacing: 10px;
+        color: $font;
+        font-size: 24px;
+    }
+}
+*/
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,105 @@
+@import "variables";
+@import "mixins";
+
+.bg_img-friend{
+    background-image: url("/images/png-files/about_image2.png");
+    min-height: 100%;
+}
+
+.bg_img-movie {
+    background-image: url("/images/png-files/master-oogway2.png");
+    min-height: 100%;
+    background-position: 40%;
+}
+
+.bg_img-cook {
+    background-image: url("/images/png-files/anthony-bourdain.png");
+    min-height: 100%;
+}
+
+#BlogFriendPage, #BlogMoviePage, #BlogCookPage {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+
+    h1{
+        background: none;
+        color: #d2fdff;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+    }
+}
+
+#BlogMoviePage {
+    h1 {
+        font-size: 20px;
+        left: 30%;
+    }
+}
+
+.FriendPage {
+    //margin:auto;
+    margin:16px 0;
+    text-align: center;
+    &__topic {
+        h3 {
+            font-size: 30px;
+        }
+    }
+    &__josh{
+
+    }
+    &__andrew{
+        
+    }
+}
+
+.MoviePage{
+    margin:16px 0;
+    text-align: center;
+    &__topic {
+
+    }
+}
+
+#BlogCookPage {
+    background-position: 0 10%;
+    h1 {
+        font-size: 30px;
+    }
+}
+
+.CookPage {
+    margin:16px 0;
+    text-align: center;
+    &__topic {
+        max-width: 60%;
+        margin:auto;
+    }
+}
+/*
+#BlogHomePage, #BlogAboutPage, #BlogContactPage {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.FstParallax, .SecParallax, .ThirParallax {
+    opacity: 0.75;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        text-align: center;
+        letter-spacing: 10px;
+        color: $font;
+        font-size: 24px;
+    }
+}
+*/

@@ -73,9 +73,6 @@
 
     .AboutMidSection {
         //find solution
-        display: flex;
-        align-items: center;
-
         background-color: $primary;
         padding: 10px;
         .AboutPicture {
@@ -83,6 +80,7 @@
             //box-shadow: 5px 5px 5px gray, -5px -5px 5px gray;
             padding: 12px 24px;
             width: 50%;
+            //float: left;
             p {
                 margin: 10px 0;
                 display: flex;
@@ -101,8 +99,9 @@
             }
         }
         .AboutPara {
-            padding: 12px 24px;
             width: 50%;
+            //float: left;
+            padding: 12px 24px;
         }
     }
 }
@@ -187,12 +186,14 @@
 
     .ContactSection {
         //find solution
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        //display: flex;
+        //justify-content: center;
+        //align-items: center;
 
         padding: 10px;
         .ContactSlides {
+            width: 50%;
+            float: left;
             margin: 0;
             padding: 10px;
 
@@ -212,6 +213,8 @@
             //position: relative;
             //left: -20%;
             //margin: auto;
+            width: 50%;
+            float: left;
             width: 33.33333%; 
             padding: 12px 24px;
             vertical-align: middle;
@@ -223,6 +226,7 @@
                     object-fit: contain;
                     width: 30px;
                     height: 30px;
+                    margin-right: 10px;
                 }
             }
         }

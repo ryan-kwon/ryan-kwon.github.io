@@ -3,3 +3,5 @@ how to update github: https://pages.github.com/
 color schemes: https://visme.co/blog/website-color-schemes/
 actual page: https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm
 resume: https://www.w3schools.com/w3css/tryw3css_templates_cv.htm
+
+responsive div: https://www.xspdf.com/resolution/54453235.html
