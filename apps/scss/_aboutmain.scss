@@ -15,6 +15,7 @@
 .bg_img-cook {
     background-image: url("/images/png-files/anthony-bourdain.png");
     min-height: 100%;
+    background-position: 0 15%;
 }
 
 #BlogFriendPage, #BlogMoviePage, #BlogCookPage {
@@ -36,25 +37,40 @@
 
 #BlogMoviePage {
     h1 {
+        //position:fixed;
+        padding: 0 10px;
         font-size: 20px;
-        left: 30%;
     }
 }
 
 .FriendPage {
     //margin:auto;
-    margin:16px 0;
+    margin: 16px 0;
     text-align: center;
     &__topic {
         h3 {
             font-size: 30px;
         }
     }
-    &__josh{
-
+    .FriendPageMid {
+        background-color: $primary;
+        padding: 10px;
+        .video {
+            height: 300px;
+        }
+        &__josh {
+            width:50%;
+            float: left;
+        }
+        &__andrew {
+            width:50%;
+            float: right;
+        }   
     }
-    &__andrew{
-        
+    .FriendPageVid {
+        .video {
+            height: 300px;
+        }
     }
 }
 
@@ -67,7 +83,6 @@
 }
 
 #BlogCookPage {
-    background-position: 0 10%;
     h1 {
         font-size: 30px;
     }

@@ -31,6 +31,9 @@ cheerful and energetic
   .AboutPara {
     display: none;
   }
+  .FriendPageVid .video {
+    display: none;
+  }
 }
 
 /*
@@ -41,13 +44,7 @@ cheerful and energetic
  }
  */
 @media (min-width: 601px) {
-  .LeftColumn {
-    width: 33.33333%;
-  }
-}
-
-@media (min-width: 601px) {
-  .ContactInfo {
+  .LeftColumn, .ContactInfo {
     width: 33.33333%;
   }
 }
@@ -194,6 +191,9 @@ cheerful and energetic
   .AboutPara {
     display: none;
   }
+  .FriendPageVid .video {
+    display: none;
+  }
 }
 
 /*
@@ -204,13 +204,7 @@ cheerful and energetic
  }
  */
 @media (min-width: 601px) {
-  .LeftColumn {
-    width: 33.33333%;
-  }
-}
-
-@media (min-width: 601px) {
-  .ContactInfo {
+  .LeftColumn, .ContactInfo {
     width: 33.33333%;
   }
 }
@@ -266,6 +260,9 @@ cheerful and energetic
   .AboutPara {
     display: none;
   }
+  .FriendPageVid .video {
+    display: none;
+  }
 }
 
 /*
@@ -276,13 +273,7 @@ cheerful and energetic
  }
  */
 @media (min-width: 601px) {
-  .LeftColumn {
-    width: 33.33333%;
-  }
-}
-
-@media (min-width: 601px) {
-  .ContactInfo {
+  .LeftColumn, .ContactInfo {
     width: 33.33333%;
   }
 }
@@ -306,6 +297,8 @@ cheerful and energetic
 }
 
 .footer {
+  position: relative;
+  bottom: 0;
   width: 100%;
   background-color: #f4976c;
   padding: 30px;
@@ -409,6 +402,9 @@ cheerful and energetic
   .AboutPara {
     display: none;
   }
+  .FriendPageVid .video {
+    display: none;
+  }
 }
 
 /*
@@ -419,13 +415,7 @@ cheerful and energetic
  }
  */
 @media (min-width: 601px) {
-  .LeftColumn {
-    width: 33.33333%;
-  }
-}
-
-@media (min-width: 601px) {
-  .ContactInfo {
+  .LeftColumn, .ContactInfo {
     width: 33.33333%;
   }
 }
@@ -529,6 +519,9 @@ cheerful and energetic
   .AboutPara {
     display: none;
   }
+  .FriendPageVid .video {
+    display: none;
+  }
 }
 
 /*
@@ -539,13 +532,7 @@ cheerful and energetic
  }
  */
 @media (min-width: 601px) {
-  .LeftColumn {
-    width: 33.33333%;
-  }
-}
-
-@media (min-width: 601px) {
-  .ContactInfo {
+  .LeftColumn, .ContactInfo {
     width: 33.33333%;
   }
 }
@@ -716,6 +703,7 @@ cheerful and energetic
   height: 300px;
   width: auto;
   opacity: 0.6;
+  margin-bottom: 20px;
 }
 
 .AboutPage .AboutWorkSection a img:hover {
@@ -1062,6 +1050,9 @@ cheerful and energetic
   .AboutPara {
     display: none;
   }
+  .FriendPageVid .video {
+    display: none;
+  }
 }
 
 /*
@@ -1072,13 +1063,7 @@ cheerful and energetic
  }
  */
 @media (min-width: 601px) {
-  .LeftColumn {
-    width: 33.33333%;
-  }
-}
-
-@media (min-width: 601px) {
-  .ContactInfo {
+  .LeftColumn, .ContactInfo {
     width: 33.33333%;
   }
 }
@@ -1115,6 +1100,7 @@ cheerful and energetic
 .bg_img-cook {
   background-image: url("/images/png-files/anthony-bourdain.png");
   min-height: 100%;
+  background-position: 0 15%;
 }
 
 #BlogFriendPage, #BlogMoviePage, #BlogCookPage {
@@ -1135,8 +1121,8 @@ cheerful and energetic
 }
 
 #BlogMoviePage h1 {
+  padding: 0 10px;
   font-size: 20px;
-  left: 30%;
 }
 
 .FriendPage {
@@ -1148,13 +1134,32 @@ cheerful and energetic
   font-size: 30px;
 }
 
+.FriendPage .FriendPageMid {
+  background-color: #fbe8a6;
+  padding: 10px;
+}
+
+.FriendPage .FriendPageMid .video {
+  height: 300px;
+}
+
+.FriendPage .FriendPageMid__josh {
+  width: 50%;
+  float: left;
+}
+
+.FriendPage .FriendPageMid__andrew {
+  width: 50%;
+  float: right;
+}
+
+.FriendPage .FriendPageVid .video {
+  height: 300px;
+}
+
 .MoviePage {
   margin: 16px 0;
   text-align: center;
-}
-
-#BlogCookPage {
-  background-position: 0 10%;
 }
 
 #BlogCookPage h1 {
@@ -1193,4 +1198,146 @@ cheerful and energetic
     }
 }
 */
+/* Color schemes
+Colorful and balanced
+#e27d60
+#85dcb
+#e8a87c
+#c38d9e
+#41b3a3
+
+striking and simple (futuristic tech, not professional)
+#0b0c10
+#1f2833
+#c5c6c7
+#66fcf1
+#45a29e
+
+cheerful and energetic
+#fbe8a6
+#f4976c
+#303c6c
+#b4dfe5
+#d2fdff
+*/
+@media only screen and (max-device-width: 1600px) {
+  .bg_img-1, .bg_img-2, .bg_img-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .AboutPara {
+    display: none;
+  }
+  .FriendPageVid .video {
+    display: none;
+  }
+}
+
+/*
+ @media (min-width: 601px) {
+    .ContactSlides {
+        width: 66.66666%;
+    }
+ }
+ */
+@media (min-width: 601px) {
+  .LeftColumn, .ContactInfo {
+    width: 33.33333%;
+  }
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.CalcMain {
+  scroll-behavior: smooth;
+  font-size: 100%;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.CalcMain .CalcMainDiv {
+  background-color: #f4976c;
+  border-radius: 25px;
+  position: relative;
+  top: 25%;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
+.CalcMain .CalcMainDiv h1 {
+  padding: 20px 0px 0px;
+}
+
+.CalcMain .CalcMainDiv p {
+  font-weight: bold;
+}
+
+.CalcMain .CalcMainDiv .SmallMessage {
+  font-weight: none;
+  font-size: small;
+  margin-bottom: 5px;
+}
+
+.CalcMain .CalcMainDiv input {
+  background-color: #d2fdff;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid #b4dfe5;
+}
+
+.CalcMain .CalcMainDiv .CalcButtonDiv {
+  margin: 20px;
+}
+
+.CalcMain .CalcMainDiv .CalcButtonDiv button {
+  background-color: #d2fdff;
+  color: #303c6c;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 25px;
+  border: 2px solid #b4dfe5;
+  margin: 1rem;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  outline: none;
+}
+
+.CalcMain .CalcMainDiv .CalcButtonDiv button:hover {
+  -webkit-box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(180, 223, 229, 0.3);
+          box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(180, 223, 229, 0.3);
+}
+
+.CalcMain .CalcMainDiv .CalcButtonDiv button:hover span {
+  padding-right: 25px;
+}
+
+.CalcMain .CalcMainDiv .CalcButtonDiv button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 /*# sourceMappingURL=style.css.map */

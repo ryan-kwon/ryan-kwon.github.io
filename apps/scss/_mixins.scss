@@ -9,6 +9,11 @@
     .AboutPara {
        display: none;
     }
+    .FriendPageVid{
+        .video {
+            display:none;
+        }
+    }
  }
 
  /*
@@ -20,13 +25,7 @@
  */
 
  @media (min-width: 601px) {
-    .LeftColumn {
-        width: 33.33333%;
-    }
- }
-
- @media (min-width: 601px) {
-    .ContactInfo {
+    .LeftColumn, .ContactInfo {
         width: 33.33333%;
     }
  }

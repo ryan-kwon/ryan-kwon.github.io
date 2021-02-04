@@ -1,0 +1,74 @@
+<!--
+    Creator: Kyu Sung Kwon
+    Last Update: 2/2/2021
+    Description:
+        Create a web app using any language which logs calculations
+        as they happen and shares those calculations with everyone connected to the app.
+
+        Results should remain between sessions.
+        Only show the last 10 calculations descending from most recent to oldest.
+        The calculator only needs to implement basic arithmetic operations,
+        although you can add other math functions if you would like to impress.
+        But don't forget to meet the basic requirements of the exercise first!
+    Example:
+        user A and user B go to your app at the same time.
+        User A calculates “5 + 5”, which equals “10".
+        This is logged below the calculator as “5 + 5 = 10”.
+        User B is updated about this calculation right after user A posts it.
+        Now, user B calculates “3 x 4".
+        This calculates to “12” and displays “3 x 4=12" right below the prior calculation.
+        User A sees this update immediately after user B posts it.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculation Website</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/apps/scss/style.css">
+        <script src="/apps/js/calcscript.js"></script>
+    </head>
+    <body>
+        <main class="CalcMain">
+            <div class="CalcMainDiv">
+                <h1>Try pressing a button!</h1>
+                <p class="SmallMessage">Someday, I will make a graphing calcluator</p>
+                <input type="text" id="inputA" class="" placeholder="Enter here!">
+                <input type="text" id="inputB" class="" placeholder="Enter here!">
+                <div class="CalcButtonDiv">
+                    <button onclick="Add(inputA, inputB)">Add</button>
+                    <button onclick="Sub(inputA, inputB)">Subtract</button>
+                    <button onclick="Mult(inputA, inputB)">Multiply</button>
+                    <button onclick="Div(inputA, inputB)">Divide</button>
+                </div>
+                <p id="display">Number will be presented here!</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="FirstFootContainer">
+                <div class="Footer_links">
+                    <a href="index.html">Home</a>
+                    <a href="/#HomePage">About</a>
+                    <a href="/resume.html">Work</a>
+                    <a href="/#ContactPage">Contact</a>
+                </div>
+            </div>
+            <div class="SecondFootContainer">
+                <div class="Footer_links">
+                    <a href="https://github.com/ryan-kwon">
+                        <img src="/images/svg-files/github logo.svg" alt="github">
+                    </a>
+                    <a href="https://www.linkedin.com/in/kyu-sung-k-a079a01a5/">
+                        <img src="/images/svg-files/linkedin logo.svg" alt="linkedin">
+                    </a>
+                    <a href="https://www.instagram.com/_kyu_sung_/">
+                        <img src="/images/svg-files/insta logo.svg" alt="instagram">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
