@@ -80,7 +80,7 @@
             //box-shadow: 5px 5px 5px gray, -5px -5px 5px gray;
             padding: 12px 24px;
             width: 50%;
-            //float: left;
+            float: left;
             p {
                 margin: 10px 0;
                 display: flex;
@@ -100,13 +100,14 @@
         }
         .AboutPara {
             width: 50%;
-            //float: left;
+            float: right;
             padding: 12px 24px;
         }
     }
 }
 
 .SecParallax {
+    text-align: center;
     background-position: 0 70%;
     h1 {
         color: $third;

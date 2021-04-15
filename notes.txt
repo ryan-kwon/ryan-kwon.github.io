@@ -5,3 +5,5 @@ actual page: https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm
 resume: https://www.w3schools.com/w3css/tryw3css_templates_cv.htm
 
 responsive div: https://www.xspdf.com/resolution/54453235.html
+
+fix footer: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/

@@ -297,8 +297,6 @@ cheerful and energetic
 }
 
 .footer {
-  position: relative;
-  bottom: 0;
   width: 100%;
   background-color: #f4976c;
   padding: 30px;
@@ -442,6 +440,7 @@ cheerful and energetic
   background-color: #fbe8a6;
   position: fixed;
   width: 100%;
+  top: 0;
   z-index: 1;
 }
 
@@ -630,6 +629,7 @@ cheerful and energetic
 .HomePage .AboutMidSection .AboutPicture {
   padding: 12px 24px;
   width: 50%;
+  float: left;
 }
 
 .HomePage .AboutMidSection .AboutPicture p {
@@ -659,10 +659,12 @@ cheerful and energetic
 
 .HomePage .AboutMidSection .AboutPara {
   width: 50%;
+  float: right;
   padding: 12px 24px;
 }
 
 .SecParallax {
+  text-align: center;
   background-position: 0 70%;
 }
 
@@ -1121,8 +1123,9 @@ cheerful and energetic
 }
 
 #BlogMoviePage h1 {
-  padding: 0 10px;
+  margin-left: 50px;
   font-size: 20px;
+  left: 0;
 }
 
 .FriendPage {
@@ -1176,28 +1179,114 @@ cheerful and energetic
   margin: auto;
 }
 
-/*
-#BlogHomePage, #BlogAboutPage, #BlogContactPage {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-}
+/* Color schemes
+Colorful and balanced
+#e27d60
+#85dcb
+#e8a87c
+#c38d9e
+#41b3a3
 
-.FstParallax, .SecParallax, .ThirParallax {
-    opacity: 0.75;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+striking and simple (futuristic tech, not professional)
+#0b0c10
+#1f2833
+#c5c6c7
+#66fcf1
+#45a29e
 
-    h1 {
-        text-align: center;
-        letter-spacing: 10px;
-        color: $font;
-        font-size: 24px;
-    }
-}
+cheerful and energetic
+#fbe8a6
+#f4976c
+#303c6c
+#b4dfe5
+#d2fdff
 */
+@media only screen and (max-device-width: 1600px) {
+  .bg_img-1, .bg_img-2, .bg_img-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .AboutPara {
+    display: none;
+  }
+  .FriendPageVid .video {
+    display: none;
+  }
+}
+
+/*
+ @media (min-width: 601px) {
+    .ContactSlides {
+        width: 66.66666%;
+    }
+ }
+ */
+@media (min-width: 601px) {
+  .LeftColumn, .ContactInfo {
+    width: 33.33333%;
+  }
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+#WeeklyRes, #SConnect, #BioCon, #BioConnect, #HCon {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+#WeeklyRes h1, #SConnect h1, #BioCon h1, #BioConnect h1, #HCon h1 {
+  background: none;
+  color: #303c6c;
+  font-size: 50px;
+}
+
+.WR {
+  padding: 0px 20px;
+}
+
+.WR .Week1 embed, .WR .Week2 embed, .WR .Week3 embed, .WR .Week4 embed, .WR .Week5 embed, .WR .Week6 embed, .WR .Week7 embed, .WR .Week8 embed, .WR .Week9 embed, .WR .Week10 embed {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.WR .Week1__quiz, .WR .Week2__quiz, .WR .Week3__quiz, .WR .Week4__quiz, .WR .Week5__quiz, .WR .Week6__quiz, .WR .Week7__quiz, .WR .Week8__quiz, .WR .Week9__quiz, .WR .Week10__quiz {
+  width: 50%;
+  float: left;
+  padding: 0px 10px;
+}
+
+.WR .Week1__product, .WR .Week2__product, .WR .Week3__product, .WR .Week4__product, .WR .Week5__product, .WR .Week6__product, .WR .Week7__product, .WR .Week8__product, .WR .Week9__product, .WR .Week10__product {
+  width: 50%;
+  float: right;
+  padding: 0px 10px;
+}
+
+.footer {
+  bottom: 0;
+}
+
 /* Color schemes
 Colorful and balanced
 #e27d60
@@ -1276,31 +1365,32 @@ cheerful and energetic
   text-align: center;
 }
 
-.CalcMain .CalcMainDiv {
+.CalcMain .HalfDiv {
+  position: relative;
+  top: 3%;
   background-color: #f4976c;
   border-radius: 25px;
-  position: relative;
-  top: 25%;
-  width: 50%;
-  margin: auto;
+  width: 48%;
+  height: auto;
   padding: 20px;
+  margin: 10px;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.CalcMain .CalcMainDiv h1 {
-  padding: 20px 0px 0px;
+.CalcMain .CalcDiv {
+  float: left;
 }
 
-.CalcMain .CalcMainDiv p {
+.CalcMain .CalcDiv h1 {
+  padding: 10px 0px 0px;
+}
+
+.CalcMain .CalcDiv p {
   font-weight: bold;
 }
 
-.CalcMain .CalcMainDiv .SmallMessage {
-  font-weight: none;
-  font-size: small;
-  margin-bottom: 5px;
-}
-
-.CalcMain .CalcMainDiv input {
+.CalcMain .CalcDiv input {
   background-color: #d2fdff;
   text-align: center;
   margin: 10px;
@@ -1309,11 +1399,11 @@ cheerful and energetic
   border: 2px solid #b4dfe5;
 }
 
-.CalcMain .CalcMainDiv .CalcButtonDiv {
+.CalcMain .CalcDiv .CalcButtonDiv {
   margin: 20px;
 }
 
-.CalcMain .CalcMainDiv .CalcButtonDiv button {
+.CalcMain .CalcDiv .CalcButtonDiv button {
   background-color: #d2fdff;
   color: #303c6c;
   font-weight: bold;
@@ -1327,17 +1417,44 @@ cheerful and energetic
   outline: none;
 }
 
-.CalcMain .CalcMainDiv .CalcButtonDiv button:hover {
+.CalcMain .CalcDiv .CalcButtonDiv button:hover {
   -webkit-box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(180, 223, 229, 0.3);
           box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(180, 223, 229, 0.3);
 }
 
-.CalcMain .CalcMainDiv .CalcButtonDiv button:hover span {
+.CalcMain .CalcDiv .CalcButtonDiv button:hover span {
   padding-right: 25px;
 }
 
-.CalcMain .CalcMainDiv .CalcButtonDiv button:hover span:after {
+.CalcMain .CalcDiv .CalcButtonDiv button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.CalcMain .ProgressDiv {
+  float: right;
+}
+
+.CalcMain .ProgressDiv h1 {
+  padding: 20px 0px 5px;
+}
+
+.CalcMain .ProgressDiv .SmallMessage {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.CalcMain .ProgressDiv p {
+  margin: 0px 30px;
+}
+
+.CalcMain .ProgressDiv .CodePara {
+  text-align: left;
+  margin-left: 50px;
+}
+
+.CalcMain .img {
+  width: 40%;
+  float: left;
 }
 /*# sourceMappingURL=style.css.map */

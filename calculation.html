@@ -1,6 +1,6 @@
 <!--
     Creator: Kyu Sung Kwon
-    Last Update: 2/2/2021
+    Last Update: 2/4/2021
     Description:
         Create a web app using any language which logs calculations
         as they happen and shares those calculations with everyone connected to the app.
@@ -23,6 +23,7 @@
 <html lang="en">
     <head>
         <title>Calculation Website</title>
+        <link rel = "icon" href = "/images/svg-files/title-icon.svg" type = "image/x-icon"> 
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,9 +33,8 @@
     </head>
     <body>
         <main class="CalcMain">
-            <div class="CalcMainDiv">
+            <div class="CalcDiv HalfDiv">
                 <h1>Try pressing a button!</h1>
-                <p class="SmallMessage">Someday, I will make a graphing calcluator</p>
                 <input type="text" id="inputA" class="" placeholder="Enter here!">
                 <input type="text" id="inputB" class="" placeholder="Enter here!">
                 <div class="CalcButtonDiv">
@@ -45,6 +45,46 @@
                 </div>
                 <p id="display">Number will be presented here!</p>
             </div>
+            <div class="ProgressDiv HalfDiv">
+                <h1>How this came to be</h1>
+                <p class="SmallMessage">Last Update: 2/5/2021</p>
+                <p>
+                    This started from an email from Sezzle,
+                    a company that I applied to for web development internship.
+                    Attached was a problem that stated, "Create a web app using
+                    any language which logs calculations as they happen and
+                    shares those calculations with everyone connected to the app.
+                    Results should remain between sessions.
+                    Only show the last 10 calculations descending from most recent to oldest."
+                    Well, easy enough.
+                    Let's just start with a simple input of two integers and add them.
+                </p>
+                <br>
+                <p class="CodePara">
+                    function() {<br>
+                    var x = document.getElementById(first input);<br>
+                    var y = document.getElementById(second input);<br>
+                    var result = first input + second input;<br>
+                    text display = result;<br>
+                    }
+                </p>
+                <br>
+                <p>
+                    Finally, set the function to a button.
+                    This should get you the display on the left.
+                    What stumps me is the two users at once part,
+                    as I realized I might need more backend knowledge
+                    Turns out I could use a Github local server. haha.
+                </p>
+                <br>
+                <p>
+                    This inspired me to try to make a legit calculator,
+                    where you could input, "3+6-2*4," and get 1.
+                    First I started thinking about looking for a '+'
+                    to then add the elements of a position before and after the plus
+                </p>
+            </div>
+            <img class="HalfDiv img" src="images/png-files/Calc_Pic1.PNG" alt="for-loop">
         </main>
 
         <footer class="footer">

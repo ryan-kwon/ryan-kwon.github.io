@@ -37,9 +37,9 @@
 
 #BlogMoviePage {
     h1 {
-        //position:fixed;
-        padding: 0 10px;
+        margin-left: 50px;
         font-size: 20px;
+        left: 0;
     }
 }
 
@@ -77,9 +77,6 @@
 .MoviePage{
     margin:16px 0;
     text-align: center;
-    &__topic {
-
-    }
 }
 
 #BlogCookPage {
@@ -96,25 +93,3 @@
         margin:auto;
     }
 }
-/*
-#BlogHomePage, #BlogAboutPage, #BlogContactPage {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-}
-
-.FstParallax, .SecParallax, .ThirParallax {
-    opacity: 0.75;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    h1 {
-        text-align: center;
-        letter-spacing: 10px;
-        color: $font;
-        font-size: 24px;
-    }
-}
-*/
