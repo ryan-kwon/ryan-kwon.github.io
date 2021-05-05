@@ -1,0 +1,54 @@
+#SConnect, #BioCon, #BioConnect, #HCon {
+    margin: auto;
+    //height: 100%;
+    width: 50%;
+    text-align: center;
+
+    h1{
+        background: none;
+        color: $font;
+        //position: relative;
+        //top: 50%;
+        //left: 50%;
+        //-webkit-transform: translate(-50%, -50%);
+        //transform: translate(-50%, -50%);
+        font-size: 50px;
+    }
+    img{
+        width: auto;
+        vertical-align:middle;
+        height: 80px;
+    }
+
+}
+.SciConnect, .BioConcept, .BioConnect, .HumanConcept {
+    margin: 10px;
+    /*
+    table {
+        border-collapse: collapse;
+        border: 2px black solid;
+    }
+    td {
+        border: 1px black solid;
+        padding: 5px;
+    }
+    */
+    .BodyDataTable {
+        border-collapse: collapse;
+        border: 2px black solid;
+        width: 85%;
+        height: 500px;
+    }
+}
+body{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .TopLink{
+        text-align: center;
+    }
+}
+.footer {
+    position: relative;
+    margin: 0px;
+    clear: both;
+}

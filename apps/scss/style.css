@@ -1248,12 +1248,12 @@ cheerful and energetic
   }
 }
 
-#WeeklyRes, #SConnect, #BioCon, #BioConnect, #HCon {
+#WeeklyRes {
   margin: auto;
   width: 100%;
 }
 
-#WeeklyRes h1, #SConnect h1, #BioCon h1, #BioConnect h1, #HCon h1 {
+#WeeklyRes h1 {
   background: none;
   color: #303c6c;
   font-size: 50px;
@@ -1297,7 +1297,63 @@ cheerful and energetic
 }
 
 .footer {
-  bottom: 0;
+  position: relative;
+  margin-top: -180px;
+  clear: both;
+}
+
+#SConnect, #BioCon, #BioConnect, #HCon {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#SConnect h1, #BioCon h1, #BioConnect h1, #HCon h1 {
+  background: none;
+  color: #303c6c;
+  font-size: 50px;
+}
+
+#SConnect img, #BioCon img, #BioConnect img, #HCon img {
+  width: auto;
+  vertical-align: middle;
+  height: 80px;
+}
+
+.SciConnect, .BioConcept, .BioConnect, .HumanConcept {
+  margin: 10px;
+  /*
+    table {
+        border-collapse: collapse;
+        border: 2px black solid;
+    }
+    td {
+        border: 1px black solid;
+        padding: 5px;
+    }
+    */
+}
+
+.SciConnect .BodyDataTable, .BioConcept .BodyDataTable, .BioConnect .BodyDataTable, .HumanConcept .BodyDataTable {
+  border-collapse: collapse;
+  border: 2px black solid;
+  width: 85%;
+  height: 500px;
+}
+
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+body .TopLink {
+  text-align: center;
+}
+
+.footer {
+  position: relative;
+  margin: 0px;
+  clear: both;
 }
 
 /* Color schemes
