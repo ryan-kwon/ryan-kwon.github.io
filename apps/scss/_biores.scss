@@ -1,6 +1,12 @@
 @import "variables";
 @import "mixins";
 
+body {
+    p {
+        text-align: center;
+    }
+}
+
 #WeeklyRes {
     margin: auto;
     //height: 100%;

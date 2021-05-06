@@ -1248,6 +1248,10 @@ cheerful and energetic
   }
 }
 
+body p {
+  text-align: center;
+}
+
 #WeeklyRes {
   margin: auto;
   width: 100%;
@@ -1306,6 +1310,12 @@ cheerful and energetic
   margin: auto;
   width: 50%;
   text-align: center;
+  /*
+    p{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    */
 }
 
 #SConnect h1, #BioCon h1, #BioConnect h1, #HCon h1 {
@@ -1314,7 +1324,7 @@ cheerful and energetic
   font-size: 50px;
 }
 
-#SConnect img, #BioCon img, #BioConnect img, #HCon img {
+#SConnect .icon, #BioCon .icon, #BioConnect .icon, #HCon .icon {
   width: auto;
   vertical-align: middle;
   height: 80px;
@@ -1322,6 +1332,7 @@ cheerful and energetic
 
 .SciConnect, .BioConcept, .BioConnect, .HumanConcept {
   margin: 10px;
+  padding: 20px;
   /*
     table {
         border-collapse: collapse;
@@ -1339,6 +1350,30 @@ cheerful and energetic
   border: 2px black solid;
   width: 85%;
   height: 500px;
+}
+
+.BioConcept {
+  height: 50%;
+}
+
+.BioConcept .GIT_image {
+  height: 80%;
+  width: auto;
+}
+
+.HumanConcept .Digestion_image {
+  height: auto;
+  width: 70%;
+}
+
+.BioConnect .Week6_ref {
+  width: 50%;
+  float: left;
+}
+
+.BioConnect .Week10_ref {
+  width: 50%;
+  float: right;
 }
 
 body {

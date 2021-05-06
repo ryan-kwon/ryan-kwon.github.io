@@ -14,7 +14,13 @@
         //transform: translate(-50%, -50%);
         font-size: 50px;
     }
-    img{
+    /*
+    p{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    */
+    .icon{
         width: auto;
         vertical-align:middle;
         height: 80px;
@@ -23,6 +29,7 @@
 }
 .SciConnect, .BioConcept, .BioConnect, .HumanConcept {
     margin: 10px;
+    padding: 20px;
     /*
     table {
         border-collapse: collapse;
@@ -38,6 +45,30 @@
         border: 2px black solid;
         width: 85%;
         height: 500px;
+    }
+}
+.BioConcept {
+    height: 50%;
+    .GIT_image {
+        height: 80%;
+        width: auto;
+        //float: left;
+    }
+}
+.HumanConcept {
+    .Digestion_image {
+        height: auto;
+        width: 70%;
+    }
+}
+.BioConnect {
+    .Week6_ref {
+        width: 50%;
+        float: left;
+    }
+    .Week10_ref {
+        width: 50%;
+        float: right;
     }
 }
 body{
