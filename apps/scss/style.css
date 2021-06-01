@@ -1306,7 +1306,7 @@ body p {
   clear: both;
 }
 
-#SConnect, #BioCon, #BioConnect, #HCon {
+#SConcept, #SSkill, #SConnect, #BioCon, #BioSkill, #BioConnect, #HCon, #HSkill, #HConnect {
   margin: auto;
   width: 50%;
   text-align: center;
@@ -1318,13 +1318,13 @@ body p {
     */
 }
 
-#SConnect h1, #BioCon h1, #BioConnect h1, #HCon h1 {
+#SConcept h1, #SSkill h1, #SConnect h1, #BioCon h1, #BioSkill h1, #BioConnect h1, #HCon h1, #HSkill h1, #HConnect h1 {
   background: none;
   color: #303c6c;
   font-size: 50px;
 }
 
-#SConnect .icon, #BioCon .icon, #BioConnect .icon, #HCon .icon {
+#SConcept .icon, #SSkill .icon, #SConnect .icon, #BioCon .icon, #BioSkill .icon, #BioConnect .icon, #HCon .icon, #HSkill .icon, #HConnect .icon {
   width: auto;
   vertical-align: middle;
   height: 80px;
