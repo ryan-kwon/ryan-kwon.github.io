@@ -1252,6 +1252,10 @@ body p {
   text-align: center;
 }
 
+body .TopLink {
+  text-align: center;
+}
+
 #WeeklyRes {
   margin: auto;
   width: 100%;
@@ -1298,6 +1302,10 @@ body p {
   padding: 10px;
   background-color: #f4976c;
   border-radius: 25px;
+}
+
+.WR .Week1 .Week9_product, .WR .Week2 .Week9_product, .WR .Week3 .Week9_product, .WR .Week4 .Week9_product, .WR .Week5 .Week9_product, .WR .Week6 .Week9_product, .WR .Week7 .Week9_product, .WR .Week8 .Week9_product, .WR .Week9 .Week9_product, .WR .Week10 .Week9_product {
+  width: 49%;
 }
 
 .footer {

@@ -5,6 +5,9 @@ body {
     p {
         text-align: center;
     }
+    .TopLink{
+        text-align: center;
+    }
 }
 
 #WeeklyRes {
@@ -50,6 +53,10 @@ body {
             padding: 10px;
             background-color: $secondary;
             border-radius: 25px;
+        }
+
+        .Week9_product{
+            width: 49%;
         }
     }
 }
