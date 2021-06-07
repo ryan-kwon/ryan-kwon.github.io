@@ -1338,7 +1338,7 @@ body .TopLink {
   height: 80px;
 }
 
-.SciConnect, .BioConcept, .BioConnect, .HumanConcept {
+.SciConcept, .SciSkill, .SciConnect, .BioConcept, .BioSkill, .BioConnect, .HumanConcept, .HumanSkill, .HumanConnect {
   margin: 10px;
   padding: 20px;
   /*
@@ -1353,11 +1353,34 @@ body .TopLink {
     */
 }
 
-.SciConnect .BodyDataTable, .BioConcept .BodyDataTable, .BioConnect .BodyDataTable, .HumanConcept .BodyDataTable {
-  border-collapse: collapse;
-  border: 2px black solid;
-  width: 85%;
-  height: 500px;
+.SciConcept ol, .SciSkill ol, .SciConnect ol, .BioConcept ol, .BioSkill ol, .BioConnect ol, .HumanConcept ol, .HumanSkill ol, .HumanConnect ol {
+  text-align: left;
+  font-size: small;
+}
+
+.SciConnect .bib {
+  text-align: left;
+}
+
+.SciConnect .bib p, .SciConnect .bib a {
+  font-size: small;
+  text-align: left;
+}
+
+.SciConnect .bib h3 {
+  text-align: center;
+}
+
+.SciConnect .bib a:link {
+  text-decoration: none;
+}
+
+.SciConnect .bib a:visited {
+  text-decoration: none;
+}
+
+.SciConnect .bib a:hover {
+  text-decoration: underline;
 }
 
 .BioConcept {
@@ -1391,6 +1414,13 @@ body {
 
 body .TopLink {
   text-align: center;
+}
+
+.BodyDataTable {
+  border-collapse: collapse;
+  border: 2px black solid;
+  width: 85%;
+  height: 500px;
 }
 
 .footer {

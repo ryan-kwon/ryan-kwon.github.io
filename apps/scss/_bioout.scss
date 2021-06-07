@@ -27,7 +27,7 @@
     }
 
 }
-.SciConnect, .BioConcept, .BioConnect, .HumanConcept {
+.SciConcept, .SciSkill, .SciConnect, .BioConcept, .BioSkill, .BioConnect, .HumanConcept, .HumanSkill, .HumanConnect {
     margin: 10px;
     padding: 20px;
     /*
@@ -40,11 +40,30 @@
         padding: 5px;
     }
     */
-    .BodyDataTable {
-        border-collapse: collapse;
-        border: 2px black solid;
-        width: 85%;
-        height: 500px;
+    ol{
+        text-align: left;
+        font-size: small;
+    }
+}
+.SciConnect {
+    .bib{
+        text-align: left;
+        p, a{
+            font-size: small;
+            text-align: left;
+        }
+        h3{
+            text-align: center;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
     }
 }
 .BioConcept {
@@ -78,6 +97,13 @@ body{
         text-align: center;
     }
 }
+.BodyDataTable {
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 85%;
+    height: 500px;
+}
+
 .footer {
     position: relative;
     margin: 0px;
