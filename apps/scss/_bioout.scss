@@ -45,6 +45,13 @@
         font-size: small;
     }
 }
+.SciSkill{
+    embed { //resize issues
+        width: 100%;
+        height: 600px;
+        object-fit: contain;
+    }
+}
 .SciConnect {
     .bib{
         text-align: left;
@@ -74,10 +81,23 @@
         //float: left;
     }
 }
-.HumanConcept {
-    .Digestion_image {
-        height: auto;
-        width: 70%;
+.BioSkill{
+    p{
+        text-align: left;
+    }
+    dl{
+        text-align: left;
+    }
+    .list{
+        width:50%;
+    }
+    .list1{
+        //width:48%;
+        float:left;
+    }
+    .list2{
+        //width:52%;
+        float: right;
     }
 }
 .BioConnect {
@@ -88,6 +108,12 @@
     .Week10_ref {
         width: 50%;
         float: right;
+    }
+}
+.HumanConcept {
+    .Digestion_image {
+        height: auto;
+        width: 70%;
     }
 }
 body{
