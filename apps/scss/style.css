@@ -1341,21 +1341,23 @@ body .TopLink {
 .SciConcept, .SciSkill, .SciConnect, .BioConcept, .BioSkill, .BioConnect, .HumanConcept, .HumanSkill, .HumanConnect {
   margin: 10px;
   padding: 20px;
-  /*
-    table {
-        border-collapse: collapse;
-        border: 2px black solid;
-    }
-    td {
-        border: 1px black solid;
-        padding: 5px;
-    }
-    */
 }
 
 .SciConcept ol, .SciSkill ol, .SciConnect ol, .BioConcept ol, .BioSkill ol, .BioConnect ol, .HumanConcept ol, .HumanSkill ol, .HumanConnect ol {
   text-align: left;
   font-size: small;
+}
+
+.SciConcept p {
+  text-align: left;
+}
+
+.SciConcept ol {
+  font-size: medium;
+}
+
+.SciConcept ul {
+  text-align: left;
 }
 
 .SciSkill embed {
@@ -1390,20 +1392,11 @@ body .TopLink {
   text-decoration: underline;
 }
 
-.BioConcept {
-  height: 50%;
-}
-
 .BioConcept .GIT_image {
-  height: 80%;
-  width: auto;
+  width: 80%;
 }
 
-.BioSkill p {
-  text-align: left;
-}
-
-.BioSkill dl {
+.BioSkill p, .BioSkill dl {
   text-align: left;
 }
 
@@ -1429,9 +1422,54 @@ body .TopLink {
   float: right;
 }
 
-.HumanConcept .Digestion_image {
+.HumanConcept .DGInfo {
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HumanConcept .DGInfo .Digestion_image {
   height: auto;
-  width: 70%;
+  width: 60%;
+  float: left;
+}
+
+.HumanConcept .DGInfo .DigestGame {
+  width: 40%;
+  float: right;
+}
+
+.HumanConcept .FirstAid {
+  width: 100%;
+}
+
+.HumanConcept .FirstAid ol {
+  font-size: medium;
+}
+
+.HumanSkill p, .HumanSkill ul {
+  text-align: left;
+}
+
+.HumanSkill .list {
+  min-height: 800px;
+  width: 50%;
+}
+
+.HumanSkill .list1 {
+  float: left;
+}
+
+.HumanSkill .list2 {
+  float: right;
+}
+
+.HumanConnect p {
+  text-align: left;
 }
 
 body {
@@ -1443,11 +1481,19 @@ body .TopLink {
   text-align: center;
 }
 
+.BodyDataGraph {
+  border-collapse: collapse;
+  border: 2px black solid;
+  width: 67%;
+  height: 380px;
+}
+
 .BodyDataTable {
   border-collapse: collapse;
   border: 2px black solid;
-  width: 85%;
+  width: 80%;
   height: 500px;
+  float: left;
 }
 
 .footer {

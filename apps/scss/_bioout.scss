@@ -30,19 +30,20 @@
 .SciConcept, .SciSkill, .SciConnect, .BioConcept, .BioSkill, .BioConnect, .HumanConcept, .HumanSkill, .HumanConnect {
     margin: 10px;
     padding: 20px;
-    /*
-    table {
-        border-collapse: collapse;
-        border: 2px black solid;
-    }
-    td {
-        border: 1px black solid;
-        padding: 5px;
-    }
-    */
     ol{
         text-align: left;
         font-size: small;
+    }
+}
+.SciConcept{
+    p{
+        text-align: left;
+    }
+    ol{
+        font-size: medium;
+    }
+    ul{
+        text-align: left;
     }
 }
 .SciSkill{
@@ -74,18 +75,13 @@
     }
 }
 .BioConcept {
-    height: 50%;
     .GIT_image {
-        height: 80%;
-        width: auto;
+        width: 80%;
         //float: left;
     }
 }
 .BioSkill{
-    p{
-        text-align: left;
-    }
-    dl{
+    p, dl{
         text-align: left;
     }
     .list{
@@ -111,9 +107,47 @@
     }
 }
 .HumanConcept {
-    .Digestion_image {
-        height: auto;
-        width: 70%;
+    .DGInfo{
+        height: 450px;
+        display: flex;
+        align-items: center;
+        .Digestion_image {
+            height: auto;
+            width: 60%;
+            float:left;
+        }
+        .DigestGame{
+            width: 40%;
+            float:right;
+        }
+    }
+    .FirstAid{
+        width:100%;
+        ol{
+            font-size: medium;
+        }
+    }
+}
+.HumanSkill{
+    p, ul{
+        text-align: left;
+    }
+    .list{
+        min-height: 800px;
+        width:50%;
+    }
+    .list1{
+        //width:48%;
+        float:left;
+    }
+    .list2{
+        //width:52%;
+        float: right;
+    }
+}
+.HumanConnect{
+    p{
+        text-align: left;
     }
 }
 body{
@@ -123,11 +157,18 @@ body{
         text-align: center;
     }
 }
+.BodyDataGraph{
+    border-collapse: collapse;
+    border: 2px black solid;
+    width: 67%;
+    height: 380px;
+}
 .BodyDataTable {
     border-collapse: collapse;
     border: 2px black solid;
-    width: 85%;
+    width: 80%;
     height: 500px;
+    float:left;
 }
 
 .footer {
