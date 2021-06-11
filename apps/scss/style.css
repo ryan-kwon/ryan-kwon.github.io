@@ -31,6 +31,9 @@ cheerful and energetic
   .AboutPara {
     display: none;
   }
+  .AboutPicture {
+    min-width: 100%;
+  }
   .FriendPageVid .video {
     display: none;
   }
@@ -191,6 +194,9 @@ cheerful and energetic
   .AboutPara {
     display: none;
   }
+  .AboutPicture {
+    min-width: 100%;
+  }
   .FriendPageVid .video {
     display: none;
   }
@@ -259,6 +265,9 @@ cheerful and energetic
 @media (max-width: 767px) {
   .AboutPara {
     display: none;
+  }
+  .AboutPicture {
+    min-width: 100%;
   }
   .FriendPageVid .video {
     display: none;
@@ -400,6 +409,9 @@ cheerful and energetic
   .AboutPara {
     display: none;
   }
+  .AboutPicture {
+    min-width: 100%;
+  }
   .FriendPageVid .video {
     display: none;
   }
@@ -518,6 +530,9 @@ cheerful and energetic
   .AboutPara {
     display: none;
   }
+  .AboutPicture {
+    min-width: 100%;
+  }
   .FriendPageVid .video {
     display: none;
   }
@@ -628,7 +643,7 @@ cheerful and energetic
 
 .HomePage .AboutMidSection .AboutPicture {
   padding: 12px 24px;
-  width: 50%;
+  max-width: 50%;
   float: left;
 }
 
@@ -693,6 +708,7 @@ cheerful and energetic
 
 .AboutPage .AboutWorkSection {
   margin: auto;
+  min-height: 1000px;
 }
 
 .AboutPage .AboutWorkSection a {
@@ -702,8 +718,7 @@ cheerful and energetic
 .AboutPage .AboutWorkSection a img {
   -o-object-fit: contain;
      object-fit: contain;
-  height: 300px;
-  width: auto;
+  max-width: 50%;
   opacity: 0.6;
   margin-bottom: 20px;
 }
@@ -732,7 +747,6 @@ cheerful and energetic
 
 .ContactPage {
   width: 80%;
-  min-height: 550px;
   text-align: center;
   margin: auto;
   padding-bottom: 10px;
@@ -749,6 +763,15 @@ cheerful and energetic
 }
 
 .ContactPage .ContactSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
 }
 
@@ -768,14 +791,10 @@ cheerful and energetic
   -webkit-animation: fadeIn ease 5s;
           animation: fadeIn ease 5s;
   display: none;
-  width: 500px;
-  height: 350px;
+  max-width: 80%;
 }
 
 .ContactPage .ContactSection .ContactInfo {
-  width: 50%;
-  float: left;
-  width: 33.33333%;
   padding: 12px 24px;
   vertical-align: middle;
   overflow: hidden;
@@ -1052,6 +1071,9 @@ cheerful and energetic
   .AboutPara {
     display: none;
   }
+  .AboutPicture {
+    min-width: 100%;
+  }
   .FriendPageVid .video {
     display: none;
   }
@@ -1211,6 +1233,9 @@ cheerful and energetic
 @media (max-width: 767px) {
   .AboutPara {
     display: none;
+  }
+  .AboutPicture {
+    min-width: 100%;
   }
   .FriendPageVid .video {
     display: none;
@@ -1534,6 +1559,9 @@ cheerful and energetic
 @media (max-width: 767px) {
   .AboutPara {
     display: none;
+  }
+  .AboutPicture {
+    min-width: 100%;
   }
   .FriendPageVid .video {
     display: none;
