@@ -1,16 +1,15 @@
-var myIndex = 0;
-carousel();
+var modal = document.getElementById("modal_back");//Get the modal
+var btn = document.getElementById("modal_button");//Get the button that opens the modal
+var span = document.getElementsByClassName("close")[0];//Get the <span> element that closes the modal
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("ContactSlides__slide");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+btn.onclick = function() {//When the user clicks the button, open the modal 
+    modal.style.display = "block";
+}
+span.onclick = function() {//When the user clicks on <span> (x), close the modal
+    modal.style.display = "none";
+}
+window.onclick = function(event) {//When the user clicks anywhere outside of the modal, close it
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
-
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);
-    //setTimeout(carousel, 9000);
 }

@@ -1,236 +1,274 @@
 @import "variables";
 @import "mixins";
-
-.bg_img-1 {
-    background-image: url("/images/png-files/parallax_image.png");
-    min-height: 100%;
-}
-
-.bg_img-2 {
-    background-image: url("/images/png-files/parallax_meme_image1.png");
-    min-height: 100%;
-}
-
-.bg_img-3 {
-    background-image: url("/images/png-files/parallax_meme_image2.png");
-    min-height: 100%;
-}
-
-#BlogHomePage, #BlogAboutPage, #BlogContactPage {
-    margin: auto;
+.index_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    flex-direction: column;
+    flex: 1;
     height: 100%;
+    margin: auto;
+    width: 930px;
+    max-width: 100%;
+    padding: 1.875rem 0.9375rem;
+    transition: filter 0.5s;
+    transition-delay: 0.1s;
+    filter: blur(0px);
+}
+
+.intro{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 930px;
+    max-width: 100%;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+
+    .h1{
+        font-size: clamp(24px, calc(14.40px + 2.00vw), 40px);
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .link{
+        margin-top: 1.25rem;
+        margin-inline-start: 0rem;
+        width: 100%;
+
+        .ul{
+            display: flex;
+            //display:inline;
+            list-style-type: none;
+            padding: 0rem;
+            //margin: -7.5px;
+
+            .li{
+                //width:100px;
+                margin:7.5px;
+                .list_button{
+                    background-color: $SS-color2;
+                    border:none;
+                    border-radius: 15px;
+                    height: 50px;
+                    width: 50px;
+                    display: flex;
+                    padding:0px;
+                    align-items: center;
+                    justify-content: center;
+                    cursor:pointer;
+
+                    img{
+                        height: 30px;
+                        width: 30px;
+                    }
+                    
+                    .emailhover{
+                        visibility: hidden;
+                        width: 120px;
+                        background-color: black;
+                        color: #fff;
+                        text-align: center;
+                        border-radius: 6px;
+                        padding: 5px 0;
+                        position: absolute;
+                        z-index: 1;
+                        top: 150%;
+                        left: 50%;
+                        margin-left: -60px;
+
+                            ::after{
+                                content: "";
+                                position: absolute;
+                                bottom: 100%;
+                                left: 50%;
+                                margin-left: -5px;
+                                border-width: 5px;
+                                border-style: solid;
+                                border-color: transparent transparent black transparent;
+                            }
+                            :hover{
+                                visibility: visible;
+                            }
+                        }
+                }
+            }
+        }
+    }
+
+}
+
+.portfolio{
+    display: grid;
+    grid-row-gap: 1.875rem;
+    grid-column-gap: 2.5rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     width: 100%;
-}
+    margin-top: 5rem;
 
-.FstParallax, .SecParallax, .ThirParallax {
-    opacity: 0.75;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 930px;
+    max-width: 100%;
+    
+    color: $SS-color6;
+    
+    .links{
+        //cursor: pointer;
+        //opacity: 0.8;
+        //transition: opacity 0.3s;
 
-    h1 {
-        text-align: center;
-        letter-spacing: 10px;
-        color: $font;
-        font-size: 24px;
-    }
-}
-
-.FstParallax {
-    //background-position: center;
-    h1 {
-        padding: 12px 24px;
-        background-color: $primary;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-}
-
-.HomePage {
-    //border: 5px solid $border;
-    //border-radius: 10px;
-    margin: auto;
-    max-width: 900px;
-    text-align: center;
-    width: 80%;
-    h3 {
-        //padding: 10px 0;
-        margin: 30px 0 10px;
-        font-size: 24px;
-        font-weight: 400;
-    }
-    p{
-        a:hover {
-            text-decoration: underline;
+        &__sub{
+            border:none;
+            display: -webkit-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
         }
-    }
-    &__fstpara {
-        margin: 0 20px;
-    }
+        .links_img{
+            margin-right: 20px;
+            border-radius: 15px;
+            width:100px;
+            height: 100px;
+        }
+        .links_click{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            position: relative;
+            width: 100%;
 
-    .AboutMidSection {
-        //find solution
-        background-color: $primary;
-        padding: 10px;
-        .AboutPicture {
-            //border-radius: 10px;
-            //box-shadow: 5px 5px 5px gray, -5px -5px 5px gray;
-            padding: 12px 24px;
-            max-width: 50%;
-            float: left;
-            p {
-                margin: 10px 0;
-                display: flex;
-                justify-content: center;
+            &__text{
+                margin-right: 0.9375rem;
+                
+                h3{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                p{
+                    text-align: left;
+                    font-size: clamp(12px, calc(10.80px + 0.25vw), 14px);
+                    color:$SS-color4;
+                }
+            }
+            &__button{
+                display: inline-flex;
+                appearance: none;
                 align-items: center;
-                img {
-                    object-fit: contain;
-                    width: 30px;
-                    height: 30px;
-                }
+                justify-content: center;
+                transition: all 250ms;
+                user-select: none;
+                position: relative;
+                white-space: nowrap;
+                vertical-align: middle;
+                outline: none;
+                line-height: 1;
+                flex-shrink: 0;
+
+                width: 100px;
+                min-width: 2.5rem;
+                height:50px;
+                border:none;
+                border-radius: 1rem;
+                margin-left: auto;
+                padding: 0rem 0.9375rem;
+
+                background-color: $SS-color2;
+
+                color: $SS-color6;
+                text-transform: none;
+                font-size:20px;
+                font-weight: 600;
+                font-size: 14px;
             }
-            
-            img {
-                max-width: 100%;
-                height: auto;
+
+            &::after{
+                position: absolute;
+                content: "";
+                bottom: -17px;
+                left:0rem;
+                width: 100%;
+                height: 1px;
+                display: block;
             }
         }
-        .AboutPara {
-            width: 50%;
-            float: right;
-            padding: 12px 24px;
+
+        :hover{
+            cursor:pointer;
+            //opacity: 1;
         }
+    }
+
+    hr{
+        width: 50%;
     }
 }
 
-.SecParallax {
-    text-align: center;
-    background-position: 0 70%;
-    h1 {
-        color: $third;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        font-size: 50px;
-    }
-}
+.modal_background{
+    display: none;
+    position: absolute;
+    z-index: 1; /* Sit on top */
+    top: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    left: 0rem;
+    background-color: $SS-color1;
 
-.AboutPage {
-    //background-color: $secondary;
-    padding-bottom: 30px;
-    margin: auto;
-    max-width: 900px;
-    text-align: center;
-    h3 {
-        //padding: 10px 0;
-        margin: 30px 0 10px;
-        font-size: 24px;
-        font-weight: 400;
-    }
-    .AboutWorkSection { //in mobile, the flex does not drop down
-        //width: 80%;
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+
+    .modal_pos{
+        position: fixed;
+        right: 0rem;
+        bottom: 0rem;
+        left: 0rem;
+        width: 930px;
+        max-width: 100%;
         margin: auto;
-        min-height: 1000px;
-        //display:flex;
-        //align-items: center;
-        //padding: 12px 24px;
-        a {
-            margin: 10px;
-            img{
-                object-fit: contain;
-                //height: 300px;
-                max-width: 50%;
-                opacity: 0.6;
-                margin-bottom:20px;
 
-                &:hover {
-                    opacity: 1;
-                }
-            }
-            h5 {
-                &:hover{
-                    color: black;
-                }
-            }
-        }
-    }
-}
+        transform: translateY(0%) translateZ(0px);
 
-.ThirParallax {
-    background-position: 0 25%;
-    h1 {
-        color: $third;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        font-size: 50px;
-    }
-}
+        .modal{
+            margin:auto;
+            height: 950px;
 
-.ContactPage {
-    width: 80%;
-    //min-height: 550px;
-    text-align: center;
-    margin: auto;
-    padding-bottom: 10px;
-    h3 {
-        margin: 30px 0 10px;
-        font-size: 24px;
-        font-weight: 400;
-    }
-    p {
-        margin-bottom: 20px;
-    }
-
-    .ContactSection {
-        //find solution
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        padding: 10px;
-        .ContactSlides {
-            width: 50%;
-            float: left;
-            margin: 0;
-            padding: 10px;
-
-            p {
-                margin:auto;
-            }
-            &__slide {
-                margin: auto;
-                animation: fadeIn ease 5s;
-                display:none;
-                max-width: 80%;
-                //height: 100%;
-            }
-        }
-        .ContactInfo {
-            //this is a dumb solution lmao
-            //position: relative;
-            //left: -20%;
-            //margin: auto;
-
-            //width: 33.33333%; 
-            //float: left;
-            padding: 12px 24px;
-            vertical-align: middle;
+            background-color: $SS-color2;
+            border-style: solid;
+            border-image: initial;
+            border-width: 1px;
+            border-color: $SS-color6;
+            border-radius: 10px;
+            
             overflow: hidden;
-            p {
-                margin: 0;
-                img {
-                    //margin: auto;
-                    object-fit: contain;
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 10px;
+    
+            &__header{
+
+                .close {
+                    color: #66FCF1;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
                 }
+                :hover,:focus {
+                    color: #66FCF1;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+            &__body{
+    
             }
         }
     }

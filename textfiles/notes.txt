@@ -1,5 +1,10 @@
 THINGS TO DO
-- 
+- hover over text
+- portfolio modal
+- cvs resume
+
+PLANS
+- complete redesign of UI (minimal or something crazy new like 3D)
 
 how to update github: https://pages.github.com/
 

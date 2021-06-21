@@ -1,59 +1,69 @@
-@media only screen and (max-device-width: 1600px) {
-    .bg_img-1, .bg_img-2, .bg_img-3 {
-        background-attachment: scroll;
-        min-height: 400px;
+@media screen and (min-width: 930px){
+    .modal{
+        border-width: 1px;
     }
 }
 
-@media (max-width: 767px) {                  
-    .AboutPara {
-       display: none;
+@media screen and (min-width: 768px){
+    .portfolio {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .AboutPicture{
-        min-width: 100%;
+    .links_img {
+        margin-right: 0.9375rem;
     }
-    .FriendPageVid{
-        .video {
-            display:none;
-        }
+    .index_body{
+        justify-content: center;
     }
- }
+    .modal{
+        height: 935px;
+    }
+}
+@media screen and (min-width: 480px){
+    .links_click::after {
+        display: block;
+    }
+    .index_body {
+        transition: none;
+        filter: none;
+    }
+}
 
- /*
- @media (min-width: 601px) {
-    .ContactSlides {
-        width: 66.66666%;
-    }
- }
- */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
 
- @media (min-width: 601px) {
-    .LeftColumn, .ContactInfo {
-        width: 33.33333%;
-    }
- }
-
+/*
 @keyframes fadeIn {
     0%,100% { opacity: 0; }
     50% { opacity: 1; }
 }
-    
 @-moz-keyframes fadeIn {
     0%,100% { opacity: 0; }
     50% { opacity: 1; }
 }
-
 @-webkit-keyframes fadeIn {
     0%,100% { opacity: 0; }
     50% { opacity: 1; }
 }
-
 @-o-keyframes fadeIn {
     0%,100% { opacity: 0; }
     50% { opacity: 1; }
 }
-
 @-ms-keyframes fadeIn {
     0%,100% { opacity: 0; }
     50% { opacity: 1; }
 }
+*/
