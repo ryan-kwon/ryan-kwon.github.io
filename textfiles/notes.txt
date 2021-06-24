@@ -1,4 +1,5 @@
 THINGS TO DO
+- extra space on bottom
 - hover over text
 - portfolio modal
 - cvs resume

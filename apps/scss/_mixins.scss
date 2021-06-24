@@ -2,8 +2,15 @@
     .modal{
         border-width: 1px;
     }
+    .modal_header_info__img{
+        width:4.0625rem;
+        height: 4.0625rem;
+        border-radius: 1.25rem;
+    }
+    .app_tools_display{
+        display:block;
+    }
 }
-
 @media screen and (min-width: 768px){
     .portfolio {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -17,6 +24,9 @@
     .modal{
         height: 935px;
     }
+    .app_description_p{
+        max-width: 70%;
+    }
 }
 @media screen and (min-width: 480px){
     .links_click::after {
@@ -26,23 +36,63 @@
         transition: none;
         filter: none;
     }
+    .modal_header_info{
+        padding: 2.1875rem 2.1875rem 0rem;
+    }
+    .modal_hr{
+        padding-left: 2.1875rem;
+        padding-right: 2.1875rem;
+    }
+    .app_tools{
+        padding-left: 2.1875rem;
+        padding-right: 2.1875rem;
+    }
+    .app_slide{
+        padding-left: 2.1875rem;
+        padding-right: 2.1875rem;
+    }
+}
+@media screen and (max-width: 768px){ //terrible solution
+    .index_body{
+        overflow:visible;
+    }
 }
 
 @-webkit-keyframes slideIn {
-    from {bottom: -300px; opacity: 0} 
-    to {bottom: 0; opacity: 1}
+    from {
+        bottom: -300px;
+        opacity: 0
+    } 
+    to {
+        bottom: 0; 
+        opacity: 1
+    }
 }
 @keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
+    from {
+        bottom: -300px;
+        opacity: 0
+    } 
+    to {
+        bottom: 0; 
+        opacity: 1
+    }
 }
 @-webkit-keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
+    from {
+        opacity: 0
+    } 
+    to {
+        opacity: 1
+    }
 }
 @keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
+    from {
+        opacity: 0
+    } 
+    to {
+        opacity: 1
+    }
 }
 
 /*

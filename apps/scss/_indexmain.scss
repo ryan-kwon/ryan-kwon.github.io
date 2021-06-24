@@ -1,19 +1,24 @@
 @import "variables";
 @import "mixins";
+@use "sass:math";
+
 .index_body{
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center;
     justify-content: space-between;
     min-height: 100vh;
     flex-direction: column;
     flex: 1;
+
     height: 100%;
-    margin: auto;
     width: 930px;
     max-width: 100%;
+    margin: auto;
     padding: 1.875rem 0.9375rem;
+    min-height: 975px;
+
+    overflow: hidden; //why is there extra space
     transition: filter 0.5s;
     transition-delay: 0.1s;
     filter: blur(0px);
@@ -244,7 +249,7 @@
             margin:auto;
             height: 950px;
 
-            background-color: $SS-color2;
+            background-color: $SS-color1;
             border-style: solid;
             border-image: initial;
             border-width: 1px;
@@ -252,23 +257,172 @@
             border-radius: 10px;
             
             overflow: hidden;
+
+            -webkit-animation-name: slideIn;
+            -webkit-animation-duration: 0.4s;
+            animation-name: slideIn;
+            animation-duration: 0.4s;
     
             &__header{
+                margin: 30px;
 
-                .close {
-                    color: #66FCF1;
+                &_exit {
                     float: right;
-                    font-size: 28px;
-                    font-weight: bold;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    background-color: $SS-color2;
+                    width: 50px;
+                    height:50px;
+                    border-radius: 50px;
+                    :hover,:focus {
+                        color: #66FCF1;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+
+                    .close {
+                        color: #66FCF1;
+                        //float: right;
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
                 }
-                :hover,:focus {
-                    color: #66FCF1;
-                    text-decoration: none;
-                    cursor: pointer;
+
+                &_title{
+                    display: flex;
+                    //justify-content: center;
+                    align-items: center;
+                    
+                    text-align: left;
+
+                    .info_img{
+                        width:100px;
+                        height: 100px;
+                        border-radius: 10px;
+                    }
+                    .text{
+                        margin-left:20px;
+
+                        width: 350px;
+                        height: 70px;
+
+                        text-align: left;
+
+                        .GIF{
+                            text-align: left;
+                            font-weight: bold;
+                            font-size: 30px;
+                            color: $SS-color4;
+                        }
+                        .des{
+                            text-align: left;
+                            font-size: 20px;
+                            color: $SS-color5;
+                        }
+                    }
+                }
+
+                &__hr{
+                    padding: 15px 0rem;
+    
+                    .modal_separator{
+                        opacity: 0.6;
+                        border-width: 0px 0px 1px;
+                        border-image: initial;
+                        border-color: inherit;
+                        border-style: solid;
+                        width: 100%;
+                    }
+                }
+
+                &__apps{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+
+                    .tool{
+                        &_text{
+                            //height: 50px;
+
+                            background-color: $SS-color1;
+                            border-style: solid;
+                            border-radius: 10px;
+                            border-width: 1px;
+                            border-color: $SS-color5;
+
+                            padding: 18px 10px;
+                            margin-right: 20px;
+                            
+                            font-size: 15px;
+                            color: $SS-color4;
+
+                            display: inline-block;
+                            white-space: nowrap;
+                            vertical-align: middle;
+                            
+                            text-transform: none;
+                        }
+                    }
                 }
             }
+
             &__body{
-    
+                &_slides{
+                    .slide_background{
+                        width: 700px;
+                        height: 500px;
+                        background-color: #F1CEDB;
+                        
+                        .slide_img{
+                            height: 400px;
+                            width: auto;
+                            margin: auto auto;
+                        }
+                    }
+                }
+                &_description{
+
+                }
+                &_site{
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                    padding: 0px 30px;
+                    
+                    &_link{
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        vertical-align: middle;
+
+                        height: 2.5rem;
+                        width: auto;
+                        //min-width: 11.25rem;
+                        padding: 8px 24px;
+
+                        background-color: $SS-color2;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-radius: 25px;
+                        border-color: $SS-color4;
+
+                        font-size: 20px;
+                        color: $SS-color4;
+                        text-transform: none;
+
+                        appearance: none;
+                        transition: all 250ms ease 0s;
+                        user-select: none;
+                        position: relative;
+                        white-space: nowrap;
+                        outline: none;
+                        
+                        line-height: 1;
+                        
+                    }
+                }
             }
         }
     }
