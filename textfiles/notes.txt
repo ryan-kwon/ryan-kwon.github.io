@@ -1,5 +1,6 @@
 THINGS TO DO
-- extra space on bottom
+- extra space on bottom: solved
+    - issue was that the min-height was too much
 - hover over text
 - portfolio modal
 - cvs resume

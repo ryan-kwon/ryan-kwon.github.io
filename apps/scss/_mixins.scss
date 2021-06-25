@@ -19,10 +19,11 @@
         margin-right: 0.9375rem;
     }
     .index_body{
+        //-webkit-box-pack: center;
         justify-content: center;
     }
     .modal{
-        height: 935px;
+        height: 720px;
     }
     .app_description_p{
         max-width: 70%;
@@ -35,6 +36,9 @@
     .index_body {
         transition: none;
         filter: none;
+    }
+    .modal_background,.modal_pos,.modal{
+        overflow: visible;
     }
     .modal_header_info{
         padding: 2.1875rem 2.1875rem 0rem;
@@ -50,11 +54,6 @@
     .app_slide{
         padding-left: 2.1875rem;
         padding-right: 2.1875rem;
-    }
-}
-@media screen and (max-width: 768px){ //terrible solution
-    .index_body{
-        overflow:visible;
     }
 }
 

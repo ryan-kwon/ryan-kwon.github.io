@@ -13,3 +13,7 @@ window.onclick = function(event) {//When the user clicks anywhere outside of the
         modal.style.display = "none";
     }
 }
+
+//if part of portfolio is hidden, overflow:visible;
+//var see = document.getElementsByClassName("index_body");
+//see.style.overflow="visible";

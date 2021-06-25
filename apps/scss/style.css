@@ -48,7 +48,7 @@ cheerful and energetic
             justify-content: center;
   }
   .modal {
-    height: 935px;
+    height: 720px;
   }
   .app_description_p {
     max-width: 70%;
@@ -65,6 +65,9 @@ cheerful and energetic
     -webkit-filter: none;
             filter: none;
   }
+  .modal_background, .modal_pos, .modal {
+    overflow: visible;
+  }
   .modal_header_info {
     padding: 2.1875rem 2.1875rem 0rem;
   }
@@ -79,12 +82,6 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .index_body {
-    overflow: visible;
   }
 }
 
@@ -306,7 +303,7 @@ cheerful and energetic
             justify-content: center;
   }
   .modal {
-    height: 935px;
+    height: 720px;
   }
   .app_description_p {
     max-width: 70%;
@@ -323,6 +320,9 @@ cheerful and energetic
     -webkit-filter: none;
             filter: none;
   }
+  .modal_background, .modal_pos, .modal {
+    overflow: visible;
+  }
   .modal_header_info {
     padding: 2.1875rem 2.1875rem 0rem;
   }
@@ -337,12 +337,6 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .index_body {
-    overflow: visible;
   }
 }
 
@@ -458,7 +452,7 @@ cheerful and energetic
             justify-content: center;
   }
   .modal {
-    height: 935px;
+    height: 720px;
   }
   .app_description_p {
     max-width: 70%;
@@ -475,6 +469,9 @@ cheerful and energetic
     -webkit-filter: none;
             filter: none;
   }
+  .modal_background, .modal_pos, .modal {
+    overflow: visible;
+  }
   .modal_header_info {
     padding: 2.1875rem 2.1875rem 0rem;
   }
@@ -489,12 +486,6 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .index_body {
-    overflow: visible;
   }
 }
 
@@ -681,7 +672,7 @@ cheerful and energetic
             justify-content: center;
   }
   .modal {
-    height: 935px;
+    height: 720px;
   }
   .app_description_p {
     max-width: 70%;
@@ -698,6 +689,9 @@ cheerful and energetic
     -webkit-filter: none;
             filter: none;
   }
+  .modal_background, .modal_pos, .modal {
+    overflow: visible;
+  }
   .modal_header_info {
     padding: 2.1875rem 2.1875rem 0rem;
   }
@@ -712,12 +706,6 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .index_body {
-    overflow: visible;
   }
 }
 
@@ -882,7 +870,7 @@ cheerful and energetic
             justify-content: center;
   }
   .modal {
-    height: 935px;
+    height: 720px;
   }
   .app_description_p {
     max-width: 70%;
@@ -899,6 +887,9 @@ cheerful and energetic
     -webkit-filter: none;
             filter: none;
   }
+  .modal_background, .modal_pos, .modal {
+    overflow: visible;
+  }
   .modal_header_info {
     padding: 2.1875rem 2.1875rem 0rem;
   }
@@ -913,12 +904,6 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .index_body {
-    overflow: visible;
   }
 }
 
@@ -986,6 +971,30 @@ cheerful and energetic
 */
 @use "sass:math";
 .index_body {
+  /*
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1007,11 +1016,11 @@ cheerful and energetic
       -ms-flex: 1;
           flex: 1;
   height: 100%;
+  min-height: 100vh;
   width: 930px;
   max-width: 100%;
   margin: auto;
   padding: 1.875rem 0.9375rem;
-  min-height: 975px;
   overflow: hidden;
   -webkit-transition: -webkit-filter 0.5s;
   transition: -webkit-filter 0.5s;
@@ -1135,7 +1144,7 @@ cheerful and energetic
   -ms-grid-columns: (minmax(0, 1fr))[1];
       grid-template-columns: repeat(1, minmax(0, 1fr));
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 4.6875rem;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1162,10 +1171,10 @@ cheerful and energetic
 }
 
 .portfolio .links .links_img {
-  margin-right: 20px;
+  margin-right: 0.625rem;
   border-radius: 15px;
-  width: 100px;
-  height: 100px;
+  width: 4.0625rem;
+  height: 4.0625rem;
 }
 
 .portfolio .links .links_click {
@@ -1257,20 +1266,21 @@ cheerful and energetic
 }
 
 .modal_background {
+  position: fixed;
+  width: 930px;
+  max-width: 100%;
+  margin: auto;
   display: none;
-  position: absolute;
   z-index: 1;
   /* Sit on top */
-  top: 0rem;
   right: 0rem;
   bottom: 0rem;
   left: 0rem;
   background-color: #0B0C10;
   -webkit-animation-name: fadeIn;
-  /* Fade in the background */
+          animation-name: fadeIn;
   -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s;
+          animation-duration: 0.4s;
 }
 
 .modal_background .modal_pos {
@@ -1287,7 +1297,7 @@ cheerful and energetic
 
 .modal_background .modal_pos .modal {
   margin: auto;
-  height: 950px;
+  height: 735px;
   background-color: #0B0C10;
   border-style: solid;
   -o-border-image: initial;
@@ -1415,9 +1425,14 @@ cheerful and energetic
 }
 
 .modal_background .modal_pos .modal__body_slides .slide_background {
-  width: 700px;
-  height: 500px;
   background-color: #F1CEDB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 450px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .modal_background .modal_pos .modal__body_slides .slide_background .slide_img {
@@ -1745,7 +1760,7 @@ cheerful and energetic
             justify-content: center;
   }
   .modal {
-    height: 935px;
+    height: 720px;
   }
   .app_description_p {
     max-width: 70%;
@@ -1762,6 +1777,9 @@ cheerful and energetic
     -webkit-filter: none;
             filter: none;
   }
+  .modal_background, .modal_pos, .modal {
+    overflow: visible;
+  }
   .modal_header_info {
     padding: 2.1875rem 2.1875rem 0rem;
   }
@@ -1776,12 +1794,6 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .index_body {
-    overflow: visible;
   }
 }
 
@@ -1988,7 +2000,7 @@ cheerful and energetic
             justify-content: center;
   }
   .modal {
-    height: 935px;
+    height: 720px;
   }
   .app_description_p {
     max-width: 70%;
@@ -2005,6 +2017,9 @@ cheerful and energetic
     -webkit-filter: none;
             filter: none;
   }
+  .modal_background, .modal_pos, .modal {
+    overflow: visible;
+  }
   .modal_header_info {
     padding: 2.1875rem 2.1875rem 0rem;
   }
@@ -2019,12 +2034,6 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .index_body {
-    overflow: visible;
   }
 }
 
@@ -2389,7 +2398,7 @@ cheerful and energetic
             justify-content: center;
   }
   .modal {
-    height: 935px;
+    height: 720px;
   }
   .app_description_p {
     max-width: 70%;
@@ -2406,6 +2415,9 @@ cheerful and energetic
     -webkit-filter: none;
             filter: none;
   }
+  .modal_background, .modal_pos, .modal {
+    overflow: visible;
+  }
   .modal_header_info {
     padding: 2.1875rem 2.1875rem 0rem;
   }
@@ -2420,12 +2432,6 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .index_body {
-    overflow: visible;
   }
 }
 

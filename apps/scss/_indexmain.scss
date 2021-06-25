@@ -3,22 +3,50 @@
 @use "sass:math";
 
 .index_body{
+    /*
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    */
+
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+    //margin-top: auto;
+    //margin-bottom: auto;
+
     min-height: 100vh;
     flex-direction: column;
     flex: 1;
 
     height: 100%;
+    min-height: 100vh;
     width: 930px;
     max-width: 100%;
     margin: auto;
     padding: 1.875rem 0.9375rem;
-    min-height: 975px;
 
-    overflow: hidden; //why is there extra space
+    overflow: hidden;
     transition: filter 0.5s;
     transition-delay: 0.1s;
     filter: blur(0px);
@@ -117,7 +145,7 @@
     grid-column-gap: 2.5rem;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 4.6875rem;
 
     height: 100%;
     margin-left: auto;
@@ -141,10 +169,10 @@
             align-items: center;
         }
         .links_img{
-            margin-right: 20px;
+            margin-right: 0.625rem;
             border-radius: 15px;
-            width:100px;
-            height: 100px;
+            width:4.0625rem;
+            height: 4.0625rem;
         }
         .links_click{
             display: flex;
@@ -220,17 +248,19 @@
 }
 
 .modal_background{
+    position:fixed;
+    width: 930px;
+    max-width: 100%;
+    margin: auto;
+
     display: none;
-    position: absolute;
     z-index: 1; /* Sit on top */
-    top: 0rem;
+    //top: 0rem;
     right: 0rem;
     bottom: 0rem;
     left: 0rem;
     background-color: $SS-color1;
 
-    -webkit-animation-name: fadeIn; /* Fade in the background */
-    -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s;
 
@@ -247,7 +277,7 @@
 
         .modal{
             margin:auto;
-            height: 950px;
+            height: 735px;
 
             background-color: $SS-color1;
             border-style: solid;
@@ -372,9 +402,17 @@
             &__body{
                 &_slides{
                     .slide_background{
-                        width: 700px;
-                        height: 500px;
                         background-color: #F1CEDB;
+
+                        display:flex;
+
+                        //width: 70%;
+                        //height: auto;
+                        width: auto;
+                        height: 450px;
+                        //margin: auto;
+                        margin-left: 100px;
+                        margin-right: 100px;
                         
                         .slide_img{
                             height: 400px;
