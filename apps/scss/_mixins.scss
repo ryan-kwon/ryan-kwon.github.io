@@ -38,6 +38,15 @@
         transition: none;
         filter: none;
     }
+    .app_tools{
+        padding-left: 2.1875rem;
+        padding-right: 2.1875rem;
+    }
+    .app_slide{
+        padding-left: 2.1875rem;
+        padding-right: 2.1875rem;
+    }
+
     .modal_background,.modal_pos,.modal{
         overflow: visible;
     }
@@ -48,18 +57,45 @@
         padding-left: 2.1875rem;
         padding-right: 2.1875rem;
     }
-    .app_tools{
-        padding-left: 2.1875rem;
-        padding-right: 2.1875rem;
+    .modal__header_exit{
+        width: 30px;
+        height: 30px;
+        .close{
+            font-size: 19px;
+        }
     }
-    .app_slide{
-        padding-left: 2.1875rem;
-        padding-right: 2.1875rem;
+    .GIF{
+        font-size: 20px;
+    }
+    .des{
+        font-size:15px;
     }
 }
 @media screen and (max-width: 480px){
     .index_body{
         overflow: visible;
+    }
+    
+    .modal__header_exit{
+        width: 30px;
+        height: 30px;
+        .close{
+            font-size: 19px;
+        }
+    }
+    .GIF{
+        font-size: 20px;
+    }
+    .des{
+        font-size:15px;
+    }
+    
+    .slide_background{
+        width: 300px;
+        
+        .slide_img{
+            width: 200px;
+        }
     }
 }
 

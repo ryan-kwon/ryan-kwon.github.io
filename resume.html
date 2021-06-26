@@ -1,232 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="resume_html">
     <head>
         <title>My Work</title>
-        <link rel = "icon" href = "/images/svg-files/title-icon.svg" type = "image/x-icon"> 
+        <link rel = "icon" href = "/images/svg-files/Lightmode/title-icon.svg" type = "image/x-icon"> 
 
         <meta charset="UTF-8">
+        <meta name="author" content="Kyu Sung Kwon">
+        <meta name="keywords" content="HTML, SCSS, JavaScript">
+        <meta name="description" content="Kyu Sung Kwon currently studies Computer Science at Oregon State University with a focus on artificial intelligence.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="apps/scss/style.css">
     </head>
-    <body>
-        <main class="flex flex-jc-c flex-ai-c">
-            <div class="LeftColumn">
-                <div class="PicSection">
-                    <img src="images/png-files/profile_image.png">
-                    <div class="PicSection__display">
-                        <h3>Kyu Sung Kwon</h3>
-                    </div>
-                </div>
-                <div class="StatSection">
-                    <p class="flex flex-ai-c">
-                        <img src="images/svg-files/user.svg">
-                        Student
-                    </p>
-                    <p class="flex flex-ai-c">
-                        <img src="images/svg-files/home.svg">
-                        Tigard, Oregon
-                    </p>
-                    <p class="flex flex-ai-c">
-                        <img src="images/svg-files/email.svg">
-                        ryanksk@gmail.com
-                    </p>
-                    <p class="flex flex-ai-c">
-                        <img src="images/svg-files/phone.svg">
-                        (503) 747-8745
-                    </p>
-                    <hr>
-                    <h3 class="flex flex-ai-c">
-                        <img src="/images/svg-files/monitor.svg" alt="monitor">
-                        Programming Skills
-                    </h3>
-                    <p>Python</p>
-                    <div class="progress">
-                        <div class="progress__bar progress__bar__num1">70%</div>
-                    </div>
-                    <p>HTML</p>
-                    <div class="progress">
-                        <div class="progress__bar progress__bar__num2">50%</div>
-                    </div>
-                    <p>SCSS</p>
-                    <div class="progress">
-                        <div class="progress__bar progress__bar__num3">50%</div>
-                    </div>
-                    <p>C++</p>
-                    <div class="progress">
-                        <div class="progress__bar progress__bar__num4">40%</div>
-                    </div>
-                    <p>Javascript</p>
-                    <div class="progress">
-                        <div class="progress__bar progress__bar__num5">20%</div>
-                    </div>
-                    <hr>
-                    <!--maybe put strengths and skills side by side-->
-                    <h3 class="flex flex-ai-c">
-                        <img src="/images/svg-files/arm.svg" alt="arm">
-                        Strengths
-                    </h3>
-                    <p>Flexible</p>
-                    <p>Desire to learn</p>
-                    <p>Respectfulness</p>
-                    <p>Meeting Deadlines</p>
-                    <p>Organized</p>
-                    <p>Independent</p>
-                    <hr>
-                    <h3 class="flex flex-ai-c">
-                        <img src="/images/svg-files/world.svg" alt="globe">
-                        Skills
-                    </h3>
-                    <p>Korean</p>
-                    <p>Calculus</p>
-                    <p>Photoshop</p>
-                    <p>Audacity</p>
-                    <p>Musescore</p>
-                </div>
+    <body class="resume_body">
+        <div class="resume_body_profile">
+            <img class="resume_body_profile_img" src="images/png-files/profile_image.png">
+            <div class="resume_body_profile_text">
+                <h1 class="resume_body_profile_text_h1">Kyu Sung Kwon</h1>
+                <p class="resume_body_profile_text_p">Computer Science Student</p>
+                <a class="resume_body_profile_text_a" href="index.html">ryan-kwon.github.io</a>
             </div>
-    
-            <div class="RightColumn">
-                <!--
-                <div class="StateSection">
-                    <h2>Computer Science Student</h2>
-                    <i>
-                        Eager student equipped to handle fast-paced work inspecting coursework <br>
-                        Benefits both work and the students by accurately grading quickly and efficiently
-                    </i>
-                </div>
-                -->
-                <div class="WorkSection">
-                    <h2 class="flex flex-ai-c">
-                        <img src="images/svg-files/suitcase.svg" alt="suitcase">
-                        Experience
-                    </h2>
-                    <div class="WorkSection__work">
-                        <h5><b>Grader/Tutor | Kumon</b></h5>
-                        <h6 class="flex flex-ai-c">
-                            <img src="images/svg-files/calendar.svg" alt="calendar">
-                            August 2019 - present
-                        </h6>
-                        <p>
-                            ● One of the few graders who understand calculus <br>
-                            ● Often helped students understand Calculus
-                            leading to better score improvements
-                        </p>
+        </div>
+        <div class="resume_body_about">
+            <!--<p class="resume_body_about_p1">About</p>-->
+            <h3>About</h3>
+            <p class="resume_body_about_p2">
+                Kyu Sung Kwon is a Computer Science student at OSU with a goal towards Artificial Intelligence
+            </p>
+        </div>
+        <div class="resume_body_projects">
+            <div class="resume_body_projects_eh">
+                <h3>Projects</h3>
+                <div class="resume_body_projects_exp">
+                    <div class="resume_body_projects_exp_time">
+                        <span style="position: absolute;">2021</span>
                     </div>
-                    <hr>
-                    <div class="WorkSection__work">
-                        <h5><b>Secretary | Liberty in North Korea</b></h5>
-                        <h6 class="flex flex-ai-c">
-                            <img src="images/svg-files/calendar.svg" alt="calendar">
-                            Sep 2017 - Feb 2019
-                        </h6>
-                        <p>
-                            ● Organized 2 events <br>
-                            ● Facilitated 12 meetings on the upcoming events <br>
-                            ● Raised over $6000, resulting in helping 3 refugees
-                        </p>
-                    </div>
-                </div>
-                <div class="ProjectSection">
-                    <h2 class="flex flex-ai-c">
-                        <img src="images/svg-files/keyboard.svg" alt="keyboard">
-                        Coding Projects
-                    </h2>
-                    <div class="ProjectSection__project">
-                        <a href="https://github.com/JoshuaLim007/Gif---Gift-Idea-Forum">
-                            <h5><b>Gift Idea Forum</b></h5>
-                        </a>
-                        <h6 class="flex flex-ai-c">
-                            <img src="images/svg-files/calendar.svg" alt="calendar">
-                            October 2020
-                        </h6>
-                        <p>
-                            ● A website with a voting filtration system that inspires ideas for special gifts <br>
-                            ● Neumorphism UI developer
-                        </p>
-                        <hr>
-                        <a href="https://github.com/ryan-kwon/Visual-Sorting-Algorithm">
-                            <h5><b>Visual Sorting Algorithm</b></h5>
-                        </a>
-                        <h6 class="flex flex-ai-c">
-                            <img src="images/svg-files/calendar.svg" alt="calendar">
-                            June 2020
-                        </h6>
-                        <p>
-                            ● All the basic sorting algorithms with matplotlib
-                        </p>
-                    </div>
-                </div>
-                <div class="EduSection">
-                    <h2 class="flex flex-ai-c">
-                        <img src="images/svg-files/graduation-hat.svg" alt="graduation hat">
-                        Education
-                    </h2>
-                    <div class="EduSection__school">
-                        <h5><b>Oregon State University</b></h5>
-                        <h6 style="margin: none;">Bachelor in Computer Science</h6>
-                        <h6 class="flex flex-ai-c">
-                            <img src="images/svg-files/calendar.svg" alt="calendar">
-                            Sep 2020 - June 2024
-                        </h6>
-                        <p>OSU App Club</p>
-                        <hr>
-                        <h5><b>Tualatin High School</b></h5>
-                        <h6 style="margin: none;">Honors Degree</h6>
-                        <h6 class="flex flex-ai-c">
-                            <img src="images/svg-files/calendar.svg" alt="calendar">
-                            Sep 2016 - June 2020
-                        </h6>
-                        <p>Presidential Award | Honors Band | Mu Alpha Theta</p>
-                    </div>
-                </div>
-                <div class="CertSection">
-                    <h2 class="flex flex-ai-c">
-                        <img src="images/svg-files/file.svg" alt="file">
-                        Certification
-                    </h2>
-                    <div class="CertSection__cert">
-                        <h5><b>Python Certification</b></h5>
-                        <h6 style="margin: none;">Sololearn</h6>
-                        <h6 class="flex flex-ai-c">
-                            <img src="images/svg-files/calendar.svg" alt="calendar">
-                            June 2020
-                        </h6>
-                        <hr>
-                        <h5><b>Javascript Certification</b></h5>
-                        <h6 style="margin: none;">Sololearn</h6>
-                        <h6 class="flex flex-ai-c">
-                            <img src="images/svg-files/calendar.svg" alt="calendar">
-                            June 2020
-                        </h6>
+                    <div class="resume_body_projects_exp_content">
+                        <div class="resume_body_projects_exp_content_title">
+                            <a class="resume_body_projects_exp_content_title_a" href="">GIF</a>
+                            <span style="white-space: nowrap">&#8599;</span>
+                        </div>
+                        <div class="resume_body_projects_exp_content_des">
+                            <p>ASP.NET, C#, JavaScript, HTML, SASS</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </main>
-        
-        <footer class="footer">
-            <div class="FirstFootContainer">
-                <div class="Footer_links">
-                    <a href="index.html">Home</a>
-                    <a href="/#HomePage">About</a>
-                    <a href="/resume.html">Work</a>
-                    <a href="/#ContactPage">Contact</a>
+            <div class="resume_body_projects_exp">
+                <div class="resume_body_projects_exp_time">
+                    <span style="position: absolute;">2021</span>
+                </div>
+                <div class="resume_body_projects_exp_content">
+                    <div class="resume_body_projects_exp_content_title">
+                        <a class="resume_body_projects_exp_content_title_a" href="">Sorting Algorithms</a>
+                        <span style="white-space: nowrap">&#8599;</span>
+                    </div>
+                    <div class="resume_body_projects_exp_content_des">
+                        <p>Python, MatLab</p>
+                    </div>
                 </div>
             </div>
-            <div class="SecondFootContainer">
-                <div class="Footer_links">
-                    <a href="https://github.com/ryan-kwon">
-                        <img src="/images/svg-files/github logo.svg" alt="github">
-                    </a>
-                    <a href="https://www.linkedin.com/in/kyu-sung-k-a079a01a5/">
-                        <img src="/images/svg-files/linkedin logo.svg" alt="linkedin">
-                    </a>
-                    <a href="https://www.instagram.com/_kyu_sung_/">
-                        <img src="/images/svg-files/insta logo.svg" alt="instagram">
-                    </a>
+            <div class="resume_body_projects_exp">
+                <div class="resume_body_projects_exp_time">
+                    <span style="position: absolute;">2021</span>
+                </div>
+                <div class="resume_body_projects_exp_content">
+                    <div class="resume_body_projects_exp_content_title">
+                        <a class="resume_body_projects_exp_content_title_a" href="">Graphing Calculator</a>
+                        <span style="white-space: nowrap">&#8599;</span>
+                    </div>
+                    <div class="resume_body_projects_exp_content_des">
+                        <p>JavaScript, HTML, SASS</p>
+                    </div>
                 </div>
             </div>
-        </footer>
+            <div class="resume_body_projects_exp">
+                <div class="resume_body_projects_exp_time">
+                    <span style="position: absolute;">2021</span>
+                </div>
+                <div class="resume_body_projects_exp_content">
+                    <div class="resume_body_projects_exp_content_title">
+                        <a class="resume_body_projects_exp_content_title_a" href="">BIO 103 Portfolio</a>
+                        <span style="white-space: nowrap">&#8599;</span>
+                    </div>
+                    <div class="resume_body_projects_exp_content_des">
+                        <p>JavaScript, HTML, SASS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume_body_work">
+            <h3>Work</h3>
+        </div>
+        <div class="resume_body_contact">
+            <h3>Contact</h3>
+        </div>
     </body>
 </html>

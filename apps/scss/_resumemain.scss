@@ -1,187 +1,145 @@
 @import "variables";
+@import "mixins";
+@use "sass:math";
 
-main {
-    background-color: $primary;
-    max-width: 1400px;
-    //height: 1000px;
-    //margin-top:48px;
-    margin: auto;
-
-    hr {
-        border: 0;
-        border-top: 1px solid #b4dfe5;
-        margin: 20px 0;
-        -webkit-box-sizing: content-box;
-        box-sizing: content-box;
-        height: 0;
-        overflow: visible;
-    }
+.resume_html{
+    background-color: $SS-color2;
 }
+.resume_body{
+    background-color: $SS-color2;
+    color:$SS-color4;
+    text-align: left;
+    
+    
+    //display: flex;
+    //justify-content: center;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 50px;
 
-.LeftColumn {
-    //box-sizing: inherit;
-    //width: 33.3333%;
-    //float:left;
-    margin: 16px;
-    //margin-top: 30px;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
-    0 4px 20px 0 rgba(0,0,0,0.19);
+    h3{
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+    }
 
-    .PicSection{
-        //height: 30%;
-        position: relative;
-        img{
-            width: 100%;
+    &_profile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &_img{
+            width: 100px;
+            height:100px;
+            
+            border-radius: 50px;
         }
-        &__display {
-            background-color: $secondary;
-            position: absolute;
-            bottom: 0;
-            left:0;
-            padding: 16px;
-            text-align: center;
-            width: 100%;
-            h3{
-                font-size:30px;
-                font-weight: bolder;
-                //margin: 10px 0;
+        &_text{
+            margin-left: 30px;
+            text-align: left;
+
+            &_h1{
+                font-size: 20px;
             }
-        }
-    }
-
-    .StatSection {
-        vertical-align: middle;
-        overflow: hidden;
-        text-decoration: none;
-        margin: 0 16px;
-        img{
-            object-fit: contain;
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-        }
-        p {
-            margin: 1rem 0;
-            //margin-top: 1rem;
-        }
-        h3{
-            font-size: 18px;
-            //font-weight: 400;
-            margin: 10px 0;
-        }
-        .progress{
-            background-color: $border;
-            border-radius: 16px;
-            &__bar{
-                color: $third;
-                border-radius: 16px;
-                font-size: 12px;
-                background-color: $font;
-                text-align: center;
-                &__num1 {
-                    width: 70%;
-                }
-                &__num2 {
-                    width: 50%;
-                }
-                &__num3 {
-                    width: 50%;
-                }
-                &__num4 {
-                    width: 40%;
-                }
-                &__num5 {
-                    width: 20%;
-                }
+            &_p{
+                text-align: left;
+                color: $SS-color5;
             }
-        }
-    }
-}
-
-.RightColumn {
-    //box-sizing: inherit;
-    //width: 66.66666%;
-    //float:right;
-    margin: 0 16px;
-    h2 {
-        padding: 8px 0;
-        margin: 8px 0;
-        img {
-            object-fit: contain;
-            width: 60px;
-            height: 60px;
-            margin-right: 16px;
-        }
-    }
-
-    img {
-        object-fit: contain;
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-    }
-    h5, h6{
-        margin: 10px 0;
-    }
-    h5 {
-        font-size: 18px;
-    }
-    h6 {
-        font-size: 14px;
-    }
-
-    .StateSection {
-        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
-        0 4px 20px 0 rgba(0,0,0,0.19);
-        padding: 16px;
-        padding-bottom: 32px;
-        margin:16px 0;
-        text-align: center;
-        h2 {
-            padding: 0;
-        }
-    }
-    .WorkSection{
-        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
-        0 4px 20px 0 rgba(0,0,0,0.19);
-        padding: 16px;
-        padding-bottom: 32px;
-        margin:16px 0;
-        &__work {
-            padding: 0 16px;
-        }
-    }
-    .ProjectSection {
-        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
-        0 4px 20px 0 rgba(0,0,0,0.19);
-        padding: 16px;
-        padding-bottom: 32px;
-        margin:16px 0;
-        &__project {
-            a:hover {
+            &_a{
+                color:$SS-color3;
                 text-decoration: underline;
             }
-            padding: 0 16px;
         }
     }
-    .EduSection {
-        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
-        0 4px 20px 0 rgba(0,0,0,0.19);
-        padding: 16px;
-        padding-bottom: 32px;
-        margin:16px 0;
-        &__school {
-            padding: 0 16px;
+    &_about{
+        margin-top: 36px;
+        margin-right: 0px;
+        margin-bottom: 36px;
+        margin-left: 0px;
+        //width:80%;
+        
+        //text-align: left;
+        //display: flex;
+        //justify-content: center;
+        //align-items: center;
+
+        /*
+        &_p1{
+            text-align: left;
+            font-size: 20px;
+        }
+        */
+        &_p2{
+            text-align: left;
+            color: $SS-color5;
         }
     }
-    .CertSection {
-        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),
-        0 4px 20px 0 rgba(0,0,0,0.19);
-        padding: 16px;
-        padding-bottom: 32px;
-        margin:16px 0;
-        &__cert {
-            padding: 0 16px;
+    &_projects{
+        margin-top: 60px;
+        margin-right: 0px;
+        margin-bottom: 60px;
+        margin-left: 0px;
+
+        &_eh{
+            
         }
+        &_exp{
+            display:flex;
+            flex-direction: row;
+            margin-top: 24px;
+            margin-right: 0px;
+            margin-bottom: 36px;
+            margin-left: 0px;
+
+            &_time{
+                width: 88px;
+                margin-right: 36px;
+                white-space: nowrap;
+                position: relative;
+                //text-align: right;
+                :after{
+                    content: "0000 — 0000";
+                    visibility: hidden;
+                }
+            }
+            &_content{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0%;
+
+                &_title{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    &_a{
+                        color: $SS-color4;
+                        text-decoration: none;
+                    }
+                }
+                &_des{
+                    
+                    //font-size: small;
+                    color:$SS-color3;
+                    p{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    &_work{
+        margin-top: 60px;
+        margin-right: 0px;
+        margin-bottom: 60px;
+        margin-left: 0px;
+
+    }
+    &_contact{
+        margin-top: 60px;
+        margin-right: 0px;
+        margin-bottom: 60px;
+        margin-left: 0px;
+
     }
 }

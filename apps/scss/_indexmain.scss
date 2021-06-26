@@ -79,7 +79,8 @@
 
         .ul{
             display: flex;
-            //display:inline;
+            flex-wrap: wrap;
+            flex-direction: row;
             list-style-type: none;
             padding: 0rem;
             //margin: -7.5px;
@@ -334,8 +335,8 @@
                     .text{
                         margin-left:20px;
 
-                        width: 350px;
-                        height: 70px;
+                        //width: 350px;
+                        //height: 70px;
 
                         text-align: left;
 
@@ -421,6 +422,8 @@
                     &_p{
                         width:60%;
                         
+                        color: $SS-color5;
+                        font-size: medium;
                         text-align: left;
                     }
                 }
