@@ -1278,34 +1278,21 @@ cheerful and energetic
   left: 0rem;
   background-color: #0B0C10;
   -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
   -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
-}
-
-.modal_background .modal_pos {
-  position: fixed;
-  right: 0rem;
-  bottom: 0rem;
-  left: 0rem;
-  width: 930px;
-  max-width: 100%;
-  margin: auto;
-  -webkit-transform: translateY(0%) translateZ(0px);
-          transform: translateY(0%) translateZ(0px);
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
 }
 
 .modal_background .modal_pos .modal {
   margin: auto;
   height: 735px;
+  width: 930px;
+  max-width: 100%;
   background-color: #0B0C10;
-  border-style: solid;
+  border: 1px solid #D2FDFF;
   -o-border-image: initial;
      border-image: initial;
-  border-width: 1px;
-  border-color: #D2FDFF;
   border-radius: 10px;
-  overflow: hidden;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
@@ -1314,6 +1301,7 @@ cheerful and energetic
 
 .modal_background .modal_pos .modal__header {
   margin: 30px;
+  margin-bottom: 10px;
 }
 
 .modal_background .modal_pos .modal__header_exit {
@@ -1410,11 +1398,9 @@ cheerful and energetic
 
 .modal_background .modal_pos .modal__header__apps .tool_text {
   background-color: #0B0C10;
-  border-style: solid;
+  border: 1px solid #C5C6C7;
   border-radius: 10px;
-  border-width: 1px;
-  border-color: #C5C6C7;
-  padding: 18px 10px;
+  padding: 10px;
   margin-right: 20px;
   font-size: 15px;
   color: #66FCF1;
@@ -1429,16 +1415,24 @@ cheerful and energetic
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
-  height: 450px;
-  margin-left: 100px;
-  margin-right: 100px;
+  width: 500px;
+  margin: auto;
 }
 
 .modal_background .modal_pos .modal__body_slides .slide_background .slide_img {
-  height: 400px;
-  width: auto;
-  margin: auto auto;
+  width: 400px;
+  margin: 10px auto;
+}
+
+.modal_background .modal_pos .modal__body_description {
+  margin-top: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.modal_background .modal_pos .modal__body_description_p {
+  width: 60%;
+  text-align: left;
 }
 
 .modal_background .modal_pos .modal__body_site {

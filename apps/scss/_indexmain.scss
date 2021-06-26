@@ -261,40 +261,38 @@
     left: 0rem;
     background-color: $SS-color1;
 
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration:0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s;
 
     .modal_pos{
-        position: fixed;
-        right: 0rem;
-        bottom: 0rem;
-        left: 0rem;
-        width: 930px;
-        max-width: 100%;
-        margin: auto;
-
-        transform: translateY(0%) translateZ(0px);
+        //position: fixed;
+        //right: 0rem;
+        //bottom: 0rem;
+        //left: 0rem;
 
         .modal{
             margin:auto;
             height: 735px;
+            width: 930px;
+            max-width: 100%;
 
             background-color: $SS-color1;
-            border-style: solid;
+            border: 1px solid $SS-color6;
             border-image: initial;
-            border-width: 1px;
-            border-color: $SS-color6;
             border-radius: 10px;
             
-            overflow: hidden;
+            //overflow: hidden;
 
             -webkit-animation-name: slideIn;
-            -webkit-animation-duration: 0.4s;
+            -webkit-animation-duration:0.4s;
             animation-name: slideIn;
             animation-duration: 0.4s;
     
             &__header{
                 margin: 30px;
+                margin-bottom: 10px;
 
                 &_exit {
                     float: right;
@@ -378,12 +376,10 @@
                             //height: 50px;
 
                             background-color: $SS-color1;
-                            border-style: solid;
+                            border: 1px solid $SS-color5;
                             border-radius: 10px;
-                            border-width: 1px;
-                            border-color: $SS-color5;
 
-                            padding: 18px 10px;
+                            padding: 10px;
                             margin-right: 20px;
                             
                             font-size: 15px;
@@ -406,23 +402,27 @@
 
                         display:flex;
 
-                        //width: 70%;
-                        //height: auto;
-                        width: auto;
-                        height: 450px;
-                        //margin: auto;
-                        margin-left: 100px;
-                        margin-right: 100px;
+                        width: 500px;
+                        margin: auto;
                         
                         .slide_img{
-                            height: 400px;
-                            width: auto;
-                            margin: auto auto;
+                            //visibility: hidden;
+                            //height: 90%;
+                            width: 400px;
+                            margin: 10px auto;
                         }
                     }
                 }
                 &_description{
+                    margin-top: 20px;
+                    padding-left: 35px;
+                    padding-right: 35px;
 
+                    &_p{
+                        width:60%;
+                        
+                        text-align: left;
+                    }
                 }
                 &_site{
                     margin-top: 20px;
