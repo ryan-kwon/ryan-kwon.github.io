@@ -34,6 +34,7 @@
         display: block;
     }
     .index_body {
+        //overflow: visible;
         transition: none;
         filter: none;
     }
@@ -54,6 +55,11 @@
     .app_slide{
         padding-left: 2.1875rem;
         padding-right: 2.1875rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .index_body{
+        overflow: visible;
     }
 }
 

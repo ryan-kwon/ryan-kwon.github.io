@@ -85,6 +85,12 @@ cheerful and energetic
   }
 }
 
+@media screen and (max-width: 480px) {
+  .index_body {
+    overflow: visible;
+  }
+}
+
 @-webkit-keyframes slideIn {
   from {
     bottom: -300px;
@@ -340,6 +346,12 @@ cheerful and energetic
   }
 }
 
+@media screen and (max-width: 480px) {
+  .index_body {
+    overflow: visible;
+  }
+}
+
 @-webkit-keyframes slideIn {
   from {
     bottom: -300px;
@@ -486,6 +498,12 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .index_body {
+    overflow: visible;
   }
 }
 
@@ -709,6 +727,12 @@ cheerful and energetic
   }
 }
 
+@media screen and (max-width: 480px) {
+  .index_body {
+    overflow: visible;
+  }
+}
+
 @-webkit-keyframes slideIn {
   from {
     bottom: -300px;
@@ -904,6 +928,12 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .index_body {
+    overflow: visible;
   }
 }
 
@@ -1791,6 +1821,12 @@ cheerful and energetic
   }
 }
 
+@media screen and (max-width: 480px) {
+  .index_body {
+    overflow: visible;
+  }
+}
+
 @-webkit-keyframes slideIn {
   from {
     bottom: -300px;
@@ -2028,6 +2064,12 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .index_body {
+    overflow: visible;
   }
 }
 
@@ -2426,6 +2468,12 @@ cheerful and energetic
   .app_slide {
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .index_body {
+    overflow: visible;
   }
 }
 
