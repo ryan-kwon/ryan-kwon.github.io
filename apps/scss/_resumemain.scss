@@ -3,13 +3,12 @@
 @use "sass:math";
 
 .resume_html{
-    background-color: $SS-color2;
+    background-color: $SS-color2; //or #141a21 (darker)
 }
 .resume_body{
     background-color: $SS-color2;
     color:$SS-color4;
     text-align: left;
-    
     
     //display: flex;
     //justify-content: center;
@@ -74,6 +73,64 @@
             color: $SS-color5;
         }
     }
+    &_edu{
+        margin-top: 60px;
+        margin-right: 0px;
+        margin-bottom: 60px;
+        margin-left: 0px;
+
+        &_eh{
+            
+        }
+        &_exp{
+            display:flex;
+            flex-direction: row;
+            margin-top: 24px;
+            margin-right: 0px;
+            margin-bottom: 36px;
+            margin-left: 0px;
+
+            &_time{
+                width: 88px;
+                margin-right: 36px;
+                white-space: nowrap;
+                position: relative;
+                color: $SS-color5;
+                //text-align: right;
+                :after{
+                    content: "0000 — 0000";
+                    visibility: hidden;
+                }
+            }
+            &_content{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0%;
+
+                &_title{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    &_a{
+                        color: $SS-color4;
+                        text-decoration: none;
+                    }
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+                &_des{
+                    
+                    //font-size: small;
+                    color:$SS-color3;
+                    p{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
     &_projects{
         margin-top: 60px;
         margin-right: 0px;
@@ -96,6 +153,7 @@
                 margin-right: 36px;
                 white-space: nowrap;
                 position: relative;
+                color: $SS-color5;
                 //text-align: right;
                 :after{
                     content: "0000 — 0000";
@@ -116,6 +174,9 @@
                         color: $SS-color4;
                         text-decoration: none;
                     }
+                    span{
+                        margin-left: 5px;
+                    }
                 }
                 &_des{
                     
@@ -134,6 +195,115 @@
         margin-bottom: 60px;
         margin-left: 0px;
 
+        &_eh{
+            
+        }
+        &_exp{
+            display:flex;
+            flex-direction: row;
+            margin-top: 24px;
+            margin-right: 0px;
+            margin-bottom: 36px;
+            margin-left: 0px;
+
+            &_time{
+                width: 88px;
+                margin-right: 36px;
+                white-space: nowrap;
+                position: relative;
+                color: $SS-color5;
+                //text-align: right;
+
+                :after{
+                    content: "0000 — 0000";
+                    visibility: hidden;
+                }
+            }
+            &_content{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0%;
+
+                &_title{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    &_a{
+                        color: $SS-color4;
+                        text-decoration: none;
+                    }
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+                &_des{
+                    
+                    //font-size: small;
+                    color:$SS-color3;
+                    p{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    &_cert{
+        margin-top: 60px;
+        margin-right: 0px;
+        margin-bottom: 60px;
+        margin-left: 0px;
+
+        &_eh{
+            
+        }
+        &_exp{
+            display:flex;
+            flex-direction: row;
+            margin-top: 24px;
+            margin-right: 0px;
+            margin-bottom: 36px;
+            margin-left: 0px;
+
+            &_time{
+                width: 88px;
+                margin-right: 36px;
+                white-space: nowrap;
+                position: relative;
+                color: $SS-color5;
+                //text-align: right;
+                :after{
+                    content: "0000 — 0000";
+                    visibility: hidden;
+                }
+            }
+            &_content{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0%;
+
+                &_title{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    &_a{
+                        color: $SS-color4;
+                        text-decoration: none;
+                    }
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+                &_des{
+                    //font-size: small;
+                    color:$SS-color3;
+                    p{
+                        text-align: left;
+                    }
+                }
+            }
+        }
     }
     &_contact{
         margin-top: 60px;
@@ -141,5 +311,49 @@
         margin-bottom: 60px;
         margin-left: 0px;
 
+        &_eh{
+            
+        }
+        &_exp{
+            display:flex;
+            flex-direction: row;
+            margin-top: 14px;
+            margin-right: 0px;
+            margin-bottom: 14px;
+            margin-left: 0px;
+
+            &_web{
+                width: 88px;
+                margin-right: 36px;
+                white-space: nowrap;
+                position: relative;
+                color: $SS-color5;
+                
+                //text-align: right;
+                :after{
+                    content: "0000 — 0000";
+                    visibility: hidden;
+                }
+            }
+            &_content{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 0%;
+
+                &_title{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    &_a{
+                        color: $SS-color4;
+                        text-decoration: none;
+                    }
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
     }
 }
