@@ -1309,31 +1309,21 @@ cheerful and energetic
 
 .intro .link .ul .li .list_button .emailhover {
   visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
+  padding: 5px 0px;
   border-radius: 6px;
-  padding: 5px 0;
+  background-color: #1F2833;
+  text-align: center;
+  color: #66FCF1;
   position: absolute;
   z-index: 1;
-  top: 150%;
-  left: 50%;
-  margin-left: -60px;
+  top: 380px;
 }
 
-.intro .link .ul .li .list_button .emailhover ::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
+.intro .link .ul .li .list_button:hover {
+  cursor: pointer;
 }
 
-.intro .link .ul .li .list_button .emailhover :hover {
+.intro .link .ul .li .list_button:hover .emailhover {
   visibility: visible;
 }
 
