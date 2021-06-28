@@ -98,6 +98,10 @@
                     content: "0000 — 0000";
                     visibility: hidden;
                 }
+                &_span{
+                    position: absolute;
+                    width: 0px;
+                }
             }
             &_content{
                 flex-grow: 1;
@@ -360,7 +364,7 @@
                             bottom: -84%;
                         }
                         &:hover{
-                            cursor: pointer;
+                            cursor: default;
                         }
                         &:hover .resume_body_contact_exp_content_title_p_hov{
                             visibility: visible;
@@ -380,7 +384,7 @@
                             bottom: -88.5%;
                         }
                         &:hover{
-                            cursor: pointer;
+                            cursor: default;
                         }
                         &:hover .resume_body_contact_exp_content_title_p_hov2{
                             visibility: visible;

@@ -1309,7 +1309,7 @@ cheerful and energetic
 
 .intro .link .ul .li .list_button .emailhover {
   visibility: hidden;
-  padding: 5px 0px;
+  padding: 5px;
   border-radius: 6px;
   background-color: #1F2833;
   text-align: center;
@@ -1966,6 +1966,11 @@ cheerful and energetic
   visibility: hidden;
 }
 
+.resume_body_edu_exp_time_span {
+  position: absolute;
+  width: 0px;
+}
+
 .resume_body_edu_exp_content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -2317,7 +2322,7 @@ cheerful and energetic
 }
 
 .resume_body_contact_exp_content_title span:hover {
-  cursor: pointer;
+  cursor: default;
 }
 
 .resume_body_contact_exp_content_title span:hover .resume_body_contact_exp_content_title_p_hov {
@@ -2338,7 +2343,7 @@ cheerful and energetic
 }
 
 .resume_body_contact_exp_content_title span:hover {
-  cursor: pointer;
+  cursor: default;
 }
 
 .resume_body_contact_exp_content_title span:hover .resume_body_contact_exp_content_title_p_hov2 {
