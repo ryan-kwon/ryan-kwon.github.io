@@ -2241,7 +2241,7 @@ cheerful and energetic
 .resume_body_contact {
   margin-top: 60px;
   margin-right: 0px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   margin-left: 0px;
 }
 
@@ -2300,8 +2300,59 @@ cheerful and energetic
   text-decoration: none;
 }
 
+.resume_body_contact_exp_content_title_p {
+  color: #66FCF1;
+  text-decoration: none;
+}
+
+.resume_body_contact_exp_content_title_p:hover {
+  cursor: pointer;
+}
+
 .resume_body_contact_exp_content_title span {
   margin-left: 5px;
+}
+
+.resume_body_contact_exp_content_title span .resume_body_contact_exp_content_title_p_hov {
+  visibility: hidden;
+  padding: 5px 0px;
+  border-radius: 6px;
+  background-color: #1F2833;
+  text-align: center;
+  color: #66FCF1;
+  position: absolute;
+  z-index: 1;
+  right: 39.5%;
+  bottom: -84%;
+}
+
+.resume_body_contact_exp_content_title span:hover {
+  cursor: pointer;
+}
+
+.resume_body_contact_exp_content_title span:hover .resume_body_contact_exp_content_title_p_hov {
+  visibility: visible;
+}
+
+.resume_body_contact_exp_content_title span .resume_body_contact_exp_content_title_p_hov2 {
+  visibility: hidden;
+  padding: 5px 0px;
+  border-radius: 6px;
+  background-color: #1F2833;
+  text-align: center;
+  color: #66FCF1;
+  position: absolute;
+  z-index: 1;
+  right: 41%;
+  bottom: -88.5%;
+}
+
+.resume_body_contact_exp_content_title span:hover {
+  cursor: pointer;
+}
+
+.resume_body_contact_exp_content_title span:hover .resume_body_contact_exp_content_title_p_hov2 {
+  visibility: visible;
 }
 
 /* Color schemes

@@ -79,9 +79,6 @@
         margin-bottom: 60px;
         margin-left: 0px;
 
-        &_eh{
-            
-        }
         &_exp{
             display:flex;
             flex-direction: row;
@@ -137,9 +134,6 @@
         margin-bottom: 60px;
         margin-left: 0px;
 
-        &_eh{
-            
-        }
         &_exp{
             display:flex;
             flex-direction: row;
@@ -195,9 +189,6 @@
         margin-bottom: 60px;
         margin-left: 0px;
 
-        &_eh{
-            
-        }
         &_exp{
             display:flex;
             flex-direction: row;
@@ -254,9 +245,6 @@
         margin-bottom: 60px;
         margin-left: 0px;
 
-        &_eh{
-            
-        }
         &_exp{
             display:flex;
             flex-direction: row;
@@ -308,12 +296,9 @@
     &_contact{
         margin-top: 60px;
         margin-right: 0px;
-        margin-bottom: 60px;
+        margin-bottom: 0px;
         margin-left: 0px;
 
-        &_eh{
-            
-        }
         &_exp{
             display:flex;
             flex-direction: row;
@@ -349,8 +334,57 @@
                         color: $SS-color4;
                         text-decoration: none;
                     }
+                    &_p{
+                        color: $SS-color4;
+                        text-decoration: none;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
                     span{
                         margin-left: 5px;
+                        
+                        .resume_body_contact_exp_content_title_p_hov{
+                            visibility:hidden;
+                            padding: 5px 0px;
+                            border-radius: 6px;
+                            background-color: $SS-color2;
+                            
+                            text-align: center;
+                            color: $SS-color4;
+
+                            position: absolute;
+                            z-index: 1;
+                            right: 39.5%;
+                            bottom: -84%;
+                        }
+                        &:hover{
+                            cursor: pointer;
+                        }
+                        &:hover .resume_body_contact_exp_content_title_p_hov{
+                            visibility: visible;
+                        }
+                        .resume_body_contact_exp_content_title_p_hov2{
+                            visibility:hidden;
+                            padding: 5px 0px;
+                            border-radius: 6px;
+                            background-color: $SS-color2;
+                            
+                            text-align: center;
+                            color: $SS-color4;
+
+                            position: absolute;
+                            z-index: 1;
+                            right: 41%;
+                            bottom: -88.5%;
+                        }
+                        &:hover{
+                            cursor: pointer;
+                        }
+                        &:hover .resume_body_contact_exp_content_title_p_hov2{
+                            visibility: visible;
+                        }
                     }
                 }
             }

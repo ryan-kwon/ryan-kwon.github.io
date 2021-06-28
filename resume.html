@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" class="resume_html">
+    <style>
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #0B0C10; 
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #45A29E; 
+            border-radius: 10px;
+        }
+    </style>
     <head>
-        <title>My Work</title>
-        <link rel = "icon" href = "/images/svg-files/Lightmode/title-icon.svg" type = "image/x-icon"> 
+        <title>Kyu Sung Resume</title>
+        <link rel = "icon" href = "/images/svg-files/Darkmode/file.svg"  type = "image/x-icon"> 
 
         <meta charset="UTF-8">
         <meta name="author" content="Kyu Sung Kwon">
@@ -205,8 +218,10 @@
                 </div>
                 <div class="resume_body_contact_exp_content">
                     <div class="resume_body_contact_exp_content_title">
-                        <a class="resume_body_contact_exp_content_title_a" href="#" onclick="CopyToClipboard('sample');return false;">ryanksk@gmail.com</a>
-                        <span style="white-space: nowrap">&#8599;</span>
+                        <p class="resume_body_contact_exp_content_title_p" id="text" onclick="copyElementText(this.id)">ryanksk@gmail.com</p>
+                        <span style="white-space: nowrap">&#8599;
+                            <span class="resume_body_contact_exp_content_title_p_hov">click to copy</span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -216,11 +231,15 @@
                 </div>
                 <div class="resume_body_contact_exp_content">
                     <div class="resume_body_contact_exp_content_title">
-                        <a class="resume_body_contact_exp_content_title_a">(503) 747 - 8745</a>
-                        <span style="white-space: nowrap">&#8599;</span>
+                        <p class="resume_body_contact_exp_content_title_p" id="text" onclick="copyElementText(this.id)">(503) 747 - 8745</p>
+                        <span style="white-space: nowrap">&#8599;
+                            <span class="resume_body_contact_exp_content_title_p_hov2">click to copy</span>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="/apps/js/indexscript.js"></script>
     </body>
 </html>
