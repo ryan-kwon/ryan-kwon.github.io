@@ -680,12 +680,16 @@ cheerful and energetic
   cursor: pointer;
   text-decoration: none;
   color: #66FCF1;
-  -webkit-transition: color 200ms ease-in-out;
-  transition: color 200ms ease-in-out;
+  opacity: .5;
+  -webkit-transition: .15s;
+  transition: .15s;
 }
 
 .footer a:hover {
-  color: #303c6c;
+  opacity: 1;
+  -webkit-transition: .15s;
+  transition: .15s;
+  cursor: pointer;
 }
 
 .footer .FootLinks {
@@ -710,15 +714,19 @@ cheerful and energetic
   text-align: center;
 }
 
-.footer .Footer_links a:hover {
+.footer .Footer_links_pages:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .Footer_links_socials:hover {
   text-decoration: underline;
 }
 
-.footer .Footer_links a:not(:last-child) {
-  margin-right: 3px;
+.footer .Footer_links_socials:not(:last-child) {
+  margin-right: 10px;
 }
 
-.footer .Footer_links img {
+.footer .Footer_links_socials_img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 30px;
@@ -726,15 +734,9 @@ cheerful and energetic
   opacity: .5;
   -webkit-transition: .15s;
   transition: .15s;
-  margin-right: 10px;
-  /*
-            &:not(:last-child) {
-                margin-right: 10px;
-            }
-            */
 }
 
-.footer .Footer_links img:hover {
+.footer .Footer_links_socials_img:hover {
   opacity: 1;
   -webkit-transition: .15s;
   transition: .15s;
@@ -1518,7 +1520,7 @@ cheerful and energetic
   cursor: pointer;
 }
 
-.modal_background .modal_pos .modal__header_exit .close {
+.modal_background .modal_pos .modal__header_exit_close {
   color: #66FCF1;
   font-size: 28px;
   font-weight: bold;
@@ -3251,105 +3253,5 @@ cheerful and energetic
     50% { opacity: 1; }
 }
 */
-.CalcMain {
-  scroll-behavior: smooth;
-  font-size: 100%;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.CalcMain .HalfDiv {
-  position: relative;
-  top: 3%;
-  background-color: #1F2833;
-  border-radius: 25px;
-  width: 48%;
-  height: auto;
-  padding: 20px;
-  margin: 10px;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.CalcMain .CalcDiv {
-  float: left;
-}
-
-.CalcMain .CalcDiv h1 {
-  padding: 10px 0px 0px;
-}
-
-.CalcMain .CalcDiv p {
-  font-weight: bold;
-}
-
-.CalcMain .CalcDiv input {
-  background-color: #d2fdff;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 25px;
-  border: 2px solid #b4dfe5;
-}
-
-.CalcMain .CalcDiv .CalcButtonDiv {
-  margin: 20px;
-}
-
-.CalcMain .CalcDiv .CalcButtonDiv button {
-  background-color: #d2fdff;
-  color: #303c6c;
-  font-weight: bold;
-  font-size: 15px;
-  border-radius: 25px;
-  border: 2px solid #b4dfe5;
-  margin: 1rem;
-  height: 100px;
-  width: 100px;
-  overflow: hidden;
-  outline: none;
-}
-
-.CalcMain .CalcDiv .CalcButtonDiv button:hover {
-  -webkit-box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(180, 223, 229, 0.3);
-          box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(180, 223, 229, 0.3);
-}
-
-.CalcMain .CalcDiv .CalcButtonDiv button:hover span {
-  padding-right: 25px;
-}
-
-.CalcMain .CalcDiv .CalcButtonDiv button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.CalcMain .ProgressDiv {
-  float: right;
-}
-
-.CalcMain .ProgressDiv h1 {
-  padding: 20px 0px 5px;
-}
-
-.CalcMain .ProgressDiv .SmallMessage {
-  font-weight: normal;
-  font-size: 15px;
-}
-
-.CalcMain .ProgressDiv p {
-  margin: 0px 30px;
-}
-
-.CalcMain .ProgressDiv .CodePara {
-  text-align: left;
-  margin-left: 50px;
-}
-
-.CalcMain .img {
-  width: 40%;
-}
+@use "sass:math";
 /*# sourceMappingURL=style.css.map */

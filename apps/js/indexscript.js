@@ -1,3 +1,4 @@
+/*
 var btn = document.querySelectorAll("button.modal_button");
 var modals = document.querySelectorAll('.modal_back');
 var spans = document.getElementsByClassName("close");
@@ -23,7 +24,22 @@ window.onclick = function(event) {
         }
     }
 }
+*/
 
+var modal = document.getElementById("modal_back1");
+var btn = document.getElementById("modal_button");
+var span = document.getElementsByClassName("modal__header_exit_close");
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 /*
 var modal = document.getElementById("modal_back");//Get the modal
 var btn = document.getElementById("modal_button");//Get the button that opens the modal

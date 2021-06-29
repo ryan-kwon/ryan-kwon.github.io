@@ -12,11 +12,16 @@
     a {
         cursor: pointer;
         text-decoration: none;
-        color:$SS-color4;
-        transition: color 200ms ease-in-out;
+        color: $SS-color4;
+        //transition: color 200ms ease-in-out;
+
+        opacity: .5;
+        transition: .15s;
 
         &:hover {
-            color: $font;
+            opacity: 1;
+            transition: .15s;
+            cursor: pointer;
         }
     }
 
@@ -34,32 +39,32 @@
         height: 30px;
         text-align: center;
 
-        a{
+        &_pages{
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+
+        &_socials{
             &:hover {
                 text-decoration:underline;
             }
             &:not(:last-child) {
-                margin-right: 3px;
-            }
-        }
-
-        img {
-            object-fit: contain;
-            width: 30px;
-            height: 30px;
-            opacity: .5;
-            transition: .15s;
-            margin-right: 10px;
-            /*
-            &:not(:last-child) {
                 margin-right: 10px;
             }
-            */
 
-            &:hover {
-                opacity: 1;
+            &_img {
+                object-fit: contain;
+                width: 30px;
+                height: 30px;
+                opacity: .5;
                 transition: .15s;
-                cursor: pointer;
+    
+                &:hover {
+                    opacity: 1;
+                    transition: .15s;
+                    cursor: pointer;
+                }
             }
         }
     }
