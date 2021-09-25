@@ -4,7 +4,7 @@ THINGS TO DO
 - hover over text in resume: done
     - could use some work
 - cvs resume: done
-- portfolio modals
+- portfolio modals (fuck this)
 
 PLANS
 - complete redesign of UI (minimal or something crazy new like 3D)

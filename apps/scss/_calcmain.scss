@@ -3,5 +3,7 @@
 @use "sass:math";
 
 .calc_body{
-    
+    .ani{
+        animation: type 8s steps(60, end);
+    }
 }

@@ -1346,6 +1346,10 @@ cheerful and energetic
   color: #D2FDFF;
 }
 
+.portfolio .links {
+  text-decoration: none;
+}
+
 .portfolio .links__sub {
   border: none;
   display: -webkit-box;
@@ -1388,12 +1392,13 @@ cheerful and energetic
   margin-right: 0.9375rem;
 }
 
-.portfolio .links .links_click__text h3 {
+.portfolio .links .links_click__text__h3 {
+  color: #D2FDFF;
   font-size: 16px;
   font-weight: 400;
 }
 
-.portfolio .links .links_click__text p {
+.portfolio .links .links_click__text__p {
   text-align: left;
   font-size: clamp(12px, calc(10.80px + 0.25vw), 14px);
   color: #66FCF1;
@@ -3254,4 +3259,8 @@ cheerful and energetic
 }
 */
 @use "sass:math";
+.calc_body .ani {
+  -webkit-animation: type 8s steps(60, end);
+          animation: type 8s steps(60, end);
+}
 /*# sourceMappingURL=style.css.map */

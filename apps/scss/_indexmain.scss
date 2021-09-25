@@ -152,6 +152,7 @@
         //cursor: pointer;
         //opacity: 0.8;
         //transition: opacity 0.3s;
+        text-decoration: none;
 
         &__sub{
             border:none;
@@ -177,11 +178,12 @@
             &__text{
                 margin-right: 0.9375rem;
                 
-                h3{
+                &__h3{
+                    color: $SS-color6;
                     font-size: 16px;
                     font-weight: 400;
                 }
-                p{
+                &__p{
                     text-align: left;
                     font-size: clamp(12px, calc(10.80px + 0.25vw), 14px);
                     color:$SS-color4;
