@@ -1,0 +1,136 @@
+@import "variables";
+@import "mixins";
+@use "sass:math";
+
+.cs290_body{
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+
+    .border{
+        //display: inline-block;
+        //vertical-align: middle;
+
+        margin: auto;
+        //margin-top: 10%;//this is dumb
+
+        height: 735px;
+        width: 1080px;
+        max-width: 100%;
+
+        background-color: $SS-color1;
+        border: 1px solid $SS-color6;
+        border-image: initial;
+        border-radius: 10px;
+
+        .cs290_header{
+            margin: 30px auto;
+            width:80%;
+
+            &_title{
+                display: flex;
+                //justify-content: center;
+                align-items: center;
+                
+                text-align: left;
+                &_img{
+                    width:100px;
+                    height: 100px;
+                    border-radius: 10px;
+                }
+                &_text{
+                    margin-left:20px;
+                    text-align: left;
+
+                    .CS290Blog{
+                        text-align: left;
+                        font-weight: bold;
+                        font-size: 30px;
+                        color: $SS-color4;
+                    }
+                    &_des{
+                        text-align: left;
+                        font-size: 20px;
+                        color: $SS-color5;
+                    }
+                }
+            }
+
+            &_hr{
+                padding: 15px 0rem;
+
+                &_separator{
+                    opacity: 0.6;
+                    border-width: 0px 0px 1px;
+                    border-image: initial;
+                    border-color: inherit;
+                    border-style: solid;
+                    width: 100%;
+                }
+            }
+
+            &_apps{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+
+                &_tool{
+                    &_text{
+                        //height: 50px;
+
+                        background-color: $SS-color1;
+                        border: 1px solid $SS-color5;
+                        border-radius: 10px;
+
+                        padding: 10px;
+                        margin-right: 20px;
+                        
+                        font-size: 15px;
+                        color: $SS-color4;
+
+                        display: inline-block;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+        
+        .cs290_bodycontent{
+            margin: auto;
+            width:80%;
+
+            &_slides{
+                
+
+                &_bg{
+                    background-color: #F1CEDB;
+
+                    display:flex;
+
+                    width: 500px;
+                    //margin: auto;
+                    &_img{
+                        width: 400px;
+                        margin: 10px auto;
+                    }
+                }
+            }
+            &_des{
+                margin-top: 20px;
+                padding-left: 35px;
+                padding-right: 35px;
+
+                &_p{
+                    width:60%;
+                    
+                    color: $SS-color5;
+                    font-size: medium;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
