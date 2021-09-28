@@ -11,14 +11,15 @@
         //display: inline-block;
         //vertical-align: middle;
 
+        //margin: auto 50px;
         margin: auto;
-        //margin-top: 10%;//this is dumb
+        padding: 30px;
 
-        height: 735px;
+        //height: 735px;
         width: 1080px;
         max-width: 100%;
 
-        background-color: $SS-color1;
+        background-color: $SS-color2; //$SS-color1 or $SS-color2
         border: 1px solid $SS-color6;
         border-image: initial;
         border-radius: 10px;
@@ -102,34 +103,77 @@
             margin: auto;
             width:80%;
 
+            display: flex;
+            justify-content: center;
+
             &_slides{
+                display:none;
                 
-
                 &_bg{
-                    background-color: #F1CEDB;
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                    //background-color: #F1CEDB;
 
-                    display:flex;
+                    //display:flex;
 
                     width: 500px;
                     //margin: auto;
+                    
+                    border: 1px solid $SS-color5;
+                    border-radius: 10px;
+
                     &_img{
+                        height: 300px;
                         width: 400px;
                         margin: 10px auto;
+                        
+                        //overflow: hidden;
+                        object-fit: scale-down;
+                        //object-fit: cover;
+                    }
+                    &_des{
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        //padding-left: 35px;
+                        //padding-right: 35px;
+                        display: flex;
+                        justify-content: center;
+
+                        &_p{
+                            width:60%;
+                            
+                            color: $SS-color5;
+                            font-size: x-large;
+                            text-align: center;
+                        }
                     }
                 }
-            }
-            &_des{
-                margin-top: 20px;
-                padding-left: 35px;
-                padding-right: 35px;
-
-                &_p{
-                    width:60%;
                     
-                    color: $SS-color5;
-                    font-size: medium;
-                    text-align: left;
+                /*
+                &_des{
+                    margin-top: 20px;
+                    //padding-left: 35px;
+                    //padding-right: 35px;
+                    display: flex;
+                    justify-content: center;
+
+                    &_p{
+                        width:60%;
+                        
+                        color: $SS-color5;
+                        font-size: medium;
+                        text-align: center;
+                    }
                 }
+                */
+            }
+
+            &_slide_pos{
+                text-align:center;
+                &_dot{
+                    color: $SS-color4;
+                }
+
             }
         }
     }

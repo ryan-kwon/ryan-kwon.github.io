@@ -9,6 +9,9 @@ THINGS TO DO
 PLANS
 - complete redesign of UI (minimal or something crazy new like 3D)
 
+CSS NOTES
+- border: size, type, color;
+
 how to update github: https://pages.github.com/
 
 color schemes: https://visme.co/blog/website-color-schemes/
@@ -18,3 +21,5 @@ resume: https://www.w3schools.com/w3css/tryw3css_templates_cv.htm
 responsive div: https://www.xspdf.com/resolution/54453235.html
 
 fix footer: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/
+
+picture color pallete: http://www.cssdrive.com/imagepalette/index.php
