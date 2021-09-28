@@ -3633,7 +3633,7 @@ cheerful and energetic
 */
 @use "sass:math";
 .cs290_body .border {
-  margin: auto;
+  margin: 50px auto;
   padding: 30px;
   width: 1080px;
   max-width: 100%;
@@ -3787,9 +3787,21 @@ cheerful and energetic
 
 .cs290_body .border .cs290_bodycontent_slides_bg_des_p {
   width: 60%;
-  color: #C5C6C7;
   font-size: x-large;
   text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #66FCF1;
+  opacity: .5;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.cs290_body .border .cs290_bodycontent_slides_bg_des_p:hover {
+  opacity: 1;
+  -webkit-transition: .15s;
+  transition: .15s;
+  cursor: pointer;
 }
 
 .cs290_body .border .cs290_bodycontent_slide_pos {

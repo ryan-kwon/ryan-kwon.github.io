@@ -11,8 +11,8 @@
         //display: inline-block;
         //vertical-align: middle;
 
-        //margin: auto 50px;
-        margin: auto;
+        margin: 50px auto;
+        //margin: auto;
         padding: 30px;
 
         //height: 735px;
@@ -142,9 +142,22 @@
                         &_p{
                             width:60%;
                             
-                            color: $SS-color5;
+                            //color: $SS-color5;
                             font-size: x-large;
                             text-align: center;
+                            
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: $SS-color4;
+
+                            opacity: .5;
+                            transition: .15s;
+
+                            &:hover {
+                                opacity: 1;
+                                transition: .15s;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }

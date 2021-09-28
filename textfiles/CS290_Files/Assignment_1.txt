@@ -1,0 +1,12 @@
+Your name and what you prefer to be called (if it's different from your name).
+Your OSU email address (e.g. hessro@oregonstate.edu).
+Your major and year of study.
+The answer to this question: what is the most complex or interesting thing you've done with your current web development skills? If you've never done anything related to web development, that's fine, but make sure to say that here.
+The answer to this question: what do you hope to learn from this class?
+The answer to this question: have you signed up for our course Piazza forum?
+A description of the most interesting fact about you or the most unique experience you've had. Include only what you can think of and write down in two minutes, maximum.
+A photo with a clear picture of your face (using an <img> tag).
+
+What challenges or troubles did you have completing this assignment. How did you work through them?
+What did you learn from this assignment? What did you already know?
+What resources (e.g. specific web articles, the class Piazza forum, the TAs) were most helpful in completing this assignment? How did you use these resources?
