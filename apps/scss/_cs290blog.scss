@@ -16,6 +16,7 @@
         padding: 30px;
 
         //height: 735px;
+        //min-height: 550px;
         width: 1080px;
         max-width: 100%;
 
@@ -104,7 +105,9 @@
             width:80%;
 
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            //justify-content: center;
+            align-items: center;
 
             &_slides{
                 display:none;
@@ -124,12 +127,21 @@
 
                     &_img{
                         height: 300px;
-                        width: 400px;
+                        //width: 400px;
                         margin: 10px auto;
                         
                         //overflow: hidden;
                         object-fit: scale-down;
                         //object-fit: cover;
+                    }
+                    &_img_assign1{
+                        height: 300px;
+                        //width: 400px;
+                        margin: 10px auto;
+                        
+                        object-fit: scale-down;
+
+                        border-radius: 30px;
                     }
                     &_des{
                         margin-top: 20px;
@@ -138,6 +150,8 @@
                         //padding-right: 35px;
                         display: flex;
                         justify-content: center;
+
+                        //text-align: center;
 
                         &_p{
                             width:60%;
@@ -157,6 +171,49 @@
                                 opacity: 1;
                                 transition: .15s;
                                 cursor: pointer;
+                            }
+                        }
+                        &_p_assign1{
+                            width:80%;
+                            
+                            color: $SS-color5;
+                            font-size: x-large;
+                            text-align: center;
+                            a{
+                                cursor: pointer;
+                                text-decoration: none;
+                                color: $SS-color5;
+
+                                opacity: .5;
+                                transition: .15s;
+
+                                &:hover {
+                                    opacity: 1;
+                                    transition: .15s;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        &_ul{
+                            list-style-type: circle;
+                            &_li{
+                                color: $SS-color5;
+                                font-size: x-large;
+                                text-align: left;
+                                a{
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    color: $SS-color5;
+
+                                    opacity: .5;
+                                    transition: .15s;
+
+                                    &:hover {
+                                        opacity: 1;
+                                        transition: .15s;
+                                        cursor: pointer;
+                                    }
+                                }
                             }
                         }
                     }
@@ -183,10 +240,25 @@
 
             &_slide_pos{
                 text-align:center;
-                &_dot{
-                    color: $SS-color4;
-                }
+                margin-top: 35px;
 
+                &_dot{
+                    //color: $SS-color4;
+
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: $SS-color4;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: $SS-color4 0.6s ease;
+                    opacity: .5;
+                    transition: .15s;
+                }
+                .active{
+                    opacity: 1;
+                    transition: .15s;
+                }
             }
         }
     }

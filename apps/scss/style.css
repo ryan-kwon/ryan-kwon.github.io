@@ -3026,12 +3026,6 @@ body .TopLink {
   width: 49%;
 }
 
-.footer {
-  position: relative;
-  margin-top: -180px;
-  clear: both;
-}
-
 #SConcept, #SSkill, #SConnect, #BioCon, #BioSkill, #BioConnect, #HCon, #HSkill, #HConnect {
   margin: auto;
   width: 50%;
@@ -3207,12 +3201,6 @@ body .TopLink {
   width: 80%;
   height: 500px;
   float: left;
-}
-
-.footer {
-  position: relative;
-  margin: 0px;
-  clear: both;
 }
 
 /* Color schemes
@@ -3730,9 +3718,13 @@ cheerful and energetic
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cs290_body .border .cs290_bodycontent_slides {
@@ -3768,10 +3760,17 @@ cheerful and energetic
 
 .cs290_body .border .cs290_bodycontent_slides_bg_img {
   height: 300px;
-  width: 400px;
   margin: 10px auto;
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.cs290_body .border .cs290_bodycontent_slides_bg_img_assign1 {
+  height: 300px;
+  margin: 10px auto;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border-radius: 30px;
 }
 
 .cs290_body .border .cs290_bodycontent_slides_bg_des {
@@ -3804,11 +3803,77 @@ cheerful and energetic
   cursor: pointer;
 }
 
-.cs290_body .border .cs290_bodycontent_slide_pos {
+.cs290_body .border .cs290_bodycontent_slides_bg_des_p_assign1 {
+  width: 80%;
+  color: #C5C6C7;
+  font-size: x-large;
   text-align: center;
 }
 
+.cs290_body .border .cs290_bodycontent_slides_bg_des_p_assign1 a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #C5C6C7;
+  opacity: .5;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.cs290_body .border .cs290_bodycontent_slides_bg_des_p_assign1 a:hover {
+  opacity: 1;
+  -webkit-transition: .15s;
+  transition: .15s;
+  cursor: pointer;
+}
+
+.cs290_body .border .cs290_bodycontent_slides_bg_des_ul {
+  list-style-type: circle;
+}
+
+.cs290_body .border .cs290_bodycontent_slides_bg_des_ul_li {
+  color: #C5C6C7;
+  font-size: x-large;
+  text-align: left;
+}
+
+.cs290_body .border .cs290_bodycontent_slides_bg_des_ul_li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #C5C6C7;
+  opacity: .5;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.cs290_body .border .cs290_bodycontent_slides_bg_des_ul_li a:hover {
+  opacity: 1;
+  -webkit-transition: .15s;
+  transition: .15s;
+  cursor: pointer;
+}
+
+.cs290_body .border .cs290_bodycontent_slide_pos {
+  text-align: center;
+  margin-top: 35px;
+}
+
 .cs290_body .border .cs290_bodycontent_slide_pos_dot {
-  color: #66FCF1;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #66FCF1;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: #66FCF1 0.6s ease;
+  transition: #66FCF1 0.6s ease;
+  opacity: .5;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.cs290_body .border .cs290_bodycontent_slide_pos .active {
+  opacity: 1;
+  -webkit-transition: .15s;
+  transition: .15s;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,12 +1,26 @@
 Your name and what you prefer to be called (if it's different from your name).
 Your OSU email address (e.g. hessro@oregonstate.edu).
 Your major and year of study.
-The answer to this question: what is the most complex or interesting thing you've done with your current web development skills? If you've never done anything related to web development, that's fine, but make sure to say that here.
-The answer to this question: what do you hope to learn from this class?
-The answer to this question: have you signed up for our course Piazza forum?
+-What is the most complex or interesting thing you've done with your current web development skills?<br>
+Working on a partner personal project called <a href="https://github.com/JoshuaLim007/Gif---Gift-Idea-Forum">Gift Idea Forum</a><br>
+-What do you hope to learn from this class?<br>
+I would like to have a better understanding of frontend to backend connection.<br>
+-Have you signed up for our course Campuswire forum?<br>
+Yes I have signed up for Campuswire.
 A description of the most interesting fact about you or the most unique experience you've had. Include only what you can think of and write down in two minutes, maximum.
+
 A photo with a clear picture of your face (using an <img> tag).
 
-What challenges or troubles did you have completing this assignment. How did you work through them?
-What did you learn from this assignment? What did you already know?
-What resources (e.g. specific web articles, the class Piazza forum, the TAs) were most helpful in completing this assignment? How did you use these resources?
+-What challenges or troubles did you have completing this assignment. How did you work through them?
+I always had issues with the editing of elements clashing with each other.
+An example of this is with the image of myself.
+I had a set width in px.
+I was trying to add a curved border on it, but it was not applying.
+When inspecting the image, it would show a padding effect.
+I realized that the image size and the width I set don't not match up well and removed the width.
+-What did you learn from this assignment? What did you already know?
+I already knew the basic layout of a webpage and how to stylize them to make the viewing experience better.
+The html, scss, and javascript tags at the top represent the tools I used to create the webpage.
+-What resources (e.g. specific web articles, the class Piazza forum, the TAs) were most helpful in completing this assignment? How did you use these resources?
+I always use w3schools a lot as a reference point.
+I think it is a great website for getting the basics of frontend design.
