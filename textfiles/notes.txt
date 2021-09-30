@@ -1,9 +1,6 @@
 THINGS TO DO
-- extra space on bottom: solved
-    - issue was that the min-height was too much
 - hover over text in resume: done
     - could use some work
-- cvs resume: done
 - portfolio modals (fuck this)
 
 PLANS

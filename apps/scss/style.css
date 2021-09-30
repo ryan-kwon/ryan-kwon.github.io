@@ -722,7 +722,7 @@ cheerful and energetic
 }
 */
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0px;
   width: 100%;
   background-color: #1F2833;
@@ -3746,6 +3746,18 @@ cheerful and energetic
                     }
                 }
                 */
+  /*
+                &_arrows_pre{
+                    border-right: 10px solid $SS-color1;
+                    border-top-color: transparent;
+                    border-bottom-color: transparent;
+                }
+                &_arrows_nex{
+                    border-left: 10px solid $SS-color1;
+                    border-top-color: transparent;
+                    border-bottom-color: transparent;
+                }
+                */
 }
 
 .cs290_body .border .cs290_bodycontent_slides_bg {
@@ -3850,6 +3862,18 @@ cheerful and energetic
   -webkit-transition: .15s;
   transition: .15s;
   cursor: pointer;
+}
+
+.cs290_body .border .cs290_bodycontent_slides_arrows_pre, .cs290_body .border .cs290_bodycontent_slides_arrows_nex {
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.cs290_body .border .cs290_bodycontent_slides_arrows_pre {
+  border-right: 25px solid #0B0C10;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
 }
 
 .cs290_body .border .cs290_bodycontent_slide_pos {

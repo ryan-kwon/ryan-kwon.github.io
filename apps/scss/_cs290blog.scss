@@ -111,7 +111,8 @@
 
             &_slides{
                 display:none;
-                
+                //filter: blur(8px);
+
                 &_bg{
                     animation-name: fade;
                     animation-duration: 1.5s;
@@ -234,6 +235,29 @@
                         font-size: medium;
                         text-align: center;
                     }
+                }
+                */
+            
+                &_arrows_pre, &_arrows_nex{
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                }
+                &_arrows_pre{
+                    border-right: 25px solid $SS-color1;
+                    border-top: 25px solid transparent;
+                    border-bottom: 25px solid transparent;
+                }
+                /*
+                &_arrows_pre{
+                    border-right: 10px solid $SS-color1;
+                    border-top-color: transparent;
+                    border-bottom-color: transparent;
+                }
+                &_arrows_nex{
+                    border-left: 10px solid $SS-color1;
+                    border-top-color: transparent;
+                    border-bottom-color: transparent;
                 }
                 */
             }

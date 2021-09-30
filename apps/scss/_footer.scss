@@ -2,7 +2,8 @@
 @import "mixins";
 
 .footer {
-    position: absolute;
+    //display: none;
+    position: relative;
     bottom: 0px;
     width: 100%;
     background-color: $SS-color2;
