@@ -29,8 +29,8 @@
             -10px 0 80px $SS-color3,
             10px 0 80px $SS-color6;
 
-            //opacity: .5;
-            transition: .15s;
+        //opacity: .5;
+        transition: .15s;
 
         &:hover{    
             box-shadow:
@@ -60,5 +60,20 @@
 
         
         */
+    }
+    &_htriangle{
+        //border: 20px solid $SS-color2;
+        //border-radius: 50%;
+
+        height: 0;
+        width: 0;
+
+        border-right: 25px solid $SS-color2;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
+    &_htri{
+        color: $SS-color4;
+        font-size: 100px;
     }
 }
