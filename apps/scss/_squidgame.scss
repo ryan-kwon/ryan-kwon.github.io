@@ -72,45 +72,101 @@
     background: #040107;
     font-family: Azonix;
     color: white;
+    height: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
 
-    min-height: 700px;
+    //min-height: 700px;
 
     &_logo{
         //margin: auto;
         //background-image: url("/images/png-files/Squid\ game\ circle.png");
-        &_img{
-            width: 500px;
-            height: 250px;
+        
+        display: flex;
+        justify-content: center;
+
+        &_bgimg{
+            position: absolute;
+            bottom: 0px;
+            //margin:auto;
+            width:700px;//need to figure out mixin
         }
-        &_p{
-            cursor: pointer;
-
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            text-decoration: none;
-
-            margin-left: 50%;
+        &_pos{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
 
             display: flex;
-            justify-content: flex-end;
+            flex-direction: column;
             align-items: center;
-            &_a{ 
-                color: white;
+
+            &_img{
+                width: 500px;
+                height: 250px;
+            }
+            &_p{
+                cursor: pointer;
+    
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
                 text-decoration: none;
-                &:hover{
-                    text-decoration: underline;
+    
+                margin-left: 25%;
+    
+                display: flex;
+                //justify-content: flex-end;
+                align-items: center;
+                
+                &_a{ 
+                    color: white;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                &_tri{
+                    font-size: 30px;
+                    width:30px;
+                    transform:rotate(90deg);
+                    margin-left: 10px;
                 }
             }
-            &_tri{
-                font-size: 30px;
-                width:30px;
-                transform:rotate(90deg);
-                margin-left: 10px;
+        }
+        &_des{
+            position: absolute;
+            top: 50%;
+            right: 20%;
+            transform: translate(20%, -50%);
+            width: 30%;
+
+            &_section{
+                display: flex;
+                flex-direction: row;
+                text-align: left;
+
+                &_hr{
+                    width: 500px;
+                    height: 5px;
+                    color: white;
+                }
+                &_words{
+                    display: flex;
+                    flex-direction: column;
+
+                    text-align: left;
+                    &_h3{
+    
+                    }
+                    &_p{
+                        text-align: left;
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                }
             }
         }
     }
