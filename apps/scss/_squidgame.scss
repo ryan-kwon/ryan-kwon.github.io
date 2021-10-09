@@ -1,0 +1,137 @@
+@import "variables";
+@import "mixins";
+
+.sg_header{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+    font-family: Azonix;
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    &_logo{
+        &_img{
+            cursor: pointer;
+        }
+    }
+    &_links{
+        list-style-type: none;
+        line-height: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        
+        &_li{
+            padding-top: 5px;
+            &_a{
+                color: white;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                text-decoration: none;
+
+                &:last-child{ //:not isn't working for some reason
+                    margin-right: 10px;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                    transition: 15s;
+                }
+            }
+        }
+    }
+    &_sign{
+        &_a{
+            cursor: pointer;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            text-decoration: none;
+
+            &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+                transition: 15s;
+            }
+        }
+    }
+}
+.sg_body{
+    background: #040107;
+    font-family: Azonix;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 700px;
+
+    &_logo{
+        //margin: auto;
+        //background-image: url("/images/png-files/Squid\ game\ circle.png");
+        &_img{
+            width: 500px;
+            height: 250px;
+        }
+        &_p{
+            cursor: pointer;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            text-decoration: none;
+
+            margin-left: 50%;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            &_a{ 
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            &_tri{
+                font-size: 30px;
+                width:30px;
+                transform:rotate(90deg);
+                margin-left: 10px;
+            }
+        }
+    }
+    &_mid{
+        //overflow: hidden;
+        &_img{
+            width: 500px;
+            //height:500px;
+            //height: 850px;
+            position: absolute;
+            bottom: 0px;
+        }
+    }
+}
+.sg_footer{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0px;
+    
+    background: linear-gradient(180deg, rgba(4, 1, 7, 0) 0%, #040107 100%);
+    font-family: Azonix;
+    color: white;
+}
