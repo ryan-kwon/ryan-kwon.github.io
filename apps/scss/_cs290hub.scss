@@ -1,0 +1,320 @@
+@import "variables";
+@import "mixins";
+@use "sass:math";
+
+.cs290_body{
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+
+    .border{
+        //display: inline-block;
+        //vertical-align: middle;
+
+        margin: 50px auto;
+        //margin: auto;
+        padding: 30px;
+
+        //height: 735px;
+        //min-height: 550px;
+        width: 1080px;
+        max-width: 100%;
+
+        background-color: $SS-color2-1; //$SS-color1 or $SS-color2
+        border: 1px solid $SS-color6;
+        border-image: initial;
+        border-radius: 10px;
+
+        .cs290_header{
+            margin: 30px auto;
+            width:80%;
+
+            &_title{
+                display: flex;
+                //justify-content: center;
+                align-items: center;
+                
+                text-align: left;
+                &_img{
+                    width:100px;
+                    height: 100px;
+                    border-radius: 10px;
+                }
+                &_text{
+                    margin-left:20px;
+                    text-align: left;
+
+                    &_p1{
+                        text-align: left;
+                        font-weight: bold;
+                        font-size: 30px;
+                        color: $SS-color4;
+                    }
+                    &_des{
+                        text-align: left;
+                        font-size: 20px;
+                        color: $SS-color5;
+                    }
+                }
+            }
+
+            &_hr{
+                padding: 15px 0rem;
+
+                &_separator{
+                    opacity: 0.6;
+                    border-width: 0px 0px 1px;
+                    border-image: initial;
+                    border-color: inherit;
+                    border-style: solid;
+                    width: 100%;
+                }
+            }
+
+            &_apps{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+
+                &_tool{
+                    &_text{
+                        //height: 50px;
+
+                        background-color: $SS-color1;
+                        border: 1px solid $SS-color5;
+                        border-radius: 10px;
+
+                        padding: 10px;
+                        margin-right: 20px;
+                        
+                        font-size: 15px;
+                        color: $SS-color4;
+
+                        display: inline-block;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+        
+        .cs290_bodycontent{
+            margin: auto;
+            width:80%;
+
+            display: flex;
+            flex-direction: column;
+            //justify-content: center;
+            //justify-content: space-around;
+            align-items: center;
+
+            &_group{
+                display: flex;
+                align-items: center;
+                
+                &_slides{
+                    display:none;
+                    //filter: blur(8px);
+
+                    &_bg{
+                        animation-name: fade;
+                        animation-duration: 1.5s;
+                        //background-color: #F1CEDB;
+
+                        //display:flex;
+
+                        width: 500px;
+                        //margin: auto;
+                        
+                        border: 1px solid $SS-color5;
+                        border-radius: 10px;
+
+                        &_img{
+                            height: 300px;
+                            //width: 400px;
+                            margin: 10px auto;
+                            
+                            //overflow: hidden;
+                            object-fit: scale-down;
+                            //object-fit: cover;
+                        }
+                        &_img_assign1{
+                            height: 300px;
+                            //width: 400px;
+                            margin: 10px auto;
+                            
+                            object-fit: scale-down;
+
+                            border-radius: 30px;
+                        }
+                        &_des{
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            //padding-left: 35px;
+                            //padding-right: 35px;
+                            display: flex;
+                            justify-content: center;
+
+                            //text-align: center;
+
+                            &_p{
+                                width:60%;
+                                
+                                //color: $SS-color5;
+                                font-size: x-large;
+                                text-align: center;
+                                
+                                cursor: pointer;
+                                text-decoration: none;
+                                color: $SS-color4;
+
+                                opacity: .5;
+                                transition: .15s;
+
+                                &:hover {
+                                    opacity: 1;
+                                    transition: .15s;
+                                    cursor: pointer;
+                                }
+                            }
+                            &_p_assign1{
+                                width:80%;
+                                
+                                color: $SS-color5;
+                                font-size: x-large;
+                                text-align: center;
+                                a{
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                    color: $SS-color5;
+
+                                    opacity: .5;
+                                    transition: .15s;
+
+                                    &:hover {
+                                        opacity: 1;
+                                        transition: .15s;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                            &_ul{
+                                list-style-type: circle;
+                                &_li{
+                                    color: $SS-color5;
+                                    font-size: x-large;
+                                    text-align: left;
+                                    a{
+                                        cursor: pointer;
+                                        text-decoration: none;
+                                        color: $SS-color5;
+
+                                        opacity: .5;
+                                        transition: .15s;
+
+                                        &:hover {
+                                            opacity: 1;
+                                            transition: .15s;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                        
+                    /*
+                    &_des{
+                        margin-top: 20px;
+                        //padding-left: 35px;
+                        //padding-right: 35px;
+                        display: flex;
+                        justify-content: center;
+
+                        &_p{
+                            width:60%;
+                            
+                            color: $SS-color5;
+                            font-size: medium;
+                            text-align: center;
+                        }
+                    }
+                    */
+                
+                    &_arrows_pre, &_arrows_nex{
+                        font-size: 50px;
+                        cursor: pointer;
+                        margin: 0px 20px;
+                        color: $SS-color4;
+                        opacity: .5;
+                        transition: .15s;
+
+                        //box-shadow: 3px 0 10px $SS-color1;
+                        &:hover{
+                            opacity: 1;
+                            transition: .15s;
+                        }
+                    }
+                    &_arrows_pre{
+                        transform:rotate(90deg);
+                    }
+                    &_arrows_nex{
+                        transform:rotate(-90deg);
+                    }
+                    
+                    /*
+                    &_arrows_pre, &_arrows_nex{
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                        margin: 20px;
+                        //border-radius: 25%;
+                        //position: relative;
+                    }
+                    &_arrows_pre{
+                        border-right: 25px solid $SS-color1;
+                        border-top: 25px solid transparent;
+                        border-bottom: 25px solid transparent;
+
+                        //right: 30px;
+                        //bottom: 200px;
+                    }
+                    &_arrows_nex{
+                        border-left: 25px solid $SS-color1;
+                        border-top: 25px solid transparent;
+                        border-bottom: 25px solid transparent;
+                        
+                        //left: 30px;
+                        //bottom:200px;
+                    }
+                    */
+                }
+            }
+
+            &_slide_pos{
+                text-align:center;
+                margin-top: 35px;
+
+                &_dot{
+                    //color: $SS-color4;
+
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: $SS-color4;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: $SS-color4 0.6s ease;
+                    opacity: .5;
+                    transition: .15s;
+                }
+                .active{
+                    opacity: 1;
+                    transition: .15s;
+                }
+            }
+        }
+    }
+}

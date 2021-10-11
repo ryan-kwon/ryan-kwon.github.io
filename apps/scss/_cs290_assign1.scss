@@ -1,0 +1,86 @@
+@import "variables";
+@import "mixins";
+@use "sass:math";
+
+.cs290_body{
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+
+    .border{
+        .cs290_assign1_bodycontent{
+            margin: auto;
+            width:80%;
+
+            display: flex;
+            //flex-direction: column;
+            //justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+
+            &_profile{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 350px;
+                height: 350px;
+
+                background: $SS-color2;
+                border-radius: 50px;
+
+                margin-right: 50px;
+
+                &_img{
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50px;
+                }
+            }
+            &_desc{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                width: 350px;
+                height: 350px;
+
+                background: $SS-color2;
+                border: 1px solid $SS-color3;
+                box-sizing: border-box;
+                border-radius: 50px;
+
+                &_ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 300px;
+                    height: 300px;
+
+                    list-style-type: circle;
+
+                    &_li{
+                        color: $SS-color5;
+                        font-size: x-large;
+                        text-align: left;
+                        a{
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: $SS-color5;
+
+                            opacity: .5;
+                            transition: .15s;
+
+                            &:hover {
+                                opacity: 1;
+                                transition: .15s;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
