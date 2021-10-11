@@ -187,6 +187,74 @@ cheerful and energetic
   }
 }
 
+@-webkit-keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@-webkit-keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
+  }
+}
+
 /*
 @keyframes fadeIn {
     0%,100% { opacity: 0; }
@@ -504,6 +572,40 @@ cheerful and energetic
   }
 }
 
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
+  }
+}
+
 /*
 @keyframes fadeIn {
     0%,100% { opacity: 0; }
@@ -711,6 +813,40 @@ cheerful and energetic
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
   }
 }
 
@@ -1000,6 +1136,40 @@ cheerful and energetic
   }
 }
 
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
+  }
+}
+
 /*
 @keyframes fadeIn {
     0%,100% { opacity: 0; }
@@ -1256,6 +1426,40 @@ cheerful and energetic
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
   }
 }
 
@@ -1979,6 +2183,40 @@ cheerful and energetic
   }
 }
 
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
+  }
+}
+
 /*
 @keyframes fadeIn {
     0%,100% { opacity: 0; }
@@ -2683,6 +2921,40 @@ cheerful and energetic
   }
 }
 
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
+  }
+}
+
 /*
 @keyframes fadeIn {
     0%,100% { opacity: 0; }
@@ -2981,6 +3253,40 @@ cheerful and energetic
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
   }
 }
 
@@ -3431,6 +3737,40 @@ cheerful and energetic
   }
 }
 
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
+  }
+}
+
 /*
 @keyframes fadeIn {
     0%,100% { opacity: 0; }
@@ -3644,6 +3984,40 @@ cheerful and energetic
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
   }
 }
 
@@ -4176,6 +4550,40 @@ cheerful and energetic
   }
 }
 
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
+  }
+}
+
 /*
 @keyframes fadeIn {
     0%,100% { opacity: 0; }
@@ -4198,6 +4606,19 @@ cheerful and energetic
     50% { opacity: 1; }
 }
 */
+.experi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .experi_explain {
   margin: 50px;
 }
@@ -4245,6 +4666,15 @@ cheerful and energetic
 .experi_htri {
   color: #66FCF1;
   font-size: 100px;
+}
+
+.experi_square {
+  margin: 100px;
+  width: 400px;
+  height: 400px;
+  background-color: #45A29E;
+  -webkit-animation: color-transition 25s linear infinite alternate;
+          animation: color-transition 25s linear infinite alternate;
 }
 
 /* Color schemes
@@ -4435,6 +4865,40 @@ cheerful and energetic
   }
 }
 
+@keyframes color-transition {
+  0% {
+    background-color: #D82C60;
+  }
+  33% {
+    background-color: #025F61;
+  }
+  66% {
+    background-color: #405688;
+  }
+  100% {
+    background-color: #8E8B5E;
+  }
+}
+
+@keyframes sg-header-bg {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#025F61), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #025F61 0%, rgba(4, 1, 7, 0) 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#405688), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #405688, rgba(4, 1, 7, 0) 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E8B5E), to(rgba(4, 1, 7, 0)));
+    background: linear-gradient(180deg, #8E8B5E 0%, rgba(4, 1, 7, 0) 100%);
+  }
+}
+
 /*
 @keyframes fadeIn {
     0%,100% { opacity: 0; }
@@ -4463,8 +4927,8 @@ cheerful and energetic
   height: 100px;
   left: 0px;
   top: 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(rgba(4, 1, 7, 0)));
-  background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#D82C60), to(#040107));
+  background: linear-gradient(180deg, #D82C60 0%, #040107 100%);
   font-family: Azonix;
   color: white;
   padding: 20px;
@@ -4631,6 +5095,11 @@ cheerful and energetic
   text-align: left;
 }
 
+.sg_body_logo_des_section_line {
+  position: relative;
+  top: 0px;
+}
+
 .sg_body_logo_des_section_hr {
   width: 500px;
   height: 5px;
@@ -4645,6 +5114,10 @@ cheerful and energetic
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: left;
+}
+
+.sg_body_logo_des_section_words_h3 {
   text-align: left;
 }
 

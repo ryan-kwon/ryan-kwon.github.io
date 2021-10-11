@@ -8,7 +8,9 @@
     left: 0px;
     top: 0px;
 
-    background: linear-gradient(180deg, #D82C60 0%, rgba(4, 1, 7, 0) 100%);
+    background: linear-gradient(180deg, $SG-red 0%, $SG-black 100%);
+    //animation: sg-header-bg 25s ease-in-out infinite alternate;
+    
     font-family: Azonix;
     color: white;
 
@@ -148,6 +150,10 @@
                 flex-direction: row;
                 text-align: left;
 
+                &_line{
+                    position: relative;
+                    top:0px; 
+                }
                 &_hr{
                     width: 500px;
                     height: 5px;
@@ -159,7 +165,7 @@
 
                     text-align: left;
                     &_h3{
-    
+                        text-align: left;
                     }
                     &_p{
                         text-align: left;
