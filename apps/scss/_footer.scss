@@ -2,9 +2,9 @@
 @import "mixins";
 
 .footer {
-    //display: none;
-    position: relative;
-    bottom: 0px;
+    //position: relative;
+    margin-top: 100px;
+
     width: 100%;
     background-color: $SS-color2-1;
     padding-top: 10px;
