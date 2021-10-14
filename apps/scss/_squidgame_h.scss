@@ -8,7 +8,7 @@
     left: 0px;
     top: 0px;
 
-    background: linear-gradient(180deg, $SG-red 0%, $SG-black 100%);
+    background: linear-gradient(180deg, $SG-red 0%, $SG-black-fade 100%);
     //animation: sg-header-bg 25s ease-in-out infinite alternate;
     
     font-family: Azonix;
@@ -71,7 +71,7 @@
     }
 }
 .sg_body{
-    background: #040107;
+    background: $SG-black;
     font-family: Azonix;
     color: white;
     height: 100%;
@@ -106,8 +106,8 @@
             align-items: center;
 
             &_img{
-                width: 500px;
-                height: 250px;
+                width: 450px;
+                //height: 250px;
             }
             &_p{
                 cursor: pointer;
@@ -148,9 +148,16 @@
             &_section{
                 display: flex;
                 flex-direction: row;
+                align-items: flex-start;
+
                 text-align: left;
 
+                &:not(:last-child){
+                    margin-bottom: 100px;
+                }
+
                 &_line{
+                    margin-top: 10px;
                     position: relative;
                     top:0px; 
                 }
@@ -165,6 +172,9 @@
 
                     text-align: left;
                     &_h3{
+                        //display:flex;
+                        //flex-direction: row;
+
                         text-align: left;
                     }
                     &_p{
@@ -176,6 +186,13 @@
             }
         }
     }
+    /*
+    &_nxtpg{
+        &_arrow{
+            
+        }
+    }
+    */
     &_mid{
         //overflow: hidden;
         &_img{

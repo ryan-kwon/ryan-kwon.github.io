@@ -1,0 +1,72 @@
+@import "variables";
+@import "mixins";
+
+.sg_g_header{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(180deg, $SG-green 0%, $SG-black-fade 100%);
+    //animation: sg-header-bg 25s ease-in-out infinite alternate;
+    
+    font-family: Azonix;
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    &_logo{
+        &_img{
+            cursor: pointer;
+        }
+    }
+    &_links{
+        list-style-type: none;
+        line-height: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        
+        &_li{
+            padding-top: 5px;
+            &_a{
+                color: white;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                text-decoration: none;
+
+                &:last-child{ //:not isn't working for some reason
+                    margin-right: 10px;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                    transition: 15s;
+                }
+            }
+        }
+    }
+    &_sign{
+        &_a{
+            cursor: pointer;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            text-decoration: none;
+
+            &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+                transition: 15s;
+            }
+        }
+    }
+}

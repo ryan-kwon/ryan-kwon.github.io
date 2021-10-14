@@ -1,0 +1,16 @@
+What was challenging about the assignment, and what specific kinds of problems did you have.
+How did you solve those problems?
+The main issue I have is the clashing of display flex and width. So far my solution is to not use a width change and use a padding or margin change. So far it works great
+
+What did you learn from the assignment?
+Were there any special insights you had?
+What did you find that you already knew?
+Positioning elements is something that I had, and still have, a lot of difficulty width. The style display:flex; helps so much with how I understand the way positioning works on elements.
+
+What kinds of resources were helpful for completing the assignment?
+Specific websites? Lectures? The class Piazza forum? The TAs?
+How did you use each of these resources?
+I still always refer to w3schools as a basis for understanding how each element change works. It's a great website for foundational skills
+
+What are one or two things you had to Google to complete the assignment?
+When I had the issue with the display:flex and width, I had to google how they work.
