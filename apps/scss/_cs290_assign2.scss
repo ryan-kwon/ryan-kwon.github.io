@@ -1,0 +1,170 @@
+/*
+ * You should write your CSS in this file.  Don't forget to add your name and
+ * @oregonstate.edu email address below.
+ *
+ * name: Kyu Sung Kwon
+ * email: kwonk@oregonstate.edu
+ */
+
+.header-image-container{
+    margin-right: 10px;
+}
+header .site-title {
+    margin: 0px 10px;
+}
+header .site-title a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 80px;
+    font-weight: lighter;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+ }
+.content .filter-container{
+    display: flex;
+    flex-direction: column;
+
+    /**/
+    width: 20%;
+    min-height: 400px;
+    /*width: 500px;*//*affected by display:flex*/
+
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(228, 228, 228);
+}
+.content .filter-container .filter-input-container{
+    display: flex;
+    flex-direction: row;
+
+    margin: 10px;
+}
+.content .filter-container .filter-input-container .filter-input-label{
+    margin-right: 10px;
+}
+.content .filter-container .filter-input-container .filter-fieldset{
+    min-width: 100px;
+    padding: 20px;
+}
+.content .filter-container .filter-input-container .filter-fieldset legend{
+    margin: auto;
+}
+.content .filter-container .filter-input-container .filter-input-element{
+    padding-right: 15px;
+}
+.content .filter-container .filter-input-container .filter-input-element .filter-input {
+    min-width: 70px;
+    width: 100%;
+}
+.content .filter-container .action-button{
+    /*width:*/
+    padding: 10px 50px;
+    border: 0px;
+    margin-bottom: 10px;
+
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+.content .filter-container .action-button:hover{
+    background-color: burlywood;
+    color: black;
+    cursor:pointer;
+}
+
+.content #posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.content .post {
+    margin: 10px;
+}
+.content .post .post-contents {
+    /*object-fit: scale-down;*/
+
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid rgb(211, 211, 211);
+}
+.content .post .post-contents .post-image-container{
+    display: flex;
+    justify-content: center;
+}
+.content .post .post-contents .post-image-container img {
+    /*margin: auto;*/
+    max-width: 100%;
+    max-height:250px;
+    /*
+    width: 150px;
+    height: 150px;
+    
+    object-fit: scale-down;
+    */
+}
+.content .post .post-contents .post-info-container{
+    /*
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    */
+    margin: 10px;
+    /*margin-bottom: 100px;*/
+}
+.content .post .post-contents .post-info-container .post-title{
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+}
+.content .post .post-contents .post-info-container .post-title:hover{
+    text-decoration:underline;
+}
+.content .post .post-contents .post-info-container .post-price{
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 10%;
+
+    background-color: rgb(241, 241, 241);
+
+    font-size: small;
+    cursor: pointer;
+}
+.content .post .post-contents .post-info-container .post-city{
+    
+}
+
+#sell-something-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px gray;
+
+    cursor: pointer;
+}
+#sell-something-button:hover{
+    transform: scale(1.2);
+}
+#sell-something-button .fas{
+    background-color: orange;
+    color: white;
+    font-size: x-large;
+}
+#sell-something-button .fas .fa-plus{
+}
