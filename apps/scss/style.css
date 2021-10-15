@@ -5560,6 +5560,35 @@ cheerful and energetic
           animation: color-transition 25s linear infinite alternate;
 }
 
+.experi_watereff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0))), url("/images/png-files/transparent_water_drops.png");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("/images/png-files/transparent_water_drops.png");
+  width: 375px;
+  height: 815px;
+  border-radius: 40px;
+  -webkit-box-shadow: inset 5px 5px 10px white;
+          box-shadow: inset 5px 5px 10px white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.experi_watereff_h1 {
+  color: white;
+  font-size: xxx-large;
+}
+
 /* Color schemes
 Colorful and balanced
 #e27d60

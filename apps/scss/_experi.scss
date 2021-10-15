@@ -90,4 +90,27 @@
         animation: color-transition 25s linear infinite alternate;
         //name duration timing-function delay iteration direction
     }
+    &_watereff{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        background-image:
+            linear-gradient(to bottom, rgba(255,255,255,.3), rgba(255,255,255,0)),
+            url("/images/png-files/transparent_water_drops.png");
+        width: 375px;
+        height: 815px;
+        border-radius: 40px;
+        box-shadow: inset 5px 5px 10px white;
+        //filter: blur(1px);
+
+        font-family: 'Roboto', sans-serif;
+        &_h1{
+            //font-family: Helvetica Neue, Arial, sans-serif;
+            color: white;
+            //font-weight: lighter;
+            font-size: xxx-large;
+        }
+    }
 }
