@@ -13,8 +13,5 @@ To exchange great ideas<br />
 Made with .NET framework
 ![Image of Yaktocat](https://github.com/JoshuaLim007/Gif---Gift-Idea-Forum/blob/main/HomePage0.png)
 
-## [Bio 103 Portfolio](https://ryan-kwon.github.io/bio_outcomes.html)
-Porfolio for Bio 103 class at OSU<br />
-- Quizzes
-- Media Responses
-- Learning Objectives
+## [Squid Game Concept](https://ryan-kwon.github.io/squid_game_home.html)
+Concept site for Squid Game<br />
