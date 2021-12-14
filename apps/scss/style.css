@@ -1980,14 +1980,6 @@ cheerful and energetic
   max-width: 100%;
   margin: auto;
   padding: 1.875rem 0.9375rem;
-  -webkit-transition: -webkit-filter 0.5s;
-  transition: -webkit-filter 0.5s;
-  transition: filter 0.5s;
-  transition: filter 0.5s, -webkit-filter 0.5s;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
 }
 
 .intro {
